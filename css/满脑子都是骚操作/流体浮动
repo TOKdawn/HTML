@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>流动float</title>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="http://t.sina.com.cn/xuruoxuan">
+                <img src="./image/photo1.png" alt="头像">
+            </a>
+
+        </div>
+        <div>
+            <p>
+                <a href="#">sss <i title="新浪认证" class="mib_vip"></i></a>
+                :测试用文字.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

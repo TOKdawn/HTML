@@ -1,0 +1,133 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css基础知识.css" type="text/css">
+</head>
+<body>
+    <h1 id="Top">澶ф爣棰�</h1>
+    <p >娈佃惤<b>鍔犵矖</b><i>鏂滀綋</i><sup>涓婃爣</sup>娈佃惤<sub>涓嬫爣</sub></p>
+    鎹�<br />琛�
+    姘村钩绾�<hr/>
+    <h2>杈呭姪闃呰鐢�</h2>
+    <strong>璇皵鍔犲己</strong>
+    <em>璇皵鏀瑰彉</em>
+    <blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-pooh">
+        缂╄繘
+        <q>cfddfs</q>
+    </blockquote>
+    <h2>Hcard</h2>
+    <hr/>
+    <div class =鈥渧card鈥�>
+  <span class =鈥渇n鈥�> Dawn inShadow </ span>
+  <div class =鈥渙rg鈥�> Dawn鐨勮褰�</ div>
+  <a class="email" href="mailto:DawninSadow0.0@gmail.com">
+    DawninSadow0.0@gmail.com
+  </a>
+  <div class =鈥渁dr鈥� >
+    <div class =鈥渟treet-address鈥�> Metropol </div>
+    <span class =鈥渓ocality鈥�>浜岄緳灞�</span>锛�
+    <span class =鈥渞egion鈥�> HarBin </span>锛�
+    <span class =鈥減ostal-code鈥�> 150400 </span>
+    <span class =鈥渃ountry-name鈥�> China </span>
+  </div>
+</div><br />
+<ins href="www.baidu.com">涓嬪垝绾�</ins>
+<del>鍒掓帀</del>
+<cite>鏂滀綋</cite>
+<ol class="list-style-type">鏈夊簭鍒楄〃<li>涓€琛�</li><li>涓よ</li><li>涓夎</li></ol>
+<ul class="list-style-type">鏃犲簭鍒楄〃<li>涓€琛�</li><li>涓よ</li><li>涓夎</li></ul>
+<a href="www.baidu.com">www.baidu.com</a>
+<a href="mailtoDwaninshadow0.0@gmail.com">DawninShadow</a>
+<a href="www.baidu,com" target="_blank">鏂扮獥鍙ｆ墦寮€</a>
+<img src="./images/weilai.jpg" alt="鎴戣€佸﹩" title="鎶婇紶鏍囦粠鎴戣€佸﹩韬笂鎷垮紑" height="700px" width="600px">
+<!--align灞炴€х敤浜庤〃绀哄浘鐗囧湪鏂囧瓧涓浣曠幆缁�,HTML5浠ヤ笉鏀寔,涓嶈鐢�-->
+<a href="#Top">鍥為《灞�</a>
+<figure>
+    <!--涓棿鐨勫唴瀹圭浉褰撲簬涓€涓浘鐗囩粍-->
+    <img src="./images/girls.jpg" alt="濂冲">
+    <img src="./images/weilai.jpg" alt="鎴戣€佸﹩" title="鎶婇紶鏍囦粠鎴戣€佸﹩韬笂鎷垮紑" height="700px" width="600px"><br />
+    <figcaption>鍥剧墖鐨勮鏄�</figcaption>
+</figure>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">鍒楀ご</th>
+        <th scope="col">鍒楀ご</th>
+        <th scope="col">鍒楀ご</th>
+    </tr>
+    <tr>
+        <th scope="row">琛屽ご</th>
+        <td>绗竴鍒�</td>
+        <td>绗簩鍒�</td>
+        <td>绗笁鍒�</td>
+    </tr>
+    <tr>
+        <th scope="row">琛屽ご</th>
+        <td colspan="2">绗簩1鎴戠珯涓や釜浣嶇疆</td>
+        <td rowspan="2">绗簩琛�</td>
+        <!-- colspan浠ｈ〃璺ㄧ殑琛屾暟 鍚戝悗鎺ㄨ繘-->
+        <!-- rowspan浠ｈ〃璺ㄧ殑鍒楁暟 鍚戜笅鎺ㄨ繘-->
+    </tr>
+    <tr>
+    <td></td>
+    <td>3/1</td>
+    <td>3/2</td>
+    </tr>
+</table>
+<table>
+    <thead>
+        <th>name</th>
+        <th>age</th>
+        <th>core</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>jam</th>
+            <td>12</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <th>jack</th>
+            <td>23</td>
+            <td>80</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th>add</th>
+        <td>???</td>
+        <td>170</td>
+    </tfoot>
+</table>
+<form action="http://www.鏈嶅姟鍣ㄤ笂鐨刄RL.com" method="get/post">
+    <!--get鐢ㄤ簬鐭〃鍗�,浠庢湇鍔″櫒鑾峰彇鏁版嵁,post鐢ㄤ簬闀胯〃鍗�,鍚戞湇鍔″櫒鍙戦€佹枃浠�,杩涜鏁版嵁搴撴搷浣�-->
+    <input type="text" name="username" size="15" maxlength="5">
+    <!--input鏄痜orm琛ㄥ崟閲岃幏鍙栨暟鎹殑鎺т欢,type鍐冲畾鑾峰彇褰㈠紡,size鍐冲畾杈撳叆妗嗛暱搴�,maxlength鍐冲畾鏁版嵁闀垮害,name鏄暟鎹爣璇�-->
+    <textarea name="鏂囨湰妗�" rows="8" cols="80">鍦ㄦ杈撳叆</textarea>
+    <p>
+        <input type="radio" name="1" value="1" checked="checked" >1
+        <!--checked 榛樿閫夊彇-->
+        <input type="radio" name="2" value="2">2
+        <input type="radio" name="3" value="3">3
+    </p>
+    <p>
+        <input type="checkbox" name="1" value="1">1
+        <input type="checkbox" name="2" value="2">2
+        <input type="checkbox" name="3" value="3">3
+    </p>
+    <select class="null" name="涓嬫媺鍒楄〃" >
+        <option value="iphone">iphone</option>
+        <option value="ipad" selected="selected">ipad</option>
+        <option value="Mac">mac</option>
+
+    </select>
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
