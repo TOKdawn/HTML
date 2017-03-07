@@ -13,6 +13,10 @@
    -ms-filter: blur(3px);
    filter: blur(1px);*/
 }
+<video autoplay loop poster="polina.jpg" id="bgvid">
+ <source src="polina.webm" type="video/webm">
+<source src="polina.mp4" type="video/mp4"></video>
+
 .mainbar{
     /*background-color: #faf;*/
     position: absolute;
@@ -101,23 +105,26 @@
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
          -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  }
+
 }
-
-
 
 @media screen and (max-width:720px)
 {
-    .page-wrapper{
+    body{
+        font: 75% georgia,sans-serif;
+        line-height: 1.88889;
+        background:url(./image/pass.jpg) center no-repeat fixed;
+        background-clip: content-box;
+    }
+    /*.page-wrapper{
         font: 75% georgia, sans-serif;
 	    line-height: 1.88889;
         background:url(./image/back.jpg) center bottom no-repeat fixed ;
-        background-clip: content-box;
+        background-clip: border-box;
         position: absolute;
         top:0px;
         left: 0px;
         right: 0px;
         bottom: 0px;
-
-    }
+    }*/
 }
