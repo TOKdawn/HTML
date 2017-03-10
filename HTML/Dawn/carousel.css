@@ -6,7 +6,21 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
 }
+.JE{
+    color: #ef9a9a;
+}
+.JE:hover{
+    color: #e57373;
+    text-decoration:none;
+}
+.music{
+    color: #e53935;
+    text-decoration: none;
+}
+.music:hover{
+    text-decoration: none;
 
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -52,6 +66,10 @@ body {
   z-index: 10;
 }
 
+.blue {
+  color: #bbdefb;
+  z-index: 10;
+}
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
