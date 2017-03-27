@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper.css">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container" id="chapter">
+        <div class="swiper-wrapper">
+            <!-- 最外层 -->
+            <div class="swiper-slide">
+                <!-- 第一章  -->
+                <div class="swiper-container "id="chapeter_1">
+                    <div class="swiper-wrapper">
+
+                        <!-- 第一章欢迎页 -->
+                        <div class="swiper-slide"style="background:#aff">第一章111
+                            <button type="button"  onclick="swChapter.slidePrev()">上一章</button>
+                            <button type="button"  onclick="swChapter.slideNext()">下一章</button>
+                        </div>
+                        <!-- 第一章欢迎页 -->
+
+
+                        <!-- 第一章第一课 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-container"id="courses_1_1">
+                                <div class="swiper-wrapper">
+
+
+                                    <!-- 第一课内容 -->
+                                    <div class="swiper-slide">第一章第一课第一节</div>
+
+                                    <div class="swiper-slide">第一章第一课第二节</div>
+
+                                    <div class="swiper-slide">第一章第一课第三节</div>
+                                    <!-- 第一课内容 -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第一章第一课 -->
+
+                        <!-- 第一章第二课     -->
+
+                            <div class="swiper-slide">
+                                <div class="swiper-container"id="courses_1_2">
+                                    <div class="swiper-wrapper">
+
+
+                                        <!-- 第二课内容 -->
+                                        <div class="swiper-slide">第一章第二课第一节</div>
+
+                                        <div class="swiper-slide">第一章第二课第二节</div>
+
+                                        <!-- 第二课内容 -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                         <!-- 第一章第二课-->
+
+                         <!-- 第一章第三课     -->
+
+                             <div class="swiper-slide">
+                                 <div class="swiper-container"id="courses_1_3">
+                                     <div class="swiper-wrapper">
+
+
+                                         <!-- 第三课内容 -->
+                                         <div class="swiper-slide">第一章第三课第一节</div>
+
+                                         <div class="swiper-slide">第一章第三课第二节</div>
+
+                                         <!-- 第三课内容 -->
+
+                                     </div>
+                                 </div>
+                             </div>
+
+                          <!-- 第一章第三课-->
+
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"id="courses_1b"></div>
+                    <!-- 第一章进度 -->
+                </div>
+            </div>
+
+
+
+            <div class="swiper-slide ">
+                <!-- 第二章  -->
+                <div class="swiper-container"id="chapeter_2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">第二章111111111111
+                            <button type="button"  onclick="swChapter.slidePrev()">上一章</button>
+                            <button type="button"  onclick="swChapter.slideNext()">下一章</button>
+
+                        </div>
+
+                        <!-- 第二章第一课 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-container"id="courses_2_1">
+                                <div class="swiper-wrapper">
+
+
+                                    <!-- 第一课内容 -->
+                                    <div class="swiper-slide">第二章第一课第一节</div>
+
+                                    <div class="swiper-slide">第二章第一课第二节</div>
+
+
+                                    <!-- 第一课内容 -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第二章第一课 -->
+
+                        <!-- 第二章第二课 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-container"id="courses_2_2">
+                                <div class="swiper-wrapper">
+
+
+                                    <!-- 第二课内容 -->
+                                    <div class="swiper-slide">第二章第二课第一节</div>
+
+                                    <div class="swiper-slide">第二章第二课第二节</div>
+
+                                    <div class="swiper-slide">第二章第二课第三节</div>
+                                    <!-- 第二课内容 -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第二章第二课 -->
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"id="chapeter_2b"></div>
+                    <!-- 第二章进度 -->
+                </div>
+            </div>
+
+            <div class="swiper-slide ">
+                <!-- 第三章 -->暂无新章节
+                <button type="button"  onclick="swChapter.slidePrev()">上一章</button>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" id="chapterb"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swChapter = new Swiper('#chapter', {
+        pagination: '#chapterb',
+        onlyExternal : true,
+        // paginationClickable: true,
+        grabCursor:false,
+        // effect : 'fade',
+        // shortSwipes : false,
+    });
+    var swChapter_1 = new Swiper('#chapeter_1', {
+        pagination: '#chapeter_1b',
+        paginationClickable: true,
+        direction: 'vertical',
+        shortSwipes : false,
+        // effect : 'cube',
+        // touchRatio :-1,
+        // initialSlide :3,
+
+    });
+    var swchapeter_2 = new Swiper('#chapeter_2', {
+        pagination: '#chapeter_1b',
+        paginationClickable: true,
+        direction: 'vertical',
+        shortSwipes : false,
+        // effect : 'cube',
+        // touchRatio :-1,
+        // initialSlide :3,
+
+    });
+    var swcourses_1_1 = new Swiper('#courses_1_1', {
+        // pagination: '#text1b',
+        paginationClickable: true,
+        // direction: 'vertical',
+        // touchRatio :-1,
+        // effect : 'cube',
+        // initialSlide :3,
+    });
+    var swcourses_1_2 = new Swiper('#courses_1_2', {
+        // pagination: '#text1b',
+        paginationClickable: true,
+        // direction: 'vertical',
+        // touchRatio :-1,
+        // effect : 'cube',
+        // initialSlide :3,
+    });
+    var swcourses_1_3 = new Swiper('#courses_1_3', {
+        // pagination: '#text1b',
+        paginationClickable: true,
+        // direction: 'vertical',
+        // touchRatio :-1,
+        // effect : 'cube',
+        // initialSlide :3,
+    });
+    var swcourses_1_3 = new Swiper('#courses_2_1', {
+        // pagination: '#text1b',
+        paginationClickable: true,
+        // direction: 'vertical',
+        // touchRatio :-1,
+        // effect : 'cube',
+        // initialSlide :3,
+    });var swcourses_1_3 = new Swiper('#courses_2_2', {
+        // pagination: '#text1b',
+        paginationClickable: true,
+        // direction: 'vertical',
+        // touchRatio :-1,
+        // effect : 'cube',
+        // initialSlide :3,
+    });
+
+    </script>
+</body>
+</html>

@@ -1,16 +1,277 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>�����̳�</title>
-</head>
-<body>
-    <div id="container">
-        <div class="sections">
-            <div class="section" id="section0"></div>
-            <div class="section" id="section1"></div>
-            <div class="section" id="section2"></div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/font-awesome.css" />
+  <link rel="stylesheet" href="./css/lunbo.css" />
+  <script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src="./js/lunbo.js"></script>
+  <!--轮播图-->
+ </head>
+ <body>
+  <header class="header">
+   <div class="header_top">
+    <ul class="header_top_left">
+     <li><a href="#">咖啡商城</a></li>
+     <li><a href="#">软工15003</a></li>
+     <li><a href="#">张鹏宇</a></li>
+    </ul>
+    <ul class="header_top_right">
+     <li> <a href="#" style="padding-right: 5px;">登录</a> <a href="#">注册</a> </li>
+     <li><i class="fa fa-fw fa-home"></i><a href="#">我的订单</a></li>
+     <li><i class="fa fa-fw fa-shopping-cart"></i><a href="#">购物车</a></li>
+     <li><i class="fa fa-fw fa-group"></i><a href="#">客户服务</a></li>
+    </ul>
+   </div>
+   <div class="header_logo">
+    <div class="logo">
+     <a href="#"><img src="./img/logo.png" alt="logo" class="logosize" /></a>
     </div>
+    <div class="search">
+     <input type="text" class="search_input" placeholder="经典美式" />
+     <button class="search_button">搜索</button>
+    </div>
+   </div>
+   <div class="header_type">
+    <ul>
+     <li><a href="#">美式咖啡</a><i>/</i>
+      <ul>
+       <li><a href="#">Long Black</a></li>
+       <li><a href="#">Americano</a></li>
+       <li><a href="#">Lungo</a></li>
+      </ul> </li>
+     <li><a href="#">摩卡咖啡</a><i>/</i> </li>
+     <li><a href="#">拿铁咖啡</a><i>/</i> </li>
+     <li><a href="#">卡布奇诺</a><i>/</i> </li>
+     <li><a href="#">玛琪雅朵</a><i>/</i> </li>
+    </ul>
+   </div>
+  </header>
+  <!--轮播图-->
+  <div class="lunbo">
+   <div id="banner">
+    <div id="banner_bg">
+    </div>
+    <!--标题背景-->
+    <div id="banner_info">
+    </div>
+    <!--标题-->
+    <ul>
+     <li class="on">1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+    </ul>
+    <div id="banner_list">
+     <a href="#" target="_blank"><img class="full" src="./img/lunbo1.png" title="卡布奇诺" alt="卡布奇诺" /></a>
+     <a href="#" target="_blank"><img class="full" src="./img/lunbo2.png" title="拿铁咖啡" alt="拿铁咖啡" /></a>
+     <a href="#" target="_blank"><img class="full" src="./img/lunbo3.png" title="玛琪雅朵" alt="玛琪雅朵" /></a>
+     <a href="#" target="_blank"><img class="full" src="./img/lunbo4.png" title="美式咖啡" alt="美式咖啡" /></a>
+    </div>
+   </div>
+  </div>
+  <!--专题精选-->
+  <div class="left">
+      <div class="mainBar">
+      <div class="titleBlock">
+          <h3> 亲请登录QvQ</h3>
+      </div>
+  <form class="" action="index.htmdl" method="post">
+      <div class="form-group">
+          <img src="./img/text.png" alt="Adminname" class="userIoc">
+          <input type="text" name="userName" class="form-control" placeholder="用户名"  id="name">
+      </div>
+      <div class="form-group">
+          <img src="./img/pass.jpg" alt="Password" class="userIoc">
+          <input type="password" name="passWord" class="form-control" placeholder=" 密码" id="password">
+      </div>
 
-</body>
+      <div class="">
+          <button class="login" type="button" name="button">登录</button>
+      </div>
+
+  </form>
+  </div>
+  </div>
+  <div class="right">
+
+  </div>
+  <div class="miin">
+   <div class="allproduct">
+    <div class="well-chosen_tit">
+     <h3>全部<span>商品</span></h3>
+    </div>
+    <div class="all_buying">
+     <div class="all_buying_cen">
+      <ul>
+       <li> <a href="#"><img src="./img/coffee1.png" alt="" width="220" height="220" /></a>
+        <div class="all_buying_con">
+         <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+         <span class="all_buying_value"><em>&yen;</em>180.5</span>
+         <a href="#" class="all_buying_btn">速抢</a>
+        </div> </li>
+       <li> <a href="#"><img src="./img/coffee2.png" alt="" width="220" height="220" /></a>
+        <div class="all_buying_con">
+         <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+         <span class="all_buying_value"><em>&yen;</em>180.5</span>
+         <a href="#" class="all_buying_btn">速抢</a>
+        </div> </li>
+       <li> <a href="#"><img src="./img/coffee3.png" alt="" width="220" height="220" /></a>
+        <div class="all_buying_con">
+         <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+         <span class="all_buying_value"><em>&yen;</em>180.5</span>
+         <a href="#" class="all_buying_btn">速抢</a>
+        </div> </li>
+       <li> <a href="#"><img src="./img/coffee4.png" alt="" width="220" height="220" /></a>
+        <div class="all_buying_con">
+         <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+         <span class="all_buying_value"><em>&yen;</em>180.5</span>
+         <a href="#" class="all_buying_btn">速抢</a>
+        </div> </li>
+        <li> <a href="#"><img src="./img/coffee1.png" alt="" width="220" height="220" /></a>
+         <div class="all_buying_con">
+          <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+          <span class="all_buying_value"><em>&yen;</em>180.5</span>
+          <a href="#" class="all_buying_btn">速抢</a>
+         </div> </li>
+        <li> <a href="#"><img src="./img/coffee2.png" alt="" width="220" height="220" /></a>
+         <div class="all_buying_con">
+          <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+          <span class="all_buying_value"><em>&yen;</em>180.5</span>
+          <a href="#" class="all_buying_btn">速抢</a>
+         </div> </li>
+        <li> <a href="#"><img src="./img/coffee3.png" alt="" width="220" height="220" /></a>
+         <div class="all_buying_con">
+          <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+          <span class="all_buying_value"><em>&yen;</em>180.5</span>
+          <a href="#" class="all_buying_btn">速抢</a>
+         </div> </li>
+        <li> <a href="#"><img src="./img/coffee4.png" alt="" width="220" height="220" /></a>
+         <div class="all_buying_con">
+          <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+          <span class="all_buying_value"><em>&yen;</em>180.5</span>
+          <a href="#" class="all_buying_btn">速抢</a>
+         </div> </li> <li> <a href="#"><img src="./img/coffee1.png" alt="" width="220" height="220" /></a>
+           <div class="all_buying_con">
+            <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+            <span class="all_buying_value"><em>&yen;</em>180.5</span>
+            <a href="#" class="all_buying_btn">速抢</a>
+           </div> </li>
+          <li> <a href="#"><img src="./img/coffee2.png" alt="" width="220" height="220" /></a>
+           <div class="all_buying_con">
+            <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+            <span class="all_buying_value"><em>&yen;</em>180.5</span>
+            <a href="#" class="all_buying_btn">速抢</a>
+           </div> </li>
+          <li> <a href="#"><img src="./img/coffee3.png" alt="" width="220" height="220" /></a>
+           <div class="all_buying_con">
+            <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+            <span class="all_buying_value"><em>&yen;</em>180.5</span>
+            <a href="#" class="all_buying_btn">速抢</a>
+           </div> </li>
+          <li> <a href="#"><img src="./img/coffee4.png" alt="" width="220" height="220" /></a>
+           <div class="all_buying_con">
+            <p>精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.精品咖啡,咖啡咖啡.</p>
+            <span class="all_buying_value"><em>&yen;</em>180.5</span>
+            <a href="#" class="all_buying_btn">速抢</a>
+           </div> </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <!--今日抢购-->
+   <div class="well-chosen">
+    <div class="well-chosen_overview">
+     <div class="well-chosen_tit">
+      <h3 >今日<span>抢购</span></h3>
+     </div>
+     <div class="buying">
+      <div class="buying_left">
+       <ul>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying1.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying2.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying3.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying4.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying5.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying6.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list3"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying1.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list4"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying2.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+       </ul>
+      </div>
+      <div class="buying_center">
+       <a href="#" class="buying_center_left border_right"> <p class="buying_center_tit">咖啡咖啡咖啡咖啡</p> <p class="buying_center_con">咖啡咖啡咖啡咖啡</p> <img src="./img/buying7.jpg" alt="" /> </a>
+       <a href="#" class="buying_center_left"> <p class="buying_center_tit">咖啡咖啡咖啡</p> <p class="buying_center_con">咖啡咖啡咖啡咖啡</p> <img src="./img/buying8.jpg" alt="" /> </a>
+       <a href="#" class="buying_center_bottom"> <img src="./img/buying9.jpg" alt="" /> </a>
+       <a href="#" class="buying_center_bottom"> <img src="./img/buying9.jpg" alt="" /> </a>
+      </div>
+      <div class="buying_left">
+       <ul>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying1.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying2.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying3.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying4.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list1"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying5.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list2"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying6.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list3"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying1.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+        <li class="buying_left_list4"> <a href="#"> <p>咖啡咖啡咖啡咖啡</p> <img src="./img/buying2.jpg" alt="" /> <em>&yen; </em><span>180.5</span> </a> </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <!--全部商品-->
+   <div class="loading_more">
+    <a href="#" class="">加载更多</a>
+   </div>
+  </div>
+  <!--版权-->
+  <footer class="footer">
+   <div class="footer_con">
+    <div class="footer_con_top">
+     <ul>
+      <li> <strong>购物指南</strong>
+       <ul>
+        <li><a href="#">正品咖啡采购</a></li>
+        <li><a href="#">关于我们</a></li>
+       </ul> </li>
+      <li> <strong>支付方式</strong>
+       <ul>
+        <li><a href="#">在线支付</a></li>
+        <li><a href="#">货到付款</a></li>
+        <li><a href="#">余额支付</a></li>
+       </ul> </li>
+      <li> <strong>配送方式</strong>
+       <ul>
+        <li><a href="#">配送范围及运费</a></li>
+        <li><a href="#">配送信息跟踪</a></li>
+        <li><a href="#">闪电发货</a></li>
+       </ul> </li>
+      <li> <strong>售后服务</strong>
+       <ul>
+        <li><a href="#">正品承诺</a></li>
+        <li><a href="#">退换货政策</a></li>
+        <li><a href="#">退款说明</a></li>
+
+       </ul> </li>
+      <li> <img src="./img/qrcode.png" alt="" /> <p>阴影中的曙光</p> </li>
+     </ul>
+    </div>
+    <div class="footer_con_bottom">
+     <div class="footer_bottom_line">
+
+     </div>
+     <div class="footer_bottom_allright">
+       2017 &copy;软工15003张鹏宇 保留一切权利
+     </div>
+    </div>
+   </div>
+  </footer>
+  <!--返回顶部-->
+  <div class="backtotop">
+   <a id="shang"> <i class="fa fa-chevron-up"></i> </a>
+  </div>
+ </body>
 </html>
