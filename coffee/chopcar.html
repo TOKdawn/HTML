@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="header">
+        <div class="header_top">
+         <ul class="header_top_left">
+          <li><a href="./index.html">咖啡商城</a></li>
+          <li><a href="#">软工15003</a></li>
+          <li><a href="#">张鹏宇</a></li>
+         </ul>
+         <ul class="header_top_right">
+          <li> <a href="#" style="padding-right: 5px;">登录</a> <a href="#">注册</a> </li>
+          <li><i class="fa fa-fw fa-home"></i><a href="#">我的订单</a></li>
+          <li><i class="fa fa-fw fa-shopping-cart"></i><a href="#">购物车</a></li>
+          <li><i class="fa fa-fw fa-group"></i><a href="#">客户服务</a></li>
+         </ul>
+        </div>
+        <!-- topBar -->
+        <div class="header_logo">
+         <div class="logo">
+          <a href="./index.html"><img src="./img/logo.png" alt="logo" class="logosize " style="margin-top:-30px"/></a>
+         </div>
+         <div class="search">
+          <input type="text" class="search_input" placeholder="经典美式" />
+          <button class="search_button">搜索</button>
+         </div>
+        </div>
+		<!-- logoBar -->
+	</div><!-- headerBar end -->
+
+  <div class="mainSelect">
+
+    <div class="selectTop">
+      <hr>
+      <div class="selectIconTop">
+        <div class="cart fl cart_allChoose"><input type="checkbox" id="cartBox_checkAll" ></div>
+        <div class="cart fl cart_allChoose"><input type="checkbox" id="cartBox_check" name="cc" ></div>
+      </div>
+      <div class="selectImgTop">
+        <small><p>全选  商品信息</p></small>
+        <small><p>品牌 ：麦斯威尔</p></small>
+      </div>
+      <div class="selectWordTop">
+        <!-- 空 -->
+      </div>
+      <div class="selectInfoTop">
+        <!-- 空 -->
+      </div>
+      <div class="selectDanJiaTop">
+        <small><p>单价(元)</p></small>
+      </div>
+      <div class="selectNumTop">
+        <small><p>数量</p></small>
+      </div>
+      <div class="selectSumMonyTop">
+        <small><p>金额(元)</p></small>
+      </div>
+      <div class="selectOperationTop">
+        <small><p>操作</p></small>
+      </div>
+    </div>
+    <div class="shopInfo">
+      <div class="shopcar11">
+        <div class="selectIcon">
+          <input type="checkbox"  name="cb" id="checkbox1">
+        </div>
+        <div class="selectImg">
+          <img src="./img/buying4.jpg" alt="">
+        </div>
+        <div class="selectWord">
+          <small><p>猫屎咖啡麝香猫只吃最好的咖啡豆</p></small>
+        </div>
+        <div class="selectInfo">
+          <small><p>特臭  3盒装  共90坨</p></small>
+        </div>
+        <div class="selectDanJia">
+          <small><p>￥<span class="cart_price">1</span></p></small>
+        </div>
+        <div class="selectNum">
+			<input class="cart_min"  name="" type="button" value="-" />
+            <input type="text" name="" class="cart_text_box" id="cart_text_box1" value="1">
+			<input class="cart_add" name="" type="button" value="+" />
+        </div>
+        <div class="selectSumMony">
+			<small><p><label class="cart_total" id="cart_total1"></label></p></small>
+        </div>
+        <div class="selectOperation">
+          <small><p>加入收藏</p><p>删除</p></small>
+        </div>
+      </div>
+
+      <div class="shopcar11">
+        <div class="selectIcon">
+          <input type="checkbox"  name="cb" id="checkbox2">
+        </div>
+        <div class="selectImg">
+          <img src="./img/buying3.jpg" alt="">
+        </div>
+        <div class="selectWord">
+          <small><p>女仆咖啡,天知道女仆裙子底下有没有大宝贝.</p></small>
+        </div>
+        <div class="selectInfo">
+          <small><p>草莓味  3盒装  共90条</p></small>
+        </div>
+        <div class="selectDanJia">
+          <small><p>￥<span class="cart_price">2</span></p></small>
+        </div>
+        <div class="selectNum">
+					<input class="cart_min"  name="" type="button" value="-" />
+          <input type="text" name="" class="cart_text_box" id="cart_text_box2" value="1">
+					<input class="cart_add" name="" type="button" value="+" />
+        </div>
+        <div class="selectSumMony">
+					<small><p><label class="cart_total" id="cart_total2"></label></p></small>
+        </div>
+        <div class="selectOperation">
+          <small><p>加入收藏</p><p>删除</p></small>
+        </div>
+      </div>
+
+      <div class="shopcar11">
+        <div class="selectIcon">
+          <input type="checkbox"  name="cb" id="checkbox3">
+        </div>
+        <div class="selectImg">
+          <img src="./img/buying6.jpg" alt="">
+        </div>
+        <div class="selectWord">
+          <small><p>我最爱的美式咖啡,加奶不加糖,又酸又苦,提神醒脑,</p></small>
+        </div>
+        <div class="selectInfo">
+          <small><p>特苦  3盒装  共90条</p></small>
+        </div>
+        <div class="selectDanJia">
+          <small><p>￥<span class="cart_price">3</span></p></small>
+        </div>
+        <div class="selectNum">
+					<input class="cart_min"  name="" type="button" value="-" />
+          <input type="text" name="" class="cart_text_box" id="cart_text_box3" value="1">
+					<input class="cart_add" name="" type="button" value="+" />
+        </div>
+        <div class="selectSumMony">
+					<small><p><label class="cart_total" id="cart_total3"></label></p></small>
+        </div>
+        <div class="selectOperation">
+          <small><p>加入收藏</p><p>删除</p></small>
+        </div>
+      </div>
+
+    </div>
+    <div class="selectMoney">
+      <small><p>已选商品</small><big><span id="cart_all"></span></big> <small>件</small>，<small>总价：</small><big>￥<span id="cart_allPrice"></span></big>
+        <button type="button" name="button" class="end1">结算</button>
+      </p>
+
+    </div>
+  </div>
+
+<!-- 可复制图层 -->
+
+<!-- 可复制图层 -->
+<div class="hr_25">
+
+</div>
+<footer class="footer">
+ <div class="footer_con">
+  <div class="footer_con_top">
+   <ul>
+    <li> <strong>购物指南</strong>
+     <ul>
+      <li><a href="#">正品咖啡采购</a></li>
+      <li><a href="#">关于我们</a></li>
+     </ul> </li>
+    <li> <strong>支付方式</strong>
+     <ul>
+      <li><a href="#">在线支付</a></li>
+      <li><a href="#">货到付款</a></li>
+      <li><a href="#">余额支付</a></li>
+     </ul> </li>
+    <li> <strong>配送方式</strong>
+     <ul>
+      <li><a href="#">配送范围及运费</a></li>
+      <li><a href="#">配送信息跟踪</a></li>
+      <li><a href="#">闪电发货</a></li>
+     </ul> </li>
+    <li> <strong>售后服务</strong>
+     <ul>
+      <li><a href="#">正品承诺</a></li>
+      <li><a href="#">退换货政策</a></li>
+      <li><a href="#">退款说明</a></li>
+
+     </ul> </li>
+    <li> <img src="./img/qrcode.png" alt="" /> <p>阴影中的曙光</p> </li>
+   </ul>
+  </div>
+  <div class="footer_con_bottom">
+   <div class="footer_bottom_line">
+
+   </div>
+   <div class="footer_bottom_allright">
+     2017 &copy;软工15003张鹏宇 保留一切权利
+   </div>
+  </div>
+ </div>
+</footer>
+<script type="text/javascript" src="js/shopcar.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		console.log('如果你能来到这里，说明你我有缘！');
+		console.log('一张网页，要经历怎样的过程，才能抵达用户面前？');
+		console.log('一位新人，要经历怎样的成长，才能站在技术之巅？');
+		console.log('探寻这里的秘密；');
+		console.log('成为这里的主人；');
+		console.log('加入我们，加入小分队，你，可以影响世界。');
+	});
+</script>
+</body>
+</html>

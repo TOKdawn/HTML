@@ -18,6 +18,12 @@ ul,ol,li{
     height: 30px;
     line-height: 30px;
 }
+.end1{
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+            -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+            box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
 .header_top_left{
     margin-left: 129.5px;
 }
@@ -473,7 +479,7 @@ ul,ol,li{
     width:100%;
     min-height:260px;
     background: #f9f9f9;
-    margin-top: 10px;
+    margin-top: 2550px;
     display: block;
     box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
 
@@ -559,7 +565,19 @@ ul,ol,li{
 }
 .left{width: 280px;height: 1850px;background: ;position: absolute;left: 0;margin-top: -630px;}
 .right{width: 280px;height: 1850px;background: ;position: absolute;right: 0;margin-top: 0px;}
-.miin{height: 1850px; margin-top: 0px; margin-left: 280px; margin-right: 280px}
+.miin{
+
+
+    height: 1850px;
+
+    left: 50%;
+    margin-left: -554.5px;
+    position: absolute;
+    height: 643px;
+    margin-top: 643px;
+
+
+}
 .mainBar{
     /*background-color: #faf;*/
     position: absolute;
@@ -649,4 +667,47 @@ ul,ol,li{
          -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
             transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 
+}
+.shopinformation{
+    border-width: 1px;
+    height: 500px;
+    border-color: #a0f;
+    border-style: solid;
+    width: 600px;
+    margin-left: 350px;
+    display: inline-block;
+}
+.shopimg{
+    height: 500px;
+    border-style: solid;
+    width: 500px;
+    position: absolute;
+
+
+}
+.fatherinfor{
+    padding-top: 20px;
+    left: 0px;
+    right: 0px;
+    width: 1300px;
+    height: 1000px;
+    border-style: solid;
+    margin: auto;
+}
+.jiage{
+    background-color: #bdbdbd;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 160px;
+    text-align: left;
+}
+.small1{
+    padding-left: 20px;
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    font-size: 15px;
+}
+.howMany{
+    width: 20px;
 }

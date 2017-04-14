@@ -1,7 +1,8 @@
 .lunbo{
-    width: 100%;
+    left: 50%;
+    margin-left: -512px;
+    position: absolute;
     height: 643px;
-
 }
 #banner { position: relative; margin: 0 auto; width: 1024px; height: 643px; border: 1px solid #666; overflow: hidden; }
 
