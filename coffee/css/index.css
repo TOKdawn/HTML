@@ -484,6 +484,15 @@ ul,ol,li{
     box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
 
 }
+.footer1{
+    width:100%;
+    min-height:260px;
+    background: #f9f9f9;
+    margin-top: 30px;
+    display: block;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.2);
+
+}
 .footer_con{
     width: 930px;
     min-height: 260px;
@@ -670,11 +679,12 @@ ul,ol,li{
 }
 .shopinformation{
     border-width: 1px;
-    height: 500px;
+    height: 425px;
     border-color: #a0f;
-    border-style: solid;
-    width: 600px;
-    margin-left: 350px;
+    background-color: #fff;
+
+    width: 450px;
+    margin-left: 280px;
     display: inline-block;
 }
 .shopimg{
@@ -691,7 +701,7 @@ ul,ol,li{
     right: 0px;
     width: 1300px;
     height: 1000px;
-    border-style: solid;
+
     margin: auto;
 }
 .jiage{
@@ -702,12 +712,35 @@ ul,ol,li{
     text-align: left;
 }
 .small1{
+    margin-top: 50px;
     padding-left: 20px;
     width: 100%;
-    height: 150px;
+    height: 80px;
     text-align: left;
     font-size: 15px;
 }
 .howMany{
     width: 20px;
+}
+.btnCar{
+    width: 100px;
+    height: 50px;
+float: left;
+margin-left: 50px;
+color: #ec407a;
+}
+.btnBuy{
+    float: left;
+    margin-left: 20px;
+    width: 100px;
+    background-color: #ec5f63;
+    height: 50px;
+}
+.buying_center1{
+    border-color: #fff;
+    margin: 6px;
+width: auto;
+height: 480px;
+padding: 10px;
+background: #fff;
 }
