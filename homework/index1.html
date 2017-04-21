@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="DawninShadow" />
+      <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+     <title>人机交互三级项目</title>
+    <!-- BOOTSTRAP 模板-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/plugins/vegas/jquery.vegas.min.css" rel="stylesheet" />
+     <!-- JQ使用 -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body data-spy="scroll" data-target="#menu">
+    <div class="navbar navbar-inverse navbar-fixed-top scrollclass" id="menu" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://github.com/TOKdawn"><img src="assets/img/logo.png" alt="" style="max-height:45px" /></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                     <li><a href="#about">JavaScript</a></li>
+                    <li><a href="#services">Canvas</a></li>
+                    <li><a href="#contact">Storage</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--NAVBAR SECTION END-->
+   <div id="home" >
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+                   <div id="carousel-slider" data-ride="carousel" class="carousel slide">
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+
+                            <h1>基础页面架构来自于BOOTSTRAP  </h1>
+                            </div>
+                            <div class="item">
+                             <h1 > 页面全部图标来自于FONT_AWESOME</h1>
+                            </div>
+                            <div class="item">
+                              <h1> 感谢提供技术支持的NEKOTORA</h1>
+                            </div>
+                        </div>
+                        <!--INDICATORS-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="2" class=""></li>
+                        </ol>
+                    </div>
+               </div>
+           </div>
+		    <div class="row">
+               <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2  scrollclass">
+
+
+                   <p style="font-size:18px;">
+                       页面作者:张鹏宇<a href="https://github.com/TOKdawn">@DawninShadow</a>
+                       页面为大连东软信息学院人机交互期末三级项目作业.
+
+                       HTML5文档元素,HTML5超链接,CSS定位,CSS背景与边框,CSS字体相关样式,
+                       均融入整体页面设计,不单一展示.
+
+                       <br><br><br><br><br>
+
+                   </p>
+				   <br/>
+                   <a href="#about" class="btn  btn-lg custom-btn-1"><i class="fa fa-cc-stripe" ></i> JavaScript </a>
+                   <a href="#services" class="btn  btn-lg custom-btn-1" ><i class="fa fa-css3" ></i> Canvas</a>
+                    <a href="#contact" class="btn btn-lg custom-btn-1"><i class="fa fa-file-code-o" ></i>Storage</a>
+               </div>
+           </div>
+       </div>
+
+   </div>
+        <!--HOME SECTION END-->
+       <hr/>
+   <section id="about"  >
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  text-center">
+			   <h2>JavaScript  展示</h2>
+			    <p>
+                       JQ实现的时间轴特效,鼠标放到圆点上会显示信息框,并且下方内容会根据信息框长度弹开,并且支持浏览器宽度兼容,可以根据浏览器宽度,动态调整信息框宽度.
+
+                   </p>
+			   </div>
+			   </div>
+
+			   <div class="row ">
+                <div class="col-lg-4 col-md-16 col-sm-4">
+                    <div class="media">
+
+                        <div class="media-body">
+                            <h3 class="media-heading  title_tool "></h3>
+                            <p class="cheng" id="chengqilai">
+                                1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-32 col-sm-4">
+                    <div class="media">
+                        <i class="fa fa-circle dian fa-2x "  id="i1" aria-hidden="true"></i>
+                        <div class="media-heading title_tool " >
+                        <div class="media-body show111" id="tooltip1">
+                            <h3 class="media-heading tothd">El Psy Congroo</h3>
+                            <p>
+                                让我再看你一遍 从南到北<br>像是被五环路 蒙住的双眼<br>请你再讲一遍 关于那天<br>抱着孩子的姑娘 和擦汗的男人<br>我知道那些夏天 就像青春一样回不来<br>代替梦想的也只能是勉为其难
+                            </p>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-32 col-sm-4">
+                    <div class="media">
+                        <i class="fa fa-circle dian fa-2x "  id="i2" aria-hidden="true"></i>
+
+                        <div class="media-heading title_tool ">
+                        <div class="media-body show111" id="tooltip2">
+                            <h3 class="media-heading  tothd">El Psy Congroo</h3>
+                            <p>
+                                我知道 吹过的牛逼 也会随青春一笑了之<br>让我困在城市里 纪念你<br>让我再尝一口 秋天的酒<br>一直往南方开 不会太久<br>
+                                让我再听一遍 最美的那一句<br>你回家了 我在等你呢
+                            </p>
+
+                        </div>
+                        <div class="media-body show222 " id="tooltip3">
+                            <h3 class="media-heading  tothd">El Psy Congroo</h3>
+                            <p>
+                                我知道那些夏天 就像你一样回不来<br>我也不会再对谁满怀期待<br>我知道这个世界 每天都有太多遗憾<br>
+                                所以你好 再见<br>我知道那些夏天 就像青春一样回不来<br>所以你好 再见
+                            </p>
+
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-17 col-sm-4">
+                    <div class="media">
+                        <i class="fa fa-circle dian fa-2x " id="i3" aria-hidden="true" ></i>
+
+                        <div class="media-body">
+                            <h3 class="media-heading  title_tool"></h3>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+			<div class="row ">
+                <div class="shoufengqin">
+
+                        <a href="" class="shou">
+                                <img  id="LI1" src="./img/1.jpg" alt="">
+                        </a>
+
+
+                        <a href="" class="shou">
+                                <img id="LI2" src="./img/2.jpg" alt="">
+                        </a>
+
+                        <a href="" class="shou">
+                                <img id="LI3" src="./img/3.jpg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+			   </div>
+			   </section>
+     <!--ABOUT SECTION END-->
+			   <hr/>
+			 <section id="services" >
+
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  text-center">
+			   <h2>Canvas  展示</h2>
+			    <p>
+                       Canvas实现的画板,定位有Bug,请把画板滚动到贴近页面后再进行绘制Orz
+                   </p>
+			   </div>
+			   </div>
+
+    <div class="pict">
+
+
+                   <input type="hidden" id="hid_color" value="red"/>
+
+                   COLOR:<input type="button" value="black" style="background:black" name="btn_color"/>
+                   <input type="button" value="red" style="background:red" name="btn_color"/>
+                   <input type="button" value="blue" style="background:blue" name="btn_color"/>
+
+                   SIZE:<input type="radio" value="1" name="rad_size" checked="checked"/>1
+                   <input type="radio" value="3" name="rad_size"/>3
+                   <input type="radio" value="5" name="rad_size"/>5
+
+                   <input type="button" value="Clear" id="btn_clear">
+                   <br>
+
+                   <canvas id="mycanvas" width="1000" height="500" style="border:1px solid blue;" >
+                       your browser does not support the canvas tag
+                   </canvas>
+               </div>
+
+
+
+</div>
+
+
+
+			   </section>
+     <!--SERVICES SECTION END-->
+    <hr />
+			    <section id="contact" >
+
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  text-center">
+			   <h2> Web Storage</h2>
+			    <p>
+                      在对应的信息栏中填入姓名手机信息后点击提交,便可把数据存入到Web Storage中,可多次进行提交.数据提交完成后点击查询,可显示所有以提交的姓名电话数据.
+                   </p>
+			   </div>
+			   </div>
+			   <div class="row ">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
+
+				               <label>YOUR NAME</label>
+                     <div class="form-group" >
+                                    <input type="text" class="form-control" required="required" id="user_name" style="color:#fff"/>
+
+                                </div>
+								 <label>YOUR PHONE</label>
+                      <div class="form-group" >
+                                    <input type="text" class="form-control" required="required" id="mobilephone" style="color:#fff"/>
+                                </div>
+                                <div class="form-group">
+                                              <button type="submit" class="btn custom-btn-1 btn-block" onclick="save()">提交</button>
+                                          </div>
+
+
+                     <div class="form-group" >
+                                    <textarea name="message" id="find_result"  class="form-control" style="min-height:120px; color:#fff; font-size:18px;" ></textarea>
+                                </div>
+                      <div class="form-group">
+                                    <button type="submit" class="btn custom-btn-1 btn-block" onclick="show()">查询</button>
+                                </div>
+
+
+                </div>
+            </div>
+			   </div>
+			   </section>
+     <!--CONTACT SECTION END-->
+			   <div class="footer">
+			   &copy; DawninShadow |  <a href="https://github.com/github" target="_blank" title="github"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a>
+			   </div>
+
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/js/Storage.js"></script>
+    <script src="assets/js/tooltip.js"></script>
+    <!-- <script src="assets/js/smoke.js"></script> -->
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/plugins/bootstrap.js"></script>
+     <!-- EASING SCROLL SCRIPTS PLUGIN  -->
+    <script src="assets/plugins/vegas/jquery.vegas.min.js"></script>
+    <!-- VEGAS SLIDESHOW SCRIPTS  -->
+    <script src="assets/plugins/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS  -->
+ <script src="assets/js/custom.js"></script>
+ <script>
+
+
+ $(function(){
+
+     draw();
+
+     $("[name='btn_color']").click(function(){
+         $("#hid_color").val(this.value);
+         draw();
+     });
+
+     $("[name='rad_size']").click(function(){
+         draw();
+     });
+
+     $("#btn_clear").click(function(){
+         //用clearRect方法清空画布，
+         document.getElementById('mycanvas').getContext("2d").clearRect(0,0,$("#mycanvas").attr("width"),$("#mycanvas").attr("height"));
+     });
+ });
+
+ function draw(){
+
+     var drawflag = false;
+     var canvas = document.getElementById('mycanvas');
+     var cxt = canvas.getContext('2d');
+
+     //指定颜色
+     cxt.strokeStyle= $("#hid_color").val();
+     //指定尺寸
+     cxt.lineWidth=$("input[name='rad_size']:checked").val();
+
+     //开始绘画
+     canvas.onmousedown = function(event) {
+         drawflag = true;
+         cxt.beginPath();
+         cxt.moveTo(event.clientX, event.clientY);
+     }
+
+     //结束绘画
+     canvas.onmouseup = function(event) {
+         drawflag = false;
+         cxt.closePath();
+     }
+
+     //鼠标移动,绘画
+     canvas.onmousemove = function(event) {
+         if(drawflag) {
+             cxt.lineTo(event.clientX, event.clientY);
+             cxt.stroke();
+         }
+     }
+ }
+
+
+ </script>
+</body>
+
+</html>
