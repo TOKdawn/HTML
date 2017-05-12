@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>(*´∇｀*)你来了啊</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.11.0/styles/default.min.css">
+<script src="//cdn.jsdelivr.net/highlight.js/9.11.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        随页面切换更换title
+    </header>
+<setior>
+    <pre><code class="javascript">
+    $().ready(function() {
+      var b, c, a = document.title;
+      "undefined" != typeof document.hidden ?
+            (b = "hidden", c = "visibilitychange") :
+
+            "undefined" != typeof document.mozHidden ?
+                  (b = "mozHidden", c = "mozvisibilitychange") :
+
+                  "undefined" != typeof document.webkitHidden && (b = "webkitHidden", c = "webkitvisibilitychange"),("undefined" != typeof document.addEventListener || "undefined" != typeof document[b]) && document.addEventListener(c, d, !1);
+      function d() {
+            document.title = document[b] ? "你想要的title。。": a
+      }
+});</code></pre>
+</setior>
+
+
+<script type="text/javascript">
+window.onload=function() {
+  var b, c, a = document.title;
+  "undefined" != typeof document.hidden ?
+        (b = "hidden", c = "visibilitychange") :
+
+        "undefined" != typeof document.mozHidden ?
+              (b = "mozHidden", c = "mozvisibilitychange") :
+
+              "undefined" != typeof document.webkitHidden && (b = "webkitHidden", c = "webkitvisibilitychange"),("undefined" != typeof document.addEventListener || "undefined" != typeof document[b]) && document.addEventListener(c, d, !1);
+  function d() {
+        document.title = document[b] ? "∑(っ °Д °;)っ快回来啊": a
+  }
+}
+</script>
+</body>
+</html>

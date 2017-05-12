@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>canvas特效文字</title>
+</head>
+<script type="text/javascript">
+    function draw(id){
+        var canvas = document.getElementById(id);
+        var context = canvas.getContext('2d');
+        context.strokeStyle = '#f57c00';
+        context.font = "bold 100px  YouYuan";
+        context.strokeText('傻逼朱伯泰',0,120);
+
+    }
+</script>
+<style media="screen">
+    body{margin: 0;padding: 0;}
+</style>
+<body onload="draw('canvas1')">
+    <canvas id="canvas1" width="800" height="300"></canvas>
+
+</body>
+</html>
