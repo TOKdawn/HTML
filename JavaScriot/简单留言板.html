@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+</head>
+<script>
+function saveStorage(id) {
+    var data=document.getElementById(id).value;
+    var time=new Date().getTime();
+    localStorage.setItem(time,data);
+    var input=document.getElementById(id);
+    input.value = "";
+    alert("save");
+}
+function showStorage(id) {
+    var reselt = '<table border="1">';
+    for(var i=0;i<localStorage.length;i++){
+        var key=localStorage.key(i);
+        var value=localStorage.getItem(key);
+        var data=new Date();
+        data.setTime(key);
+        var datestr=data.toGMTString();
+        reselt+='<tr><td>'+'这是第'+(i+1)+'条数据</td><td>'+value+'</td><td>'+datestr+'</td></tr>'
+    }
+    reselt+='</table>'
+    var target = document.getElementById(id);
+    target.innerHTML = reselt;
+
+}
+function clearStorage() {
+    localStorage.clear();
+}
+</script>
+<style>
+
+</style>
+<body>
+<header>留言板 </header>
+<textarea id="dome" cols="60" rows="10"></textarea>
+<br/>
+<input type="button" value="保存" onclick="saveStorage('dome');">
+<input type="button" value="清除" onclick="clearStorage();">
+<input type="button" value="读取" onclick="showStorage('msg');">
+<hr/>
+<article id="msg">
+
+</article>
+</body>
+</html>
