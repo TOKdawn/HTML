@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SuiteList>
+    <Suiete>
+        <SuiteID>1001</SuiteID>
+        <Name>zpy</Name>
+        <Size>5</Size>
+        <Price>50</Price>
+        <WeekFree>10</WeekFree>
+    </Suiete>
+    <Suiete>
+        <SuiteID>1002</SuiteID>
+        <Name>zbt</Name>
+        <Size>6</Size>
+        <Price>10</Price>
+        <WeekFree>13</WeekFree>
+    </Suiete>
+    <Suiete>
+        <SuiteID>1003</SuiteID>
+        <Name>xml</Name>
+        <Size>10</Size>
+        <Price>14</Price>
+        <WeekFree>18</WeekFree>
+    </Suiete>
+    <Suiete>
+        <SuiteID>1004</SuiteID>
+        <Name>por</Name>
+        <Size>5</Size>
+        <Price>50</Price>
+        <WeekFree>11</WeekFree>
+    </Suiete>
+
+
+</SuiteList>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my card</title>
+</head>
+<style>
+    body{
+        background-color: #F4F4F4;
+    }
+    body>div{
+        width: 96%;
+        margin-left: 2%;
+        height: 25em;
+        background: linear-gradient(to right,transparent 4%,white 4%,white 96%,transparent 96%);
+        margin-top: 5em;
+    }
+    div> section{
+        display: block;
+
+        width: 100%;
+        height: 75%;
+        border-radius:15px 15px 0 0 ;
+        background: #fff;
+        background:
+                radial-gradient(circle at top left, transparent 0px, #fff 0) top left,
+                radial-gradient(circle at top right, transparent 0px, #fff 0) top right,
+                radial-gradient(circle at bottom right, transparent 25px, #fff 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 25px, #fff 0) bottom left;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    div>article{
+        width: 100%;
+        height: 35%;
+        border-top: dashed #f4f4f4 5px;
+        box-sizing: border-box;
+        border-radius:0px 0px 15px 15px ;
+        background: #fcfcfc;
+        background:
+                radial-gradient(circle at top left, transparent 25px, #fcfcfc 0) top left,
+                radial-gradient(circle at top right, transparent 25px, #fcfcfc 0) top right,
+                radial-gradient(circle at bottom right, transparent 0px, #fcfcfc 0) bottom right,
+                radial-gradient(circle at bottom left, transparent 0px, #fcfcfc 0) bottom left;
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    div >section>div{
+        position: absolute;
+        padding-top: 1em;
+        padding-left: 3em;
+        font-size: 30px;
+        width: 30%;
+        display: inline-block;
+    }
+
+    div >section>div>span{
+        font-size: 100px;
+        color: #f40d2d;
+    }
+    div>section>div>p{
+        margin-left: -1em;
+        color: #797979;
+    }
+    div>article>p{
+        color: #797979;
+        font-size: 28px;
+        margin-left: 3em;
+        position: absolute;
+    }
+    .zpyinfor{
+        margin-left: 40%;
+        font-size: 40px;
+        font-weight:800;
+        padding-top: 2em;
+    }
+    .zpyinfor>p{
+        font-size: 30px;
+        font-weight:normal;
+        color: #797979;
+    }
+    article>div{
+        float: right;
+        border-radius: 105px ;
+        border: 3px solid ;
+        margin-top: 1em;
+        margin-right: .8em;
+        font-size: 30px;
+        padding: 15px 25px;
+        background-color: coral;
+        color: #FFFFFF;
+    }
+    .cant{
+        background-color: #bdbdbd;
+        color: #fcfcfc;
+    }
+</style>
+<body>
+
+    <div>
+        <section>
+            <div>
+            剩余<span>4</span>次
+            <p>3日后生成下一张<p>
+            </div>
+            <article class="zpyinfor">
+                SUV洗车券
+                <p>适用于洗suv车辆,两周生成一张</p>
+
+            </article>
+        </section>
+        <article>
+            <p>购买日期:2017-6-28</br>有效期至:2018-6-28</p>
+            <div class="cant">立刻使用</div>
+        </article>
+    </div>
+
+    <div>
+        <section>
+            <div>
+                剩余<span>4</span>次
+                <p>3日后生成下一张<p>
+            </div>
+            <article class="zpyinfor">
+                SUV洗车券
+                <p>适用于洗suv车辆,两周生成一张</p>
+
+            </article>
+        </section>
+        <article>
+            <p>购买日期:2017-6-28</br>有效期至:2018-6-28</p>
+            <div >立刻使用</div>
+        </article>
+    </div>
+
+</body>
+</html>

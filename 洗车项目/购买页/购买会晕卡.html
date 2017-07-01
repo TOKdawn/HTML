@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购买页</title>
+    <link href="css/touchSlider.css" type="text/css" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.event.drag-1.5.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script src="js/touchSlider.js"></script>
+</head>
+<style>
+    ul{
+        margin: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .zpybut{
+        border-radius: 3em;
+        float: right;
+        font-size: 30px;
+        padding: 12px 30px;
+        background: linear-gradient(90deg, #e17167, #f2aa44);
+        color: #FFFFFF;
+    }
+    section>div{
+        margin-top: 3em;
+        font-size: 30px;
+        background: linear-gradient(#FFFFFF 75%, #ea7e48 75%);
+        width: 90%;
+        margin-left: 5%;
+        height: 15em;
+        border-radius: 1em;
+        box-shadow: 3px 3px 10px rgba(117,117,117,.5),-3px -3px 10px rgba(117,117,117,.5);
+    }
+    section>div>div{
+        width: 90%;
+        margin-left: 2%;
+        border-bottom: solid 1px #bdbdbd;
+        font-size: 40px;
+        padding: 25px;
+    }
+    section>div>p{
+        margin-left: 30px;
+        color: #858585;
+    }
+    span{
+        color: #fa7a27;
+        font-size: 43px;
+    }
+    .zpycomp{
+       position: absolute;
+        margin-top: 1.5em;
+        font-size: 35px;
+
+        color: #FFFFFF;
+    }
+    .zpyyear{
+        margin-top: 1.5em;
+        float: right;
+        font-size: 35px;
+        color: #FFFFFF;
+        margin-right: 30px;
+    }
+
+</style>
+<body>
+
+<div class="main_visual">
+    <div class="flicking_con">
+        <div class="flicking_inner">
+            <a href="javascript:">1</a>
+            <a href="javascript:">2</a>
+            <a href="javascript:">3</a>
+            <a href="javascript:">4</a>
+            <a href="javascript:">5</a>
+        </div>
+    </div>
+    <div class="main_image">
+        <ul>
+            <li><span class="img_3"></span></li>
+            <li><span class="img_4"></span></li>
+            <li><span class="img_1"></span></li>
+            <li><span class="img_2"></span></li>
+            <li><span class="img_5"></span></li>
+        </ul>
+        <!-- <a href="javascript:;" id="btn_prev"></a>
+        <a href="javascript:;" id="btn_next"></a> -->
+        <div class="shop_info"></div>
+        <div class="shopName_info">xxxxxx店</div>
+        <div class="shopPhone_info">400-xxxx-xxxx</div>
+    </div>
+</div>
+
+<section>
+    <div>
+        <div> SUV200元洗车卡 <div class="zpybut">立即购买</div></div>
+        <p>售卡价格:  <span>¥ 60</span></p>
+        <p>洗SUV: <span>4</span> &nbsp次,两周可用一次 </p>
+        <p class="zpycomp">某某洗车平台会员卡</p>
+        <p class="zpyyear">有效期:1年</p>
+    </div>
+    <div>
+        <div> SUV200元洗车卡 <div class="zpybut">立即购买</div></div>
+        <p>售卡价格:  <span>¥ 60</span></p>
+        <p>洗SUV: <span>4</span> &nbsp次,两周可用一次 </p>
+        <p class="zpycomp">某某洗车平台会员卡</p>
+        <p class="zpyyear">有效期:1年</p>
+    </div>
+    <div>
+        <div> SUV200元洗车卡 <div class="zpybut">立即购买</div></div>
+        <p>售卡价格:  <span>¥ 60</span></p>
+        <p>洗SUV: <span>4</span> &nbsp次,两周可用一次 </p>
+        <p class="zpycomp">某某洗车平台会员卡</p>
+        <p class="zpyyear">有效期:1年</p>
+    </div>
+
+</section>
+
+</body>
+</html>

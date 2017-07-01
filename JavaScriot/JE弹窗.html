@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹窗demo</title>
+</head>
+<style>
+    main {
+        transition: .6s;
+    }
+    main.de-emphasized {
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+    dialog:not([open]) {
+        display: none;
+    }
+    dialog {
+        position: fixed;
+        top: 50%; left: 50%;
+        z-index: 1;
+        width: 30em;
+        height: 20em;
+        margin: -15em;
+        border: 1px solid silver;
+        border-radius: .5em;
+        box-shadow: 0 .2em .5em rgba(0,0,0,.5),
+        0 0 0 100vmax rgba(0,0,0,.2);
+    }
+    #zpy_close{
+        display: block;
+        position: relative;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        background-color: transparent;
+    }
+
+
+</style>
+<body>
+<dialog><zpy_close><?xml version="1.0" standalone="no"?><svg id="zpy_close" width="25px" height="25.00px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M836.7104 192.7168c-87.0144-87.0144-202.7264-134.9376-325.8112-134.9376-123.0848 0-238.8224 47.9488-325.8624 134.9632-87.0144 87.0144-134.9376 202.7264-134.9376 325.8112 0 123.0848 47.9232 238.7968 134.9376 325.8368 87.0144 87.0144 202.7264 134.9376 325.8112 134.9376s238.7968-47.9232 325.8112-134.9376C1016.3456 664.704 1016.3712 372.3776 836.7104 192.7168zM722.7648 703.3856c7.5008 7.5008 7.5008 19.6608 0 27.1616-3.7376 3.7376-8.6528 5.632-13.568 5.632s-9.8304-1.8688-13.568-5.632l-184.832-184.832-184.832 184.832c-3.7376 3.7376-8.6528 5.632-13.568 5.632s-9.8304-1.8688-13.568-5.632c-7.5008-7.5008-7.5008-19.6608 0-27.1616l184.832-184.832-184.832-184.832c-7.5008-7.5008-7.5008-19.6608 0-27.1616s19.6608-7.5008 27.1616 0l184.832 184.832 184.832-184.832c7.5008-7.5008 19.6608-7.5008 27.1616 0s7.5008 19.6608 0 27.1616l-184.832 184.832L722.7648 703.3856z" fill="#d81e06" /></svg></zpy_close>
+    测试是啥是是是是是说说是是是的啊打
+</dialog>
+<main>
+    Bacon ipsum dolor sit amet consectetur
+    short loin
+    ut
+    tri-tip
+    alcatra
+    ground round
+    jowl
+    beef
+    meatloaf
+    in
+    pork.  Elit
+    chicken
+    ea
+    spare ribs.  Shank
+    andouille
+    ex
+    boudin
+    picanha
+    turkey
+    esse.  Do
+    doner
+
+</main>
+<script>
+    function $(sel) {
+        return document.querySelector(sel);
+    }
+    var dialog = $('dialog');
+    var main = $('main');
+   window.onload = function() {
+
+        dialog.setAttribute('open', '');
+
+        main.classList.add('de-emphasized');
+    }
+
+    $('zpy_close').onclick = function() {
+        if (dialog.close) {
+            dialog.close();
+        }
+        else {
+            dialog.removeAttribute('open');
+        }
+
+        main.classList.remove('de-emphasized');
+    }
+
+</script>
+</body>
+</html>
