@@ -1,0 +1,1 @@
+{"version":3,"sources":["../sssad.js"],"names":["he","console","log"],"mappings":";;AAAA;;;AAGA,IAAIA,KAAK,OAAT;AACAC,QAAQC,GAAR,CAAYF,EAAZ","file":"sssad.js","sourcesContent":["/**\n * Created by dawn on 2017/9/13.\n */\nlet he = \"hello\"\nconsole.log(he);"]}

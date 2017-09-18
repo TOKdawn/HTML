@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>用户信息页</title>
@@ -7,95 +8,99 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <style>
-    html,body {
+    html,
+    body {
         margin: 0;
         padding: 0;
         height: 100%;
         width: 100%;
         font-size: 13px;
         background-color: #eee;
-
     }
-    header{
+    
+    header {
         display: block;
         top: 0;
         margin: 0px;
-        background:
-                radial-gradient(black 15%, transparent 16%) 0 0,
-                radial-gradient(black 15%, transparent 16%) 8px 8px,
-                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-        background-color:#282828;
-        background-size:16px 16px;
+        background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+        background-color: #282828;
+        background-size: 16px 16px;
         padding-top: .7em;
         height: 13.1em;
-
     }
-    aside >div{
+    
+    aside>div {
         float: left;
         font-color: #FFFFFF;
     }
-     header >img{
-         /*用户头像*/
-         -webkit-clip-path:circle(2em at 2em 2em);/*圆半径,圆x坐标,圆y坐标*/
-         clip-path:circle(2em at 2em 2em);
+    
+    header>img {
+        /*用户头像*/
+        -webkit-clip-path: circle(2em at 2em 2em);
+        /*圆半径,圆x坐标,圆y坐标*/
+        clip-path: circle(2em at 2em 2em);
         display: block;
         left: 0;
         right: 0;
-        margin: auto ;
+        margin: auto;
         width: 4em;
         height: 4em;
     }
-     header >div{
-         /*用户标签*/
-         display: block;
-         width:6em;
-         text-align: center;
-         left: 0;
-         right: 0;
-         margin: auto;
-         color: #FFFFFF;
-         padding: 0 .3em;
-         border-radius:20px;
-         border: #FFFFFF solid 2px;
-         height: 1.3em;
-
-     }
-     header >p{
-         /*用户名*/
-         display: block;
-         text-align: center;
-         width: 100%;
-         margin: .7em auto;
-
-         color: #FFFFFF;
-         height: 1em;
-     }
-    aside{
+    
+    header>div {
+        /*用户标签*/
+        display: block;
+        width: 6em;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #FFFFFF;
+        padding: 0 .3em;
+        border-radius: 20px;
+        border: #FFFFFF solid 2px;
+        height: 1.3em;
+    }
+    
+    header>p {
+        /*用户名*/
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: .7em auto;
+        color: #FFFFFF;
+        height: 1em;
+    }
+    
+    aside {
         margin-top: .7em;
         width: 100%;
         height: 4em;
-        background: rgba(74,74,74,.5);
+        background: rgba(74, 74, 74, .5);
         color: #FFFFFF;
         text-align: center;
     }
-    aside>div{
+    
+    aside>div {
         height: 100%;
         width: 33.33%;
         padding-top: .5em;
     }
-    aside >div:nth-child(even){
-       border-left: solid 2px #747474;
+    
+    aside>div:nth-child(even) {
+        border-left: solid 2px #747474;
         border-right: solid 2px #747474;
-        box-sizing:border-box;
+        box-sizing: border-box;
     }
-    aside >div>i{
+    
+    aside>div>i {
         display: block;
         left: 0;
         right: 0;
         margin: auto;
     }
-    section > article{
+    
+    section>article {
         width: 32%;
         display: block;
         height: 16em;
@@ -104,59 +109,56 @@
         margin: 1%;
         box-sizing: border-box;
     }
+</style>
 
-   </style>
 <body>
-<header>
-    <img src="./user_head.jpg" id="user_head">
-    <p id="user_name">阴影中的曙光</p>
-    <div id="user_type">普通会员</div>
-    <aside>
-        <div>
-            <i class="fa fa-credit-card fa-2x" aria-hidden="true" ></i><br>
-            洗车卡(0)
-        </div>
-        <div>
-            <i class="fa fa-money fa-2x" aria-hidden="true"></i><br>
-            优惠券(0)
-        </div>
-        <div>
-            <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i><br>
-            洗车记录
-        </div>
-    </aside>
-</header>
-<section>
-    <article id="claims">
+    <header>
+        <img src="./user_head.jpg" id="user_head">
+        <p id="user_name">阴影中的曙光</p>
+        <div id="user_type">普通会员</div>
+        <aside>
+            <div>
+                <i class="fa fa-credit-card fa-2x" aria-hidden="true"></i><br> 洗车卡(0)
+            </div>
+            <div>
+                <i class="fa fa-money fa-2x" aria-hidden="true"></i><br> 优惠券(0)
+            </div>
+            <div>
+                <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i><br> 洗车记录
+            </div>
+        </aside>
+    </header>
+    <section>
+        <article id="claims">
 
-    </article>
-    <article id="nsurance">
+        </article>
+        <article id="nsurance">
 
-    </article>
-    <article id="spray">
+        </article>
+        <article id="spray">
 
-    </article>
-    <article id="inspection">
+        </article>
+        <article id="inspection">
 
-    </article>
-    <article id="order">
-    </article>
-    <article id="dsss">
-    </article>
-</section>
+        </article>
+        <article id="order">
+        </article>
+        <article id="dsss">
+        </article>
+    </section>
 
-<script>
-    var windo_h=document.documentElement.clientHeight;
-    var article_h=(windo_h-15.2*13)/2;
-    var articles=document.getElementsByTagName('article');
-    articles[1].style.margin="1% 0%";
-    articles[3].style.margin="0% 1% 1% 1%";
-    articles[4].style.margin="0%";
-    articles[5].style.margin="0% 1% 1% 1%";
-    for(var i=0;i<6;i++){
-        articles[i].style.height=article_h+"px";
-    }
-
-</script>
+    <script>
+        var windo_h = document.documentElement.clientHeight;
+        var article_h = (windo_h - 15.2 * 13) / 2;
+        var articles = document.getElementsByTagName('article');
+        articles[1].style.margin = "1% 0%";
+        articles[3].style.margin = "0% 1% 1% 1%";
+        articles[4].style.margin = "0%";
+        articles[5].style.margin = "0% 1% 1% 1%";
+        for (var i = 0; i < 6; i++) {
+            articles[i].style.height = article_h + "px";
+        }
+    </script>
 </body>
+
 </html>

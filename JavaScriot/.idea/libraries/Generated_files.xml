@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/ex6text.js" />
+        <item url="file://$PROJECT_DIR$/dist/sssad.js" />
+        <item url="file://$PROJECT_DIR$/dist/text.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/ex6text.js" />
+      <root url="file://$PROJECT_DIR$/dist/sssad.js" />
+      <root url="file://$PROJECT_DIR$/dist/text.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
