@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue"></script>
+    <title>快速排序</title>
+</head>
+<style>
+    .nodebg {
+        padding: .3em .8em;
+        border: 1px solid rgba(0, 0, 0, .1);
+        background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
+        border-radius: .2em;
+        box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+        color: white;
+        text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+        width: 2em;
+        background-color: #ffaf00;
+    }
+</style>
+
+<body>
+
+
+    <div id="databar">
+        输入:<input type="text" v-model="array" id="inputarr">
+        <num v-for="item in array" v-bind:data="item">
+
+        </num>
+    </div>
+
+
+</body>
+<script>
+    Vue.component('num', {
+        props: ['data'],
+        template: '<div class="nodebg" >{{data}}</div>'
+    })
+
+    var databar = new Vue({
+        el: '#databar',
+        data: {
+            array: "",
+
+        }
+    })
+</script>
+
+</html>
