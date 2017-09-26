@@ -47,7 +47,7 @@ Stock.prototype = { //通过原型链实现
 var S = new Stock;
 
 
-function ponson(data, name) {
+function Ponson(data, name) {
     this.sorc;
     this.name = name;
     this.buy = function(obj) {
@@ -57,9 +57,9 @@ function ponson(data, name) {
         console.log("I am " + name + ": " + data);
     }
 }
-var f1 = new ponson("0元", "zpy");
+var f1 = new Ponson("0元", "zpy");
 //console.log(f1);
-var f2 = new ponson("0元", "zbt");
+var f2 = new Ponson("0元", "zbt");
 
 S.set(110);
 f1.buy(S);
