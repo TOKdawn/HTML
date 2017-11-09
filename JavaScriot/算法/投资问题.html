@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    sss
+    <script>
+        var PRONUM = 4
+        var MONERYNUM = 5
+        var PRO1 = 0
+        var PRO2 = 1
+        var PRO3 = 2
+        var PRO4 = 3
+        var PRO5 = 4
+        var input = [
+            [0, 11, 12, 13, 14, 15],
+            [0, 0, 5, 10, 15, 20],
+            [0, 2, 10, 30, 32, 40],
+            [0, 20, 21, 22, 23, 24]
+        ]
+
+        function Bestdata() {
+            this.money = 0
+            this.distribution = [0, 0, 0, 0, 0]
+
+        }
+        var nowphase = 0 //标记当前阶段
+        var oldphase = [] //上一阶段投资情况
+        var phase = [] //储存每次状态数的最优解序列
+        for (var money = 0; money <= MONERYNUM; money++) { //当前投入钱数
+            oldphase[money] = new Bestdata();
+            oldphase[money].money = input[nowphase][money]
+            oldphase[money].distribution[nowphase] = money
+
+        }
+
+        for (var max = 0; max < 3; max++) {
+            nowphase++
+            var newphase = []
+            var bestnow = []
+            for (var money2 = 0; money2 <= MONERYNUM; money2++) {
+                newphase[money2] = new Bestdata();
+                bestnow[money2] = new Bestdata(); //当前状态各种投资钱数的最游解临时值
+                bestnow[money2].money = oldphase[money2].money;
+                bestnow[money2].distribution = oldphase[money2].distribution.slice(0);
+                for (var newmoney = 0; newmoney <= money2; newmoney++) {
+                    var oldmoney = money2 - newmoney //分配给上一阶段的钱
+                    var newearnings = input[nowphase][newmoney] //当前项目收益
+                    var oldearnings = oldphase[oldmoney].money //上一阶段收益    
+                    if (oldphase[money2].money < newearnings + oldearnings && bestnow[money2].money < newearnings + oldearnings) {
+                        newphase[money2].distribution = oldphase[oldmoney].distribution.slice(0) //分配给上阶段当前收益钱的分布
+
+                        newphase[money2].distribution[nowphase] = newmoney //分给新状态当前数目的钱
+
+                        newphase[money2].money = newearnings + oldearnings //记录新的收益
+                        bestnow[money2].money = newphase[money2].money // 记录临时的最游节钱数
+                        bestnow[money2].distribution = newphase[money2].distribution.slice(0) //记录临时最优解路径
+
+                    } else {
+                        newphase[money2].money = oldphase[money2].money // 保留源分配
+                        newphase[money2].distribution = oldphase[money2].distribution.slice(0) //分配给上阶段当前收益钱的分布
+
+                    }
+                }
+            }
+            for (var money2 = 0; money2 <= MONERYNUM; money2++) { //完成一个阶段,
+                oldphase[money2].money = bestnow[money2].money //把此阶段的最优解存入旧状态
+                oldphase[money2].distribution = bestnow[money2].distribution.slice(0)
+            }
+
+        }
+        console.log(bestnow)
+    </script>
+</body>
+
+</html>
