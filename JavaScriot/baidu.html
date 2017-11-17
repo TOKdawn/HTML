@@ -1,69 +1,77 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>DawninShadow</title>
 </head>
 <style media="screen">
-.center{
-    top:0;
-    left:0;
-    right:0;
-    bottom:200;
-    position: absolute;
-    width: 600px;
-    height: 100px;
-    margin: auto auto;
-}
-.seachzpy{
-
-    width: 500px;
-    height: 40px;
-    font-size: 25px;
-    position: absolute;
-}
-.QVQbutten{
-    margin-left: 500px;
-    width: 90px;
-    background-color: #ef6c00;
-    height: 30px;
-    font-size: 22px;
-    padding: 5px;
-    color: #fff;
-}
-.QVQbutten:hover{
-    background-color: #ffa000;
-    color: #00e5ff;
-}
-.QVQlogo{
-    position: absolute;
-    margin-top: -65px;
-    margin-left: 25%;
-}
-li{list-style:none}
-
-.QvQli{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #bdbdbd;
-    font-size: 22px;
-    height: 30px;
-    padding: 5px;
-    width: 488px
-}
-#QVQulid{
-    margin-top: 0px;
-    margin-left: -40px;
-}
-.QVQli a{
-    color:#000;
-    text-decoration: none;
-    display: block;
-}
-.QVQli a:hover{
-    background-color: #ef6c00;
-}
-
-
+    .center {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 200;
+        position: absolute;
+        width: 600px;
+        height: 100px;
+        margin: auto auto;
+    }
+    
+    .seachzpy {
+        width: 500px;
+        height: 40px;
+        font-size: 25px;
+        position: absolute;
+    }
+    
+    .QVQbutten {
+        margin-left: 500px;
+        width: 90px;
+        background-color: #ef6c00;
+        height: 30px;
+        font-size: 22px;
+        padding: 5px;
+        color: #fff;
+    }
+    
+    .QVQbutten:hover {
+        background-color: #ffa000;
+        color: #00e5ff;
+    }
+    
+    .QVQlogo {
+        position: absolute;
+        margin-top: -65px;
+        margin-left: 25%;
+    }
+    
+    li {
+        list-style: none
+    }
+    
+    .QvQli {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #bdbdbd;
+        font-size: 22px;
+        height: 30px;
+        padding: 5px;
+        width: 488px
+    }
+    
+    #QVQulid {
+        margin-top: 0px;
+        margin-left: -40px;
+    }
+    
+    .QVQli a {
+        color: #000;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .QVQli a:hover {
+        background-color: #ef6c00;
+    }
 </style>
 
 
@@ -80,59 +88,57 @@ li{list-style:none}
         </ul>
 
     </div>
-<script type="text/javascript">
+    <script type="text/javascript">
+        var QVQul = document.getElementById('QVQulid');
 
-    var QVQul =       document.getElementById('QVQulid');
-function seach(QVQid){
-    var inpot1 = document.getElementById(QVQid);
-    var input_text = inpot1.value;
-    var QVQhref;
-    if(input_text){
-        QVQhref='https://www.baidu.com/s?wd='+input_text;
-        window.location.href=QVQhref;
-    }
-
-
-}
-function QVQchang(){
-
-    var inpot_text2 = document.getElementById('seach1').value;
-    if(inpot_text2){
-        QVQul.style.display="block";
-        var os = document.createElement("script");
-        os.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+inpot_text2+"&cb=dawn";
-        //获取数据，函数名为dawn，参数是个json
-        //dawn({q:"fgf",p:false,s:["法国风光","fgfg","放管服","fgfr","fgf2","fgf21","分隔符","房改房","fgf23抑制骨矿化","房改房是什么意思"]});
-        document.body.appendChild(os);
-    }else{
-        QVQul.style.display="none";
+        function seach(QVQid) {
+            var inpot1 = document.getElementById(QVQid);
+            var input_text = inpot1.value;
+            var QVQhref;
+            if (input_text) {
+                QVQhref = 'https://www.baidu.com/s?wd=' + input_text;
+                window.location.href = QVQhref;
+            }
 
 
-    }
-}
-function dawn( mjson){//重写dawn函数
-    QVQul.innerHTML="";
-    for(var i=0;i<mjson.s.length;i++){
-        var oLi = document.createElement("li");
-        oLi.innerHTML = "<a href=https://www.baidu.com/s?wd="+mjson.s[i]+">"+mjson.s[i]+"</a>";
-        oLi.setAttribute("class", "QvQli");
-        QVQul.appendChild(oLi);
-    }
+        }
+
+        function QVQchang() {
+
+            var inpot_text2 = document.getElementById('seach1').value;
+            if (inpot_text2) {
+                QVQul.style.display = "block";
+                var os = document.createElement("script");
+                os.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=" + inpot_text2 + "&cb=dawn";
+                //获取数据，函数名为dawn，参数是个json
+                //dawn({q:"fgf",p:false,s:["法国风光","fgfg","放管服","fgfr","fgf2","fgf21","分隔符","房改房","fgf23抑制骨矿化","房改房是什么意思"]});
+                document.body.appendChild(os);
+            } else {
+                QVQul.style.display = "none";
+            }
+        }
+
+        function dawn(mjson) { //重写dawn函数
+            QVQul.innerHTML = "";
+            for (var i = 0; i < mjson.s.length; i++) {
+                var oLi = document.createElement("li");
+                oLi.innerHTML = "<a href=https://www.baidu.com/s?wd=" + mjson.s[i] + ">" + mjson.s[i] + "</a>";
+                oLi.setAttribute("class", "QvQli");
+                QVQul.appendChild(oLi);
+            }
+        }
+
+        function EnterPress(e) {
+            var e = e || window.event;
+            if (e.keyCode == 13) {
+                seach('seach1');
+            }
+        }
 
 
-
-
-}
-function EnterPress(e){
-    var e = e || window.event;
-    if(e.keyCode == 13){
-    seach('seach1');
-    }
-}
-
-
-//https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=fgf&cb=dawn
-</script>
+        //https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=fgf&cb=dawn
+    </script>
 
 </body>
+
 </html>

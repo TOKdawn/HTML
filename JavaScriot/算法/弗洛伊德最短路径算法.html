@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <code>  var A = 0
+    var B = 1
+    var C = 2
+    var D = 3
+    var E = 4
+    var M = 200
+    var N = 5
+    var date = [
+        [],
+        [],
+        [],
+        [],
+        []
+    ]
+    var letter = ['A', 'B', 'C', 'D', 'E']
+
+    function Node() {
+        this.num = M;
+        this.path = [];
+    }
+    for (var i1 = 0; i1 < N; i1++) {
+        for (var j1 = 0; j1 < N; j1++) {
+            date[i1].push(new Node())
+        }
+    }
+    date[A][A].num = 0
+    date[A][D].num = 3
+    date[A][E].num = 5
+    date[B][A].num = 10
+    date[B][B].num = 0
+    date[B][C].num = 18
+    date[C][A].num = 5
+    date[C][C].num = 0
+    date[D][C].num = 2
+    date[D][D].num = 0
+    date[E][C].num = 2
+    date[E][D].num = 2
+    date[E][E].num = 0
+
+    for (var k = 0; k < N; k++) {
+        for (var i = 0; i < N; i++) {
+            for (var j = 0; j < N; j++) {
+                if (date[i][j].num > date[i][k].num + date[k][j].num) {
+                    date[i][j].num = date[i][k].num + date[k][j].num
+                    date[i][j].path.push(letter[k])
+                }
+            }
+        }
+    }
+    for (var i2 = 0; i2 < 5; i2++) {
+        for (var j2 = 0; j2 < 5; j2++)
+            if (date[i2][j2].num != 200) {
+                console.log(letter[i2] + "->" + letter[j2] + ":" + date[i2][j2].num + "   经过:" + date[i2][j2].path)
+            } else {
+                console.log(letter[i2] + "->" + letter[j2] + ": 不可能到达")
+            }
+    }</code>
+    <script>
+        var A = 0
+        var B = 1
+        var C = 2
+        var D = 3
+        var E = 4
+        var M = 200
+        var N = 5
+        var date = [
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+        var letter = ['A', 'B', 'C', 'D', 'E'] //字符索引
+        function Node() {
+            this.num = M;
+            this.path = [];
+        }
+        for (var i1 = 0; i1 < N; i1++) { // 建立结构体
+            for (var j1 = 0; j1 < N; j1++) {
+                date[i1].push(new Node())
+            }
+        }
+        date[A][A].num = 0
+        date[A][D].num = 3
+        date[A][E].num = 5
+        date[B][A].num = 10
+        date[B][B].num = 0
+        date[B][C].num = 18
+        date[C][A].num = 5
+        date[C][C].num = 0
+        date[D][C].num = 2
+        date[D][D].num = 0
+        date[E][C].num = 2
+        date[E][D].num = 2
+        date[E][E].num = 0
+
+        for (var k = 0; k < N; k++) {
+            for (var i = 0; i < N; i++) {
+                for (var j = 0; j < N; j++) {
+                    if (date[i][j].num > date[i][k].num + date[k][j].num) {
+                        date[i][j].num = date[i][k].num + date[k][j].num
+                        date[i][j].path.push(letter[k]) // 记录路径
+                    }
+                }
+            }
+        }
+        for (var i2 = 0; i2 < 5; i2++) {
+            for (var j2 = 0; j2 < 5; j2++)
+                if (date[i2][j2].num != 200) {
+                    console.log(letter[i2] + "->" + letter[j2] + ":" + date[i2][j2].num + "   经过:" + date[i2][j2].path)
+                } else {
+                    console.log(letter[i2] + "->" + letter[j2] + ": 不可能到达")
+                }
+        }
+    </script>
+
+</html>
