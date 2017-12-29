@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- By @DongMen 2016.12 -->
+<html charset="utf-8">
+
+<head>
+    <title></title>
+</head>
+<script src="http://img.neusoft.edu.cn/templates/neusoft.edu.cn/mobile/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<body>
+
+
+
+    <div class="wrap">
+        <h2>关键词是:<b>【???】</b>
+
+        </h2>
+        <div class="clear"></div>
+
+    </div>
+    <div class="button">开始</div>
+
+</body>
+<script type="text/javascript">
+    //背景图动效
+    window.onload = function() {
+        // var speed = 0.4;
+
+        // setInterval(function() {
+        //     var py = $('body').get(0).style.backgroundPositionY;
+        //     var a = parseFloat(py) + speed + "%";
+        //     // console.log(py);
+        //     if (parseFloat(py) <= "100") {
+
+        //         $('body').get(0).style.backgroundPositionY = a;
+        //     } else {
+        //         $('body').get(0).style.backgroundPositionY = "0%";
+        //     }
+
+        // }, 50);
+
+    }
+
+
+    //背景随机
+    function bgRandom() {
+
+        var b = [
+            "创新",
+            "仰望",
+            "探索",
+            "超越",
+            "求实",
+            "开拓",
+            "信心",
+            "进取",
+            "热爱",
+            "引领",
+            "执着",
+            "勤奋",
+            "腾飞",
+            "善思",
+            "突破",
+        ];
+        var index = Math.floor(Math.random() * b.length);
+        var width = $(window).width() - 200;
+        var hieght = $(window).height() - 200;
+        var x = Math.floor(Math.random() * (width - 50 + 1) + 50);
+        var y = Math.floor(Math.random() * (hieght - 50 + 1) + 50);
+
+        $("body").append("<span style='position: absolute;top:" + y + "px;left:" + x + "px;' class='temp'>" + b[index] + "</span>");
+
+        $("span").addClass("animated zoomOut");
+        setTimeout(function() {
+
+            $("span")[0].remove();
+
+        }, 600);
+
+    };
+
+    //中间随机
+    function myRandom()
+
+    {
+
+        var a = [
+            "【创新】",
+            "【仰望】",
+            "【探索】",
+            "【超越】",
+            "【求实】",
+            "【开拓】",
+            "【信心】",
+            "【进取】",
+            "【热爱】",
+            "【引领】",
+            "【执着】",
+            "【勤奋】",
+            "【腾飞】",
+            "【善思】",
+            "【突破】",
+
+            "【求实】",
+            "【开拓】",
+            "【信心】",
+            "【进取】",
+            "【热爱】",
+
+
+        ];
+
+        var index = Math.floor(Math.random() * a.length);
+
+        $(".wrap").find("h2").find("b").html(a[index]);
+
+        // console.log(a[index]);
+
+    }
+
+    $(function() {
+
+        var startend;
+        var bgstartend;
+        var str = $(".wrap").find("h2").find("sb").html();
+        var flag1 = new RegExp("!", "g");
+        var flag2 = new RegExp('[?]', "g");
+        $(".button").click(function() {
+            if ($(this).html() == "开始") {
+                // $(".wrap").find("h2").find("sb").html(str.replace(flag1, "[?]"));
+                $(this).html("停止");
+                startend = setInterval("myRandom()", 50);
+                bgstartend = setInterval("bgRandom()", 50);
+
+
+            } else {
+                // $(".wrap").find("h2").find("sb").html(str.replace(flag2, "!"));
+                $(this).html("开始");
+                clearInterval(bgstartend);
+                clearInterval(startend);
+                var a = $(".wrap").find("h2").find("b").html();
+                // console.log(a)
+                if (a == "【创新】")
+                    $(".wrap").find("h2").find("b").text("【探索】")
+                else if (a == "【仰望】")
+                    $(".wrap").find("h2").find("b").text("【超越】");
+                else if (a == "【腾飞】")
+                    $(".wrap").find("h2").find("b").text("【勤奋】");
+                else if (a == "【善思】")
+                    $(".wrap").find("h2").find("b").text("【执着】");
+                else if (a == "【突破】")
+                    $(".wrap").find("h2").find("b").text("【引领】");
+
+
+            }
+
+
+        })
+
+
+    })
+</script>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    background: #E9E9E9 url(./bg2.jpg) 0 0 /100% 100% no-repeat;
+    -webkit-animation: flow 16s linear infinite;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "微软雅黑", "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.wrap {
+    width: 2000px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    margin-top: -150px;
+    margin-left: -1000px;
+    left: 50%;
+    opacity: 10;
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    background-color: #08c;
+    /* height: 30px; */
+    font-size: 3em;
+    color: white;
+    z-index: 10;
+}
+
+.wrap>h2,
+.temp {
+    font-size: 6em;
+}
+
+.wrap>h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.wrap>h2>b {
+    /*font-size: 40px;*/
+    position: relative;
+    top: 3px;
+    font-weight: 900;
+    color: #fcec0b;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.temp {
+    /*	font-size: 45px;*/
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.bb {
+    position: absolute;
+}
