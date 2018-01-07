@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>随便</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+</head>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<body>
+    <div id="zcard">
+        <header>
+            <img src="./img/head.jpg" alt="head" class="img-circle zhead">
+            <h3 class="zname">DawninShadow</h3>
+        </header>
+        <div>
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/3.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left zbutton" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control right zbutton " href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="zico_bar">
+                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-comment-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-bookmark-o fa-2x" aria-hidden="true"></i>
+
+            </div>
+            <div>1,327 likes</div>
+            <div>cumberpornPleased to meet you, Patrick Melrose! The official trailer for Benedict’s new Showtime-Sky Atlantic series, Patrick <span>more</span></div>
+            <ul class="zul">
+                <li>
+                    <span>afrye97</span> @aud.ball yoooo
+                </li>
+                <li>
+                    <span> the_memory_machine</span> YES! Hugooooo
+                </li>
+                <li>
+                    <span>sol_lucena</span> This can't be seen on cinemas right?
+                </li>
+                <li>
+                    <span>goddess168Omg</span> yes!!! Thank you!
+                </li>
+
+            </ul>
+            <span>19 HOURS AGO</span>
+            <div class="zline"></div>
+            <div>
+                <input placeholder="Add a comment" class="input">
+            </div>
+        </footer>
+    </div>
+</body>
+<style>
+    body {
+        background-color: #eee;
+        padding: 10px;
+    }
+    
+    header {
+        height: 60px;
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 0 16px;
+    }
+    
+    span {
+        color: #888;
+        cursor: pointer;
+    }
+    
+    #zcard {
+        width: 614px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        background-color: #fff;
+        overflow: hidden;
+        border: 1px #ddd;
+        border-radius: 4px 4px 4px 4px;
+    }
+    
+    .zhead {
+        height: 40px;
+        /* position: absolute; */
+    }
+    
+    .zbutton {
+        padding-top: 45%;
+    }
+    
+    .zbutton>i {
+        margin-top: -20px;
+    }
+    
+    .zname {
+        position: absolute;
+        text-align: center;
+        margin-left: 45px;
+        margin-top: -33px;
+        cursor: pointer;
+    }
+    
+    .zico_bar {
+        height: 40px;
+        color: #666;
+        padding-top: 5px;
+    }
+    
+    .zico_bar i {
+        cursor: pointer;
+    }
+    
+    .zico_bar i:nth-child(3) {
+        float: right;
+    }
+    
+    .zico_bar i:nth-child(2) {
+        margin-left: 8px;
+        margin-top: -2px;
+        position: absolute;
+    }
+    
+    .zul {
+        list-style-type: none;
+        padding: 0;
+        line-height: 25px;
+    }
+    
+    .zul span {
+        color: #262626;
+        padding: 0 3px;
+        font-weight: 500;
+    }
+    
+    .zline {
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px #111;
+    }
+    
+    .input {
+        width: 100%;
+        /* border: 0px; */
+        font-size: 18px;
+        height: 30px;
+        border-top: 1px solid #eee;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        margin-bottom: 10px;
+        outline: none;
+    }
+    
+    .input:hover {
+        border: 0px;
+    }
+</style>
+
+</html>
