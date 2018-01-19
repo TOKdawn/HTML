@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDIO</title>
+    <!-- UI框架 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 字符 -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!--轮播框架-->
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!--元素渐入-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="./js/swiper-3.4.2.jquery.min.js"></script>
+
+<body>
+
+    <header class="navbar navbar-static-top bs-docs-nav" id="top">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="navbar-brand" href="#" src="./img/logo.png" style="height:50px; padding:0px ">
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#"> Home</a>
+                        </li>
+                        <li>
+                            <a href="../css/">CDIO in DNUI</a>
+                        </li>
+                        <li>
+                            <a href="../components/">Organizing Committee</a>
+                        </li>
+                        <li>
+                            <a href="../javascript/">Registration</a>
+                        </li>
+                        <li>
+                            <a href="../customize/">Program</a>
+                        </li>
+                        <li>
+                            <a href="http://www.youzhan.org">Speaker</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bootcss.com/">Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper-container swiperOne">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+    </div>
+    <div class="introduce">
+        2019 CDIO Asian Regional Meeting </br>
+        March 22 - 25, 2019, China</br>
+        Dalian Neusoft University of Information
+        </br>
+        <button class="introduce_button">LEARN MRE</button>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000, //可选选项，自动滑动
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            noSwiping: true,
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+/*公共样式清除*/
+
+html,
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ol,
+form,
+input,
+textarea,
+th,
+td,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+body {
+    text-align: center;
+}
+
+
+/**********导航栏部分*************/
+
+header {
+    height: 50px;
+    margin: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .navbar-nav {
+        float: right;
+    }
+    .nav>li>a {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 768px;
+    }
+    .navbar-brand {
+        padding: 15px 10px;
+    }
+}
+
+
+/* 轮播 */
+
+.swiperOne {
+    height: 290px;
+    min-width: 1120px;
+    overflow: hidden;
+}
+
+.swiper-wrapper div:nth-child(1) {
+    background: url(../img/bg1.png) center top /100% auto no-repeat;
+}
+
+.swiper-wrapper div:nth-child(2) {
+    background: url(../img/bg2.png) center top /100% auto no-repeat;
+}
+
+.swiper-wrapper div:nth-child(3) {
+    background: url(../img/bg3.png) center top/100% auto no-repeat;
+}
+
+.introduce_button {
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background-color: transparent;
+}
+
+
+/* 描述 */
+
+.introduce {
+    position: absolute;
+    margin-top: -200px;
+    z-index: 5;
+    color: #fff;
+    width: 100%;
+    /* margin: auto; */
+}
