@@ -156,20 +156,93 @@
         </div>
     </div>
     <div class="path_wit">
-        <div class="content">
+        <div class="content three-path">
+            <p>Call for Papers</p>
+            <p>
+                <span>Dates:</span> March 24-26, 2016
 
+                </br>
+                <span>Venue:</span> Kanazawa Institute of Technology, Ohgigaoka Campus, Sakai Memorial Hall
+                </br> (7-1 Ohgigaoka, Nonoichi, Ishikawa, 921-8501, JAPAN) </br>
+                <span>Theme:</span> "Steps toward Sustainable Innovation in Engineering Education" </br>
+                Under the auspice of Nonoichi City, City of Kanazawa, Japanese Society for Engineering Education, </br>
+                Hokuriku Shin-etsu Society for Engineering Education, Japan International Cooperation Agency (JICA)
+            </p>
+            <div class="two-button" style="margin:30px auto 80px auto;">
+                LEARN MORE
+            </div>
         </div>
     </div>
     <div class="path_blu">
         <div class="content">
+            <div>
 
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="tag-bar" role="tablist">
+                            <li role="presentation" class="active">
+                                <i class="fa fa-calendar-check-o fa-5x" aria-hidden="true"></i><a onclick=change(1) href="#home" aria-controls="home" role="tab" data-toggle="tab">Important Dates</a></li>
+                            <li role="presentation">
+                                <i class="fa fa-volume-control-phone fa-5x" aria-hidden="true"></i><a onclick="change(2)" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Contact Us</a></li>
+                            <li role="presentation">
+                                <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i><a onclick="change(3)" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Information</a></li>
+                        </ul>
+                        <div class="tag-infor">
+                            <div id="tagShow" class="tag-show">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="tab-content tag-text">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <i class="fa fa-calendar-check-o fa-5x" aria-hidden="true"></i>
+                                <h1>Important Dates</h1>
+                                <p>Registration Deadline:</br> March, 21, 2019</br> Meeting Dates: </br>March, 22-25, 2019</p>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <i class="fa fa-volume-control-phone fa-5x" aria-hidden="true"></i>..dsadasdasdasdsadasds.</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                <i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>ewqeqweqweqweqweqweqweqweqweqweqwe...</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="path_wit">
         <div class="content">
         </div>
     </div>
+    <footer>
+        <div class="facebook-section">
+            <div class="center">
+                <Icon type="social-snapchat"></Icon>
+                <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
+        function change(type) {
+            console.log($('#tagShow').css)
+            switch (type) {
+                case 1:
+                    $('#tagShow').css("top", "80px");
+                    break;
+                case 2:
+                    $('#tagShow').css("top", "230px");
+                    break;
+                case 3:
+                    $('#tagShow').css("top", "378px");
+                    break;
+            }
+        }
         var mySwiper = new Swiper('.swiper-container', {
             autoplay: 5000, //可选选项，自动滑动
             prevButton: '.swiper-button-prev',
