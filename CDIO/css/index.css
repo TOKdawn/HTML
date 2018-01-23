@@ -412,7 +412,6 @@ header {
         top: 0px !important;
     }
     .facebook-section {
-        background: url(../img/face.jpg) no-repeat 0px 0px;
         background-size: cover;
         height: auto;
         height: 400px !important;
@@ -498,15 +497,15 @@ header {
 }
 
 .bg2>div:nth-child(2) {
-    background: url(../img/1.jpg) center top / auto 100% no-repeat;
+    background: url(../img/1.jpg) center top / 100% auto no-repeat;
 }
 
 .bg2>div:nth-child(3) {
-    background: url(../img/1.jpg) center top / auto 100% no-repeat;
+    background: url(../img/1.jpg) center top / 100% auto no-repeat;
 }
 
 .bg2>div:nth-child(4) {
-    background: url(../img/1.jpg) center top / auto 100% no-repeat;
+    background: url(../img/1.jpg) center top / 100% auto no-repeat;
 }
 
 
@@ -766,7 +765,7 @@ header {
 /* footer */
 
 .facebook-section {
-    background: url(../img/face.jpg) no-repeat 0px 0px;
+    background: #212224 no-repeat 0px 0px;
     background-size: cover;
     height: auto;
     height: 250px;
@@ -780,6 +779,7 @@ header {
     font-size: 20px;
     padding-top: 20px;
     height: 200px;
+    width: 80%;
 }
 
 .footer-one {
@@ -788,18 +788,19 @@ header {
 }
 
 .footer-one img {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .footer-one p {
     width: 300px;
     margin: auto;
     text-align: left;
+    line-height: 20px;
 }
 
 .ico-bar {
     width: 300px;
-    margin: 60px auto 0px auto;
+    margin: 40px auto 0px auto;
     height: 50px;
 }
 
@@ -816,8 +817,9 @@ header {
 
 .footer-two p {
     width: 300px;
-    margin: auto;
+    margin: 10px auto 0px auto;
     text-align: left;
     color: #555b5b;
     font-size: 10px;
+    line-height: 20px;
 }
