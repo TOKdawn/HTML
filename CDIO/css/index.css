@@ -148,6 +148,14 @@ header {
     margin-bottom: 0px;
 }
 
+.navbar-nav>li>a {
+    line-height: 35px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: #2b85d2;
+}
+
 
 /* 响应式 */
 
@@ -169,8 +177,13 @@ header {
         width: 100% !important;
         top: 0px !important;
     }
+    .nav>li>a {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
     .new-row {
-        padding: 0 20px;
+        padding: 0 10px;
+        text-align: center;
     }
     .navbar-nav {
         float: right;
@@ -235,7 +248,7 @@ header {
     .navbar-brand {
         /* padding: 15px 10px; */
         height: 40px !important;
-        margin-top: 5px !important;
+        margin-top: 12px !important;
     }
     .swiperOne {
         height: 650px;
@@ -258,11 +271,10 @@ header {
         margin-left: 10% !important;
     }
     .two-path {
-        text-align: center !important;
+        padding-left: 50px;
+        text-align: left !important;
     }
-    .line {
-        margin: auto;
-    }
+    .line {}
     .two-button {
         margin: auto;
     }
@@ -320,6 +332,9 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .navbar-toggle {
+        margin-top: 16px !important;
+    }
     .swiperOne {
         height: 390px !important;
         width: 100%;
@@ -328,17 +343,17 @@ header {
     }
     .introduce {
         position: absolute;
-        margin-top: -330px !important;
+        margin-top: -230px !important;
         z-index: 5;
         color: #fff;
         width: 100%;
-        line-height: 40px !important;
-        font-size: 25px !important;
+        line-height: 30px !important;
+        font-size: 20px !important;
         text-shadow: 1px 2px 15px #000;
         /* margin: auto; */
     }
     .introduce p {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
     .introduce_button {
         border-radius: 50px;
@@ -347,7 +362,7 @@ header {
         font-size: 18px !important;
         padding-left: 5px;
         padding-right: 5px;
-        width: 200px;
+        width: 177px !important;
         font-style: italic;
         margin: auto;
     }
@@ -363,20 +378,24 @@ header {
         margin-left: 10% !important;
     }
     .two-path {
-        text-align: center !important;
+        text-align: left !important;
     }
-    .line {
-        margin: auto;
-    }
+    .line {}
     .two-button {
         margin: auto;
     }
     .one-title {
-        font-size: 25px !important;
+        font-size: 20px !important;
+        padding: 0px 40px !important;
+        margin-top: 30px !important;
     }
     .path_wit p {
-        font-size: 14px !important;
-        padding: 0px 10px !important;
+        padding-left: 50px;
+        font-size: 12px !important;
+        padding: 10px 40px !important;
+        line-height: 18px !important;
+        word-wrap: keep-all !important;
+        text-align: left;
     }
     .new-title {
         padding: 0 15px !important;
@@ -387,13 +406,23 @@ header {
         font-size: 14px !important;
     }
     .two-path p:nth-child(1) {
-        font-size: 27px !important;
+        padding-left: 50px;
+        font-size: 20px !important;
+        margin-top: 50px !important;
     }
     .two-path p:nth-child(3) {
-        font-size: 20px !important;
+        padding-left: 50px;
+        font-size: 15px !important;
+        margin-top: 20px !important;
+    }
+    .line {
+        margin-top: 20px !important;
+        margin-left: 50px !important;
     }
     .two-path p:nth-child(4) {
-        font-size: 13px !important;
+        padding-left: 50px;
+        font-size: 12px !important;
+        line-height: 20px !important;
     }
     .swipertwo {
         height: 250px !important;
@@ -402,8 +431,11 @@ header {
     .two-button {
         font-size: 15px !important;
         width: 170px !important;
+        margin: 22px auto 50px auto !important;
     }
     .three-path>p:nth-child(1) {
+        margin-top: 50px !important;
+        margin-bottom: 0px !important;
         font-size: 25px !important;
     }
     header {
@@ -418,14 +450,14 @@ header {
     }
     .ico-bar {
         width: 300px;
-        margin: 30px auto 0px auto !important;
+        margin: 20px auto 0px auto !important;
         height: 50px;
     }
     .tag-bar i {
         display: none !important;
     }
     .tag-bar {
-        margin: 40px auto 0 auto !important;
+        margin: 20px auto 0 auto !important;
         width: 90%;
         text-align: left;
         height: 15px !important;
@@ -492,12 +524,16 @@ header {
     background: url(../img/bg3.jpg) center top/auto 100% no-repeat;
 }
 
+.swiperOne>div>div:nth-child(4) {
+    background: url(../img/bg4.jpg) center top/auto 100% no-repeat;
+}
+
 .bg2>div:nth-child(1) {
     background: url(../img/1.jpg) center top / 100% auto no-repeat;
 }
 
 .bg2>div:nth-child(2) {
-    background: url(../img/1.jpg) center top / 100% auto no-repeat;
+    background: url(../img/2.jpg) center top / 100% auto no-repeat;
 }
 
 .bg2>div:nth-child(3) {
@@ -505,7 +541,7 @@ header {
 }
 
 .bg2>div:nth-child(4) {
-    background: url(../img/1.jpg) center top / 100% auto no-repeat;
+    background: url(../img/2.jpg) center top / 100% auto no-repeat;
 }
 
 
@@ -519,7 +555,7 @@ header {
     width: 100%;
     line-height: 60px;
     font-size: 40px;
-    text-shadow: 1px 2px 15px #000;
+    text-shadow: 4px 2px 15px #000;
     /* margin: auto; */
 }
 
@@ -569,7 +605,7 @@ header {
 /* news */
 
 .one-title {
-    color: #777;
+    color: #666;
     font-size: 33px;
     margin-top: 50px;
 }
@@ -590,15 +626,21 @@ header {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 .new-text {
     color: #999;
     margin-bottom: 35px;
+    text-align: left;
 }
 
 .news img {
     width: 100%;
+}
+
+.new-row {
+    text-align: center;
 }
 
 
