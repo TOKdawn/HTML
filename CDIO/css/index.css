@@ -178,6 +178,11 @@ header {
         top: 0px !important;
     }
     .nav>li>a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 11px;
+    }
+    .nav>li>a {
         padding-left: 11px;
         padding-right: 11px;
     }
@@ -237,8 +242,9 @@ header {
         float: right;
     }
     .nav>li>a {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 11px;
     }
     .container {
         padding-left: 0;
@@ -388,6 +394,7 @@ header {
         font-size: 20px !important;
         padding: 0px 40px !important;
         margin-top: 30px !important;
+        text-align: left !important;
     }
     .path_wit p {
         padding-left: 50px;
@@ -608,6 +615,31 @@ header {
     color: #666;
     font-size: 33px;
     margin-top: 50px;
+    text-align: left !important;
+    padding-left: 10px;
+}
+
+.one-title a {
+    color: #888;
+    float: right;
+    font-size: 19px;
+    vertical-align: bottom;
+    margin-top: 25px;
+    padding-right: 10px;
+}
+
+.one-titles {
+    color: #666;
+    font-size: 33px;
+    margin-top: 50px;
+}
+
+.one-line {
+    width: 90px;
+    height: 5px;
+    background-color: #2b85d2;
+    /* float: left; */
+    margin: 5px 0 5px 10px;
 }
 
 .path_wit p {
@@ -864,4 +896,10 @@ header {
     color: #555b5b;
     font-size: 10px;
     line-height: 20px;
+}
+
+header {
+    position: fixed !important;
+    width: 100% !important;
+    top: 0px !important;
 }

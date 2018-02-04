@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speaker</title>
+    <!-- UI框架 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 字符 -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!--轮播框架-->
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!--元素渐入-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="./js/swiper-3.4.2.jquery.min.js"></script>
+
+<body>
+
+    <header class="navbar navbar-static-top bs-docs-nav" id="top">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="navbar-brand" href="#" src="./img/logo.png" style="height:65px; padding:0px; margin: 0px; ">
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="./index.html"> Home</a>
+                        </li>
+                        <li>
+                            <a href="">CDIO in DNUI</a>
+                        </li>
+                        <li>
+                            <a href="">Organizing Committee</a>
+                        </li>
+                        <li>
+                            <a href="">Registration</a>
+                        </li>
+                        <li>
+                            <a href="">Call for Papers</a>
+                        </li>
+                        <li>
+                            <a href="">Program</a>
+                        </li>
+                        <li class="active">
+                            <a href="">Speaker</a>
+                        </li>
+                        <li>
+                            <a href="">Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper-container swiperOne">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+    </div>
+    <div class="introduce">
+        2019 CDIO Asian Regional Meeting </br>
+        March 22 - 25, 2019, China</br>
+        <p>Dalian Neusoft University of Information</p>
+        <div class="introduce_button">LEARN MORE</div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div class="facebook-section">
+            <div class="center">
+                <Icon type="social-snapchat"></Icon>
+                <div class="row">
+                    <div class="col-md-6 footer-one">
+                        <img src="./img/school.png">
+                        <p>
+                            Copyright(C)2017 Dalian Neusoft University of Information
+                            </br>
+                            Address：8 Software Park Rd.Dalian. P.R.China
+                            </br> Zip code：116023
+                            </br>Tel：86 411 8483 5000
+                        </p>
+                    </div>
+                    <div class="col-md-6 footer-two">
+                        <div class="ico-bar">
+                            <div><i class="fa fa-weibo" aria-hidden="true"></i></div>
+                            <div> <i class="fa fa-weixin" aria-hidden="true"></i></div>
+                            <div> <i class="fa fa-qq" aria-hidden="true"></i></div>
+                        </div>
+
+                        <p>网站策划：品牌发展部
+                            </br> 设计及技术支持：微光网络工作室
+                            </br> 意见反馈：laiwanyun@neusoft.edu.cn
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000, //可选选项，自动滑动
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            noSwiping: true,
+
+            scrollbar: '.swiper-scrollbar',
+            scrollbarHide: false,
+
+        })
+    </script>
+</body>
+
+</html>
