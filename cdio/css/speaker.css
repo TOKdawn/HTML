@@ -1,0 +1,46 @@
+        .S-img {}
+        
+        .S-text {}
+        
+        .S-main {
+            max-width: 1120px;
+            color: #888;
+            text-align: left;
+            margin: 30px auto 30px auto;
+        }
+        
+        .S-main>p {
+            color: #666;
+            font-size: 23px;
+            margin: 30px 0 5px 0;
+        }
+        
+        .S-line {
+            height: 2px;
+            background-color: #2b85d2;
+            width: 75px;
+            margin-bottom: 30px;
+        }
+        
+        .S-imgbar {
+            color: #444;
+            font-size: 17px;
+        }
+        
+        .S-imgbar span {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .S-imgbar img {
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 992px) and (min-width:768px) {
+            /* ipad */
+        }
+        
+        @media screen and (max-width:767px) and (min-width:200px) {
+            /* iphone */
+        }
