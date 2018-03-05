@@ -152,6 +152,40 @@ header {
     line-height: 35px;
 }
 
+.fatherNavBar button {
+    border: none;
+    line-height: 62px;
+    background-color: transparent;
+    color: #777;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.fatherNavBar {
+    overflow: hidden;
+    padding: 0px;
+}
+
+.fatherNavBar button:hover {
+    border: none;
+    color: #333;
+}
+
+.fatherNavBar button:focus {
+    outline: none;
+}
+
+.DNUInav {
+    padding: 8px 0px 3px 8px;
+    color: #777;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.DNUInav:hover {
+    background-color: #eeeeee;
+}
+
 .navbar-default .navbar-nav>.active>a {
     color: #2b85d2;
 }
@@ -180,6 +214,14 @@ header {
     .nav>li>a {
         padding-left: 5px;
         padding-right: 5px;
+        font-size: 11px;
+    }
+    .fatherNavBar button {
+        border: none;
+        line-height: 62px;
+        background-color: transparent;
+        color: #777;
+        margin: 0px;
         font-size: 11px;
     }
     .nav>li>a {
@@ -226,8 +268,14 @@ header {
         font-size: 15px;
         line-height: 25px;
     }
+    .three-path>p:nth-child(1) {
+        text-align: center;
+    }
     .line {
         margin-top: 15px !important;
+    }
+    .path_wit p {
+        padding: 0px 30px;
     }
 }
 
@@ -242,9 +290,18 @@ header {
         float: right;
     }
     .nav>li>a {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 4px;
+        padding-right: 4px;
         font-size: 11px;
+    }
+    .fatherNavBar button {
+        border: none;
+        line-height: 62px;
+        background-color: transparent;
+        color: #777;
+        margin: 0px;
+        font-size: 11px;
+        padding: 1px 5px;
     }
     .container {
         padding-left: 0;
@@ -280,7 +337,6 @@ header {
         padding-left: 50px;
         text-align: left !important;
     }
-    .line {}
     .two-button {
         margin: auto;
     }
@@ -334,10 +390,44 @@ header {
         margin: auto;
         display: block;
     }
+    .three-path>p:nth-child(1) {
+        text-align: center;
+    }
+    .line {
+        margin-top: 15px !important;
+    }
+    .path_wit p {
+        padding: 0px 30px;
+    }
+    .new-title {
+        padding-left: 40px;
+    }
+    .new-text {
+        padding-left: 40px;
+    }
+    .path_blu2 {
+        height: 630px;
+    }
+    .tag-bar {
+        margin-top: 50px !important;
+    }
 }
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .one-title a {
+        margin-top: 0px !important;
+    }
+    .DNUInav {
+        padding: 15px 0px 3px 15px;
+        color: #777;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+    }
+    .fatherNavBar button {
+        line-height: 50px;
+    }
     .navbar-toggle {
         margin-top: 16px !important;
     }
@@ -386,21 +476,19 @@ header {
     .two-path {
         text-align: left !important;
     }
-    .line {}
     .two-button {
         margin: auto;
     }
     .one-title {
         font-size: 20px !important;
-        padding: 0px 40px !important;
         margin-top: 30px !important;
         text-align: left !important;
     }
     .path_wit p {
         padding-left: 50px;
-        font-size: 12px !important;
+        font-size: 15px !important;
         padding: 10px 40px !important;
-        line-height: 18px !important;
+        line-height: 20px !important;
         word-wrap: keep-all !important;
         text-align: left;
     }
@@ -510,9 +598,13 @@ header {
         line-height: 20px !important;
         font-size: 13px !important;
         text-align: left;
-        width: 130px !important;
+        padding: 0px 10px !important;
+        width: 100% !important;
         margin: auto;
         font-weight: 300;
+    }
+    .path_blu2 {
+        height: 450px;
     }
 }
 
@@ -626,6 +718,7 @@ header {
     vertical-align: bottom;
     margin-top: 25px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .one-titles {
@@ -644,9 +737,11 @@ header {
 
 .path_wit p {
     color: #999;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 28px;
+    text-align: left;
 }
 
 .news {
@@ -809,11 +904,11 @@ header {
 }
 
 .tag-text {
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .tag-text i {
-    font-size: 140px;
+    font-size: 110px;
     margin: auto;
     display: block;
 }
@@ -821,16 +916,16 @@ header {
 .tag-text h1 {
     font-size: 30px;
     color: #666;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tag-text p {
     color: #888;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
-    width: 236px;
+    width: 500px;
     margin: auto;
     font-weight: 300;
 }
