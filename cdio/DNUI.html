@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DNUI</title>
     <!-- UI框架 -->
@@ -17,9 +18,65 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/zpslide.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=iKY3WKUMKb7xy4uOLmNd3ThpeYGb8Slx&services=&t=20180201111639"></script>
+
+<style type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .zp-slide {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .zp-slide>ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 1600%;
+        transition: all 0.3s;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+    .zp-slide>ul>li {
+        float: left;
+    }
+    
+    [class^=zp-slide-] {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+        left: 30px;
+        opacity: 0.5;
+    }
+    
+    [class^=zp-slide-]:hover {
+        opacity: 1;
+    }
+    
+    .zp-slide-right {
+        left: auto;
+        right: 30px;
+    }
+</style>
 
 <body>
 
@@ -48,8 +105,8 @@
                              </button>
                                 <ul class="dropdown-menu" aria-labelledby="dLabel">
                                     <li class="DNUInav">
-                                        <a href="#">DNUI</a></li>
-                                    <li class="DNUInav"><a href="./CDIO.html">CDIO</a>
+                                        <a href="#">About DNUI</a></li>
+                                    <li class="DNUInav"><a href="./CDIO.html">TOPCARES-CDIO</a>
                                     </li>
                                 </ul>
                             </div>
@@ -104,8 +161,53 @@
                 liberal arts with a strong focus on IT engineering. Over 14,000 students are currently enrolled at DNUI. The average annual employment rate of the last three years is over 93%.
 
             </p>
+
+
+
+        </div>
+        <div class="zp-slide">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/a1.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a2.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a3.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a4.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a5.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a3.png" />
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="zp-slide-left"><img src="img/zp-left.png"></a>
+            <a href="javascript:void(0)" class="zp-slide-right"><img src="img/zp-right.png"></a>
         </div>
     </div>
+    </div>
+    <div class="path_blu">
+        <div class="container">
+            <div class="map" id="baiduMap"></div>
+        </div>
+
     </div>
 
 
@@ -142,6 +244,22 @@
         </div>
     </footer>
     <script>
+        $(function() {
+            $('.zp-slide').zpSlide({
+                //'original':1, //414px小屏幕，默认显示1个
+                'xs': 1, //640px小屏幕，默认显示2个，当前自定义显示1个
+                'sm': 2, //768px中屏幕，默认显示3个，当前自定义显示2个
+                'md': 3, //1024px中屏幕，默认显示4个，当前自定义显示3个
+                'lg': 3 //1280px大屏幕，默认显示5个，当前自定义显示3个
+            });
+            var map = new BMap.Map("baiduMap");
+            map.centerAndZoom(new BMap.Point(121.542016, 38.895438), 17);
+            map.addControl(new BMap.NavigationControl());
+            map.addControl(new BMap.ScaleControl());
+            map.addControl(new BMap.OverviewMapControl());
+            map.addControl(new BMap.MapTypeControl());
+        })
+
         function change(type) {
             // console.log($('#tagShow').css)
             switch (type) {

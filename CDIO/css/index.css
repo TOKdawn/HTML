@@ -998,3 +998,8 @@ header {
     width: 100% !important;
     top: 0px !important;
 }
+
+.map {
+    height: 500px;
+    margin: 50px 0px;
+}
