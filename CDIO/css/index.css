@@ -729,7 +729,7 @@ header {
 
 .one-line {
     width: 90px;
-    height: 5px;
+    height: 3px;
     background-color: #2b85d2;
     /* float: left; */
     margin: 5px 0 5px 10px;
@@ -741,7 +741,7 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 28px;
-    text-align: left;
+    text-align: center;
 }
 
 .news {
@@ -1002,4 +1002,66 @@ header {
 .map {
     height: 500px;
     margin: 50px 0px;
+}
+
+
+/* cdio */
+
+.cdio-title {
+    color: #666;
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: left !important;
+    padding-left: 10px;
+}
+
+.cdio-line {
+    width: 120px;
+    height: 3px;
+    background-color: #2b85d2;
+    /* float: left; */
+    margin: 5px 0 5px 10px;
+    margin-bottom: 30px;
+}
+
+.cdioImg1 {
+    text-align: center;
+    width: 70%;
+}
+
+.cdioImg2 {
+    width: 50%;
+}
+
+.cdio-img-text {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cdio-wit {
+    width: 100%;
+    background-color: #fff;
+}
+
+.cdio-blu {
+    width: 100%;
+    background-color: #eff7fe;
+}
+
+.cdio-text {
+    color: #777;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    padding: 0px 30px;
+    margin-bottom: 25px;
+}
+
+.movie {
+    height: 500px;
+    width: 20px;
 }
