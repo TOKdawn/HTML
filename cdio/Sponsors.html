@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CDIO</title>
+    <title>DNUI</title>
     <!-- UI框架 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- 字符 -->
@@ -17,9 +18,65 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./js/zpslide.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="./js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=iKY3WKUMKb7xy4uOLmNd3ThpeYGb8Slx&services=&t=20180201111639"></script>
+
+<style type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .zp-slide {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .zp-slide>ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 1600%;
+        transition: all 0.3s;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+    .zp-slide>ul>li {
+        float: left;
+    }
+    
+    [class^=zp-slide-] {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+        left: 30px;
+        opacity: 0.5;
+    }
+    
+    [class^=zp-slide-]:hover {
+        opacity: 1;
+    }
+    
+    .zp-slide-right {
+        left: auto;
+        right: 30px;
+    }
+</style>
 
 <body>
 
@@ -60,9 +117,7 @@
                         <li>
                             <a href="">Registration</a>
                         </li>
-                        <li>
-                            <a href="">Call for Papers</a>
-                        </li>
+
                         <li>
                             <a href="">Program</a>
                         </li>
@@ -70,7 +125,7 @@
                             <a href="">Speaker</a>
                         </li>
                         <li class="active">
-                            <a href="#">Information</a>
+                            <a href="#">Sponsors</a>
                         </li>
 
                     </ul>
@@ -95,23 +150,296 @@
         <div class="introduce_button">LEARN MORE</div>
     </div>
 
-
-    <div class="path_wit">
-        <div class="content three-path">
-            <p>Call for Papers</p>
-            <p>
-                <span>Dates:</span> March 24-26, 2016
-
-                </br>
-                <span>Venue:</span> Kanazawa Institute of Technology, Ohgigaoka Campus, Sakai Memorial Hall
-                </br> (7-1 Ohgigaoka, Nonoichi, Ishikawa, 921-8501, JAPAN) </br>
-                <span>Theme:</span> "Steps toward Sustainable Innovation in Engineering Education" </br>
-                Under the auspice of Nonoichi City, City of Kanazawa, Japanese Society for Engineering Education, </br>
-                Hokuriku Shin-etsu Society for Engineering Education, Japan International Cooperation Agency (JICA)
-            </p>
-            <div class="two-button" style="margin:30px auto 80px auto;">
-                LEARN MORE
+    <div class="Sponsors_wit">
+        <div class="content">
+            <div class="one-titles">About Dalian City
             </div>
+            <p>&nbsp &nbsp &nbsp Dalian is a major city and seaport in the south of Liaoning Province, China. It is located on Korea Bay north of the Yellow Sea and roughly in the middle of the Liaodong peninsula at its narrowest neck or isthmus. With a
+                coastline of 1,906 km (1,184 mi), it governs the majority of the Liaodong Peninsula and about 260 surrounding islands and reefs. Dalian is the province’s second largest city and has sub-provincial administrative status. It is also a financial,
+                shipping and logistics center for Northeast Asia.
+                </br>&nbsp &nbsp &nbsp Dalian is located in the warm temperate zone of the Northern Hemisphere with oceanic climate; it's neither cold in winter nor hot in summer. The annual mean temperature is 10.90 °C. The monthly 24-hour average temperature
+                ranges from −3.9 °C in January to 24.1 °C in August. And the annual precipitation is 550—950mm, the whole year sunshine duration is 2500—2800 hours.
+                </br>&nbsp &nbsp &nbsp Standard Mandarin is usually spoken in Dalian because it is a city with people from various locations. But Dalian natives use Dalian dialect, which belongs to the Jiaoliao Mandarin subgroup spoken in parts of Shandong
+                and Liaoning provinces.
+                </br>&nbsp &nbsp &nbsp Dalian is a popular destination among domestic tourists and foreign visitors, especially from Japan, South Korea and Russia. Its mild climate and multiple beaches as well as its importance in the modern history of
+                China have attracted tourists. Some of the most famous beaches are Jinshitan Golden Coast (金石滩黄金海岸) beach, Fujiazhuang (付家庄) beach, Bangchuidao (棒棰岛) beach, Xinghai Park (星海公园) beach, Xinghai Bay (星海湾) beach, and Xiajiahezi (夏家河子) beach.
+                Dalian is also famous for its Square Culture. There are more than eighty squares in Dalian, among them the most famous are Zhongshan Square(中山广场), Friendship Square(友谊广场), Xinghai Square(星海广场), Peoples Square(人民广场), Olympic Square(奥林匹克广场)
+                and so on. Up to now, the Green completed area has reached 40% in Dalian.
+                </br>&nbsp &nbsp &nbsp In 2016, Dalian ranks 48th in the Global Financial Centres Index, the other Chinese cities on the list being Hong Kong, Shanghai, Shenzhen, Beijing and Qingdao. In 2012, Dalian ranked 82nd in the Global City Competitiveness
+                Index. In 2006, Dalian was named China's most livable city by China Daily. The National Tourism Administration and the United Nations World Tourism Organization named Dalian as "The Optimum Tourist City", this title further expands the
+                reputation of Dalian both at home and abroad, thus attracts more tourists to travel and visit Dalian.
+                </br>&nbsp &nbsp &nbsp For more information about Dalian city and its attractions, please go to the official tourist information website (Language: English, Japanese, Korean, Russian, and etc.):<a herf="http://www.dltour.gov.cn/">http://www.dltour.gov.cn/</a>
+
+
+            </p>
+
+        </div>
+        <div class="zp-slide">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/a1.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a2.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a3.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a4.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a5.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/a6.jpg" />
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" class="zp-slide-left"><img src="img/zp-left.png"></a>
+            <a href="javascript:void(0)" class="zp-slide-right"><img src="img/zp-right.png"></a>
+        </div>
+    </div>
+
+    <div class="Sponsors-blu">
+
+        <div class="content">
+
+            <div class="sponsors-titles">Transportation Information
+
+            </div>
+            <p>
+                <span>Dalian Airport </span> Dalian Zhoushuizi International Airport 大连周水子国际机场 (IATA: DLC, ICAO: ZYTL) is the airport serving the city of Dalian in Liaoning Province, China. It is about 10 km northwest of the city center. Dalian airport
+                has opened 146 routes, of which 108 domestic routes, and 38 international routes and Special Administrative Region, covering most of the large and medium-sized cities nationwide, and reaching many countries in East Asia, Southeast Asia,
+                Europe, North America, and Middle East. In 2014 the airport handled 17,203,640 passengers, making it the busiest airport in Northeast China and the 16th busiest nationwide.
+
+            </p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>
+                            东京(TYO)
+                        </th>
+                        <th>
+                            TOKYO
+                        </th>
+                        <th>
+                            大阪(OSA)
+                        </th>
+                        <th>
+                            OSAKA
+                        </th>
+                        <th>
+                            广岛(HIJ)
+                        </th>
+                        <th>
+                            HIROSHIMA
+                        </th>
+                        <th>
+                            福冈(FUK)
+                        </th>
+                        <th>
+                            FUKUOKA
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            名古屋(NGO)
+                        </th>
+                        <th>
+                            NAGOYA
+                        </th>
+                        <th>
+                            富山(TOY)
+                        </th>
+                        <th>
+                            TOYAMA
+                        </th>
+                        <th>
+                            首尔(SEL)
+                        </th>
+                        <th>
+                            SEOUL
+                        </th>
+                        <th>
+                            济州(CJU)
+                        </th>
+                        <th>
+                            JEJU
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            襄阳(YNY)
+                        </th>
+                        <th>
+                            YANGYANG
+                        </th>
+                        <th>
+                            曼谷(BKK)
+                        </th>
+                        <th>
+                            BANGKOK
+                        </th>
+                        <th>
+                            新加坡(SIN)
+                        </th>
+                        <th>
+                            SINGAPORE
+                        </th>
+                        <th>
+                            吉隆坡(KUL)
+                        </th>
+                        <th>
+                            KUALA
+                            </br>
+                            LUMPUR
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            海参崴(VVO)
+                        </th>
+                        <th>
+                            VLADIVOSTOK
+                        </th>
+                        <th>
+                            伊尔库茨克(IKT)
+                        </th>
+                        <th>
+                            IRKUTSK
+                        </th>
+                        <th>
+                            香港(HKG)
+                        </th>
+                        <th>
+                            HONG KONG
+                        </th>
+                        <th>
+                            澳门(MFM)
+                        </th>
+                        <th>
+                            MACAU
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            台北(桃园)(TPE)
+                        </th>
+                        <th>
+                            TAIPEI(TAOYUAN)
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="sponsors_title_plus">International and Special Administrative Region routes
+            </p>
+
+
+            <p class="sponsors_title_plus">Dalian Train Stations
+
+            </p>
+            <p>Dalian Railway Station大连站 is located at the city center, Zhongshan District of Dalian city. It is a main station in the northeast of China.
+            </p>
+            </br>
+
+
+            <p>Dalian North Railway Station大连北站 is located at the north of Dalian city. It is about 17.5 km away from Dalian Railway Station. It is the main high-speed railway station in Dalian. Need to buy train tickets? Please go to the official website
+                (Language: Chinese): <a href="http://www.12306.cn/mormhweb/">http://www.12306.cn/mormhweb/ </a>an city. It is a main station in the northeast of China.
+            </p>
+
+            <p class="sponsors_title_plus">City Public Transportation
+
+
+            </p>
+            <p class="sponsors_title_plus">Taxi
+
+
+
+            </p>
+            <p>Taxis are plentiful in Dalian. Rates start at 10 RMB for the first three kilometers and 2 RMB for each additional kilometer with 30% higher rates at night (10pm to the next day 5am). Blue top lights represent state-owned enterprises, white
+                ones represent collectively-owned enterprises or cooperative enterprises, while yellow ones represent private enterprises.
+            </p>
+            <p class="sponsors_title_plus">City Metro
+            </p>
+            <p>There are currently 3 metro routes in Dalian. Rates start at 2 RMB to 6 RMB according to the distance. There are metro stations at the airport and train stations. Ask station officers for help if you needed to buy tickets.
+            </p>
+            <p class="sponsors_title_plus">Bus
+
+            </p>
+            <p>There are hundreds of bus lines in Dalian including three tramcar lines. The first vehicle hour is 4:00-4:30 a.m. and final vehicle hour is 22:00-23:50 p.m., normal hour interval 3-8 minutes, and 1-2 minutes at rush hours. The price of a ticket
+                is 1 RMB to 2RMB.
+            </p>
+        </div>
+
+    </div>
+    <div class="Sponsors_wit">
+        <div class="content">
+            <p class="
+sponsors-tit">Venue
+
+
+            </p>
+            <div class="cdio-line"></div>
+            <p>Coming soon…
+            </p>
+            <p class="
+sponsors-tit">Accommodation
+
+
+
+            </p>
+            <div class="cdio-line"></div>
+            <p>Coming soon…
+            </p>
+            <p class="
+sponsors-tit"> Weather Forecast
+
+
+            </p>
+            <div class="cdio-line"></div>
+            <p>
+                <a href="http://en.weather.com.cn/weather/101070201.shtml
+">http://en.weather.com.cn/weather/101070201.shtml
+</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="path_blu">
+        <div class="container">
+            <div class="map" id="baiduMap"></div>
         </div>
     </div>
 
@@ -149,6 +477,22 @@
         </div>
     </footer>
     <script>
+        $(function() {
+            $('.zp-slide').zpSlide({
+                //'original':1, //414px小屏幕，默认显示1个
+                'xs': 1, //640px小屏幕，默认显示2个，当前自定义显示1个
+                'sm': 2, //768px中屏幕，默认显示3个，当前自定义显示2个
+                'md': 3, //1024px中屏幕，默认显示4个，当前自定义显示3个
+                'lg': 3 //1280px大屏幕，默认显示5个，当前自定义显示3个
+            });
+            var map = new BMap.Map("baiduMap");
+            map.centerAndZoom(new BMap.Point(121.542016, 38.895438), 17);
+            map.addControl(new BMap.NavigationControl());
+            map.addControl(new BMap.ScaleControl());
+            map.addControl(new BMap.OverviewMapControl());
+            map.addControl(new BMap.MapTypeControl());
+        })
+
         function change(type) {
             // console.log($('#tagShow').css)
             switch (type) {
