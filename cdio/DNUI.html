@@ -42,6 +42,34 @@
     .zp-slide {
         overflow: hidden;
         position: relative;
+        width: 80%;
+        margin: 0px auto 30px auto;
+    }
+    
+    @media only screen and (min-width: 321px) and (max-width: 1024px) {
+        .zp-slide {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+        [class^=zp-slide-] {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            margin-top: -25px;
+            left: 30px;
+            opacity: 0.8;
+        }
+        [class^=zp-slide-]:hover {
+            opacity: 1;
+        }
+        .zp-slide-right {
+            left: auto;
+            right: 30px;
+        }
     }
     
     .zp-slide>ul {
@@ -60,12 +88,12 @@
     [class^=zp-slide-] {
         display: block;
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         top: 50%;
-        margin-top: -15px;
-        left: 30px;
-        opacity: 0.5;
+        margin-top: -25px;
+        left: 10px;
+        opacity: 0.8;
     }
     
     [class^=zp-slide-]:hover {
@@ -74,7 +102,7 @@
     
     .zp-slide-right {
         left: auto;
-        right: 30px;
+        right: 10px;
     }
 </style>
 
@@ -112,20 +140,20 @@
                             </div>
                         </li>
                         <li>
-                            <a href="./program.html">Organizing Committee</a>
+                            <a href="./organ.html">Organizing Committee</a>
                         </li>
                         <li>
-                            <a href="./program.html">Registration</a>
+                            <a href="./Registration.html">Registration</a>
                         </li>
 
                         <li>
                             <a href="./program.html">Program</a>
                         </li>
                         <li>
-                            <a href="./program.html">Speaker</a>
+                            <a href="./speaker.html">Speaker</a>
                         </li>
                         <li>
-                            <a href="./Sponsors.html">Sponsors</a>
+                            <a href="./Sponsors.html">Information</a>
                         </li>
 
                     </ul>
@@ -154,9 +182,9 @@
         <div class="content">
             <div class="one-titles">About DNUI
             </div>
-            <p>&nbsp &nbsp &nbsp Dalian Neusoft University of Information (DNUI) is a private university founded in 2000 by Neusoft Holdings with the Ministry of Education’s approval. The university is located at Dalian, a beautiful coastal city and economic
-                center in Northeast China. DNUI has fifteen academic departments and schools offering undergraduate degrees, international education programs and postgraduate programs across a number of disciplines including management, digital arts and
-                liberal arts with a strong focus on IT engineering. Over 14,000 students are currently enrolled at DNUI. The average annual employment rate of the last three years is over 93%.
+            <p>Dalian Neusoft University of Information (DNUI) is a private university founded in 2000 by Neusoft Holdings with the Ministry of Education’s approval. The university is located at Dalian, a beautiful coastal city and economic center in Northeast
+                China. DNUI has fifteen academic departments and schools offering undergraduate degrees, international education programs and postgraduate programs across a number of disciplines including management, digital arts and liberal arts with
+                a strong focus on IT engineering. Over 14,000 students are currently enrolled at DNUI. The average annual employment rate of the last three years is over 93%.
 
             </p>
 
@@ -231,9 +259,7 @@
                             <div> <i class="fa fa-qq" aria-hidden="true"></i></div>
                         </div>
 
-                        <p>网站策划：品牌发展部
-                            </br> 设计及技术支持：微光网络工作室
-                            </br> 意见反馈：laiwanyun@neusoft.edu.cn
+                        <p>Powered by Shimmer network studio
                         </p>
                     </div>
 
@@ -256,6 +282,13 @@
             map.addControl(new BMap.ScaleControl());
             map.addControl(new BMap.OverviewMapControl());
             map.addControl(new BMap.MapTypeControl());
+            var opts = {
+                width: 280, // 信息窗口宽度    
+                height: 70, // 信息窗口高度    
+                title: "Dalian Neusoft University of Information" // 信息窗口标题   
+            }
+            var infoWindow = new BMap.InfoWindow("Address：8 Software Park Rd.Dalian. P.R.China ", opts); // 创建信息窗口对象    
+            map.openInfoWindow(infoWindow, map.getCenter());
         })
 
         function change(type) {

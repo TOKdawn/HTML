@@ -42,6 +42,34 @@
     .zp-slide {
         overflow: hidden;
         position: relative;
+        width: 80%;
+        margin: 0px auto 30px auto;
+    }
+    
+    @media only screen and (min-width: 321px) and (max-width: 1024px) {
+        .zp-slide {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+        [class^=zp-slide-] {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            margin-top: -25px;
+            left: 30px;
+            opacity: 0.8;
+        }
+        [class^=zp-slide-]:hover {
+            opacity: 1;
+        }
+        .zp-slide-right {
+            left: auto;
+            right: 30px;
+        }
     }
     
     .zp-slide>ul {
@@ -60,12 +88,12 @@
     [class^=zp-slide-] {
         display: block;
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
         top: 50%;
-        margin-top: -15px;
-        left: 30px;
-        opacity: 0.5;
+        margin-top: -25px;
+        left: 10px;
+        opacity: 0.8;
     }
     
     [class^=zp-slide-]:hover {
@@ -74,7 +102,7 @@
     
     .zp-slide-right {
         left: auto;
-        right: 30px;
+        right: 10px;
     }
 </style>
 
@@ -112,20 +140,20 @@
                             </div>
                         </li>
                         <li>
-                            <a href="">Organizing Committee</a>
+                            <a href="./organ.html">Organizing Committee</a>
                         </li>
                         <li>
-                            <a href="">Registration</a>
+                            <a href="./Registration.html">Registration</a>
                         </li>
 
                         <li>
-                            <a href="">Program</a>
+                            <a href="./program.html">Program</a>
                         </li>
                         <li>
-                            <a href="">Speaker</a>
+                            <a href="./speaker.html">Speaker</a>
                         </li>
                         <li class="active">
-                            <a href="#">Sponsors</a>
+                            <a href="#">Information</a>
                         </li>
 
                     </ul>
@@ -152,23 +180,27 @@
 
     <div class="Sponsors_wit">
         <div class="content">
-            <div class="one-titles">About Dalian City
+
+            <div class="cdio-title">About Dalian City
             </div>
-            <p>&nbsp &nbsp &nbsp Dalian is a major city and seaport in the south of Liaoning Province, China. It is located on Korea Bay north of the Yellow Sea and roughly in the middle of the Liaodong peninsula at its narrowest neck or isthmus. With a
-                coastline of 1,906 km (1,184 mi), it governs the majority of the Liaodong Peninsula and about 260 surrounding islands and reefs. Dalian is the province’s second largest city and has sub-provincial administrative status. It is also a financial,
-                shipping and logistics center for Northeast Asia.
-                </br>&nbsp &nbsp &nbsp Dalian is located in the warm temperate zone of the Northern Hemisphere with oceanic climate; it's neither cold in winter nor hot in summer. The annual mean temperature is 10.90 °C. The monthly 24-hour average temperature
-                ranges from −3.9 °C in January to 24.1 °C in August. And the annual precipitation is 550—950mm, the whole year sunshine duration is 2500—2800 hours.
-                </br>&nbsp &nbsp &nbsp Standard Mandarin is usually spoken in Dalian because it is a city with people from various locations. But Dalian natives use Dalian dialect, which belongs to the Jiaoliao Mandarin subgroup spoken in parts of Shandong
-                and Liaoning provinces.
-                </br>&nbsp &nbsp &nbsp Dalian is a popular destination among domestic tourists and foreign visitors, especially from Japan, South Korea and Russia. Its mild climate and multiple beaches as well as its importance in the modern history of
-                China have attracted tourists. Some of the most famous beaches are Jinshitan Golden Coast (金石滩黄金海岸) beach, Fujiazhuang (付家庄) beach, Bangchuidao (棒棰岛) beach, Xinghai Park (星海公园) beach, Xinghai Bay (星海湾) beach, and Xiajiahezi (夏家河子) beach.
-                Dalian is also famous for its Square Culture. There are more than eighty squares in Dalian, among them the most famous are Zhongshan Square(中山广场), Friendship Square(友谊广场), Xinghai Square(星海广场), Peoples Square(人民广场), Olympic Square(奥林匹克广场)
-                and so on. Up to now, the Green completed area has reached 40% in Dalian.
-                </br>&nbsp &nbsp &nbsp In 2016, Dalian ranks 48th in the Global Financial Centres Index, the other Chinese cities on the list being Hong Kong, Shanghai, Shenzhen, Beijing and Qingdao. In 2012, Dalian ranked 82nd in the Global City Competitiveness
-                Index. In 2006, Dalian was named China's most livable city by China Daily. The National Tourism Administration and the United Nations World Tourism Organization named Dalian as "The Optimum Tourist City", this title further expands the
-                reputation of Dalian both at home and abroad, thus attracts more tourists to travel and visit Dalian.
-                </br>&nbsp &nbsp &nbsp For more information about Dalian city and its attractions, please go to the official tourist information website (Language: English, Japanese, Korean, Russian, and etc.):<a herf="http://www.dltour.gov.cn/">http://www.dltour.gov.cn/</a>
+            <div class="cdio-line"></div>
+            <p> Dalian is a major city and seaport in the south of Liaoning Province, China. It is located on Korea Bay north of the Yellow Sea and roughly in the middle of the Liaodong peninsula at its narrowest neck or isthmus. With a coastline of 1,906
+                km (1,184 mi), it governs the majority of the Liaodong Peninsula and about 260 surrounding islands and reefs. Dalian is the province’s second largest city and has sub-provincial administrative status. It is also a financial, shipping and
+                logistics center for Northeast Asia.
+                </br>
+                <br> Dalian is located in the warm temperate zone of the Northern Hemisphere with oceanic climate; it's neither cold in winter nor hot in summer. The annual mean temperature is 10.90 °C. The monthly 24-hour average temperature ranges from
+                −3.9 °C in January to 24.1 °C in August. And the annual precipitation is 550—950mm, the whole year sunshine duration is 2500—2800 hours.
+                </br>
+                <br> Standard Mandarin is usually spoken in Dalian because it is a city with people from various locations. But Dalian natives use Dalian dialect, which belongs to the Jiaoliao Mandarin subgroup spoken in parts of Shandong and Liaoning
+                provinces.
+                </br><br> Dalian is a popular destination among domestic tourists and foreign visitors, especially from Japan, South Korea and Russia. Its mild climate and multiple beaches as well as its importance in the modern history of China have
+                attracted tourists. Some of the most famous beaches are Jinshitan Golden Coast (金石滩黄金海岸) beach, Fujiazhuang (付家庄) beach, Bangchuidao (棒棰岛) beach, Xinghai Park (星海公园) beach, Xinghai Bay (星海湾) beach, and Xiajiahezi (夏家河子) beach. Dalian is
+                also famous for its Square Culture. There are more than eighty squares in Dalian, among them the most famous are Zhongshan Square(中山广场), Friendship Square(友谊广场), Xinghai Square(星海广场), Peoples Square(人民广场), Olympic Square(奥林匹克广场) and so
+                on. Up to now, the Green completed area has reached 40% in Dalian.
+                </br><br> In 2016, Dalian ranks 48th in the Global Financial Centres Index, the other Chinese cities on the list being Hong Kong, Shanghai, Shenzhen, Beijing and Qingdao. In 2012, Dalian ranked 82nd in the Global City Competitiveness Index.
+                In 2006, Dalian was named China's most livable city by China Daily. The National Tourism Administration and the United Nations World Tourism Organization named Dalian as "The Optimum Tourist City", this title further expands the reputation
+                of Dalian both at home and abroad, thus attracts more tourists to travel and visit Dalian.
+                </br><br> For more information about Dalian city and its attractions, please go to the official tourist information website (Language: English, Japanese, Korean, Russian, and etc.):<a herf="http://www.dltour.gov.cn/">http://www.dltour.gov.cn/</a>
 
 
             </p>
@@ -178,32 +210,32 @@
             <ul>
                 <li>
                     <a href="">
-                        <img src="img/a1.jpg" />
+                        <img src="img/i1.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/a2.jpg" />
+                        <img src="img/i2.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/a3.jpg" />
+                        <img src="img/i3.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/a4.jpg" />
+                        <img src="img/i4.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/a5.jpg" />
+                        <img src="img/i5.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="img/a6.jpg" />
+                        <img src="img/i6.jpg" />
                     </a>
                 </li>
             </ul>
@@ -215,8 +247,10 @@
     <div class="Sponsors-blu">
 
         <div class="content">
-
-            <div class="sponsors-titles">Transportation Information
+            <div class="cdio-title">Transportation Information
+            </div>
+            <div class="cdio-line"></div>
+            <div class="sponsors-titles">Airport
 
             </div>
             <p>
@@ -225,8 +259,9 @@
                 Europe, North America, and Middle East. In 2014 the airport handled 17,203,640 passengers, making it the busiest airport in Northeast China and the 16th busiest nationwide.
 
             </p>
-            <table class="table table-bordered">
-                <thead>
+            <table class="table table-bordered cdio-table">
+
+                <tbody>
                     <tr>
                         <th>
                             东京(TYO)
@@ -253,8 +288,6 @@
                             FUKUOKA
                         </th>
                     </tr>
-                </thead>
-                <tbody>
                     <tr>
                         <th>
                             名古屋(NGO)
@@ -363,26 +396,26 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="sponsors_title_plus">International and Special Administrative Region routes
-            </p>
+            <div class="infor-text">International and Special Administrative Region routes
+            </div>
 
 
-            <p class="sponsors_title_plus">Dalian Train Stations
+            <div class="sponsors-titles">Dalian Train Stations
 
-            </p>
+            </div>
             <p>Dalian Railway Station大连站 is located at the city center, Zhongshan District of Dalian city. It is a main station in the northeast of China.
             </p>
-            </br>
+
 
 
             <p>Dalian North Railway Station大连北站 is located at the north of Dalian city. It is about 17.5 km away from Dalian Railway Station. It is the main high-speed railway station in Dalian. Need to buy train tickets? Please go to the official website
                 (Language: Chinese): <a href="http://www.12306.cn/mormhweb/">http://www.12306.cn/mormhweb/ </a>an city. It is a main station in the northeast of China.
             </p>
 
-            <p class="sponsors_title_plus">City Public Transportation
+            <div class="sponsors-titles">City Public Transportation
 
 
-            </p>
+            </div>
             <p class="sponsors_title_plus">Taxi
 
 
@@ -430,8 +463,7 @@ sponsors-tit"> Weather Forecast
             </p>
             <div class="cdio-line"></div>
             <p>
-                <a href="http://en.weather.com.cn/weather/101070201.shtml
-">http://en.weather.com.cn/weather/101070201.shtml
+                <a href="http://en.weather.com.cn/weather/101070201.shtml">http://en.weather.com.cn/weather/101070201.shtml
 </a>
             </p>
         </div>
@@ -466,9 +498,7 @@ sponsors-tit"> Weather Forecast
                             <div> <i class="fa fa-qq" aria-hidden="true"></i></div>
                         </div>
 
-                        <p>网站策划：品牌发展部
-                            </br> 设计及技术支持：微光网络工作室
-                            </br> 意见反馈：laiwanyun@neusoft.edu.cn
+                        <p>Powered by Shimmer network studio
                         </p>
                     </div>
 
@@ -491,6 +521,13 @@ sponsors-tit"> Weather Forecast
             map.addControl(new BMap.ScaleControl());
             map.addControl(new BMap.OverviewMapControl());
             map.addControl(new BMap.MapTypeControl());
+            var opts = {
+                width: 280, // 信息窗口宽度    
+                height: 70, // 信息窗口高度    
+                title: "Dalian Neusoft University of Information" // 信息窗口标题   
+            }
+            var infoWindow = new BMap.InfoWindow("Address：8 Software Park Rd.Dalian. P.R.China ", opts); // 创建信息窗口对象    
+            map.openInfoWindow(infoWindow, map.getCenter());
         })
 
         function change(type) {

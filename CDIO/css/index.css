@@ -61,8 +61,7 @@ img {
 }
 
 a {
-    text-decoration: none;
-    color: #232323;
+    text-decoration: none !important;
 }
 
 table {
@@ -406,7 +405,7 @@ header {
         padding-left: 40px;
     }
     .path_blu2 {
-        height: 630px;
+        height: 630px !important;
     }
     .tag-bar {
         margin-top: 50px !important;
@@ -415,8 +414,26 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .cdio-title {
+        font-size: 18px !important;
+    }
+    .cdio-text {
+        font-size: 13px !important;
+    }
+    .cdio-img-text {
+        font-size: 14px !important;
+    }
+    .cdio-table {
+        word-break: break-all !important;
+    }
+    .cdio-table th {
+        padding: 2px !important;
+    }
     .cdioImg2 {
         width: 80% !important;
+    }
+    .cdioImg1 {
+        width: 95% !important;
     }
     .one-title a {
         margin-top: 0px !important;
@@ -489,11 +506,14 @@ header {
     }
     .path_wit p {
         padding-left: 50px;
-        font-size: 15px !important;
+        font-size: 14px !important;
         padding: 10px 40px !important;
         line-height: 20px !important;
         word-wrap: keep-all !important;
         text-align: left;
+    }
+    .Sponsors_wit p {
+        font-size: 14px !important;
     }
     .new-title {
         padding: 0 15px !important;
@@ -607,7 +627,7 @@ header {
         font-weight: 300;
     }
     .path_blu2 {
-        height: 450px;
+        height: 450px !important;
     }
 }
 
@@ -639,11 +659,11 @@ header {
 }
 
 .bg2>div:nth-child(3) {
-    background: url(../img/1.jpg) center top / 100% auto no-repeat;
+    background: url(../img/3.jpg) center top / 100% auto no-repeat;
 }
 
 .bg2>div:nth-child(4) {
-    background: url(../img/2.jpg) center top / 100% auto no-repeat;
+    background: url(../img/4.jpg) center top / 100% auto no-repeat;
 }
 
 
@@ -740,11 +760,11 @@ header {
 
 .path_wit p {
     color: #999;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
 }
 
 .news {
@@ -757,12 +777,14 @@ header {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: left;
+    min-height: 56px;
 }
 
 .new-text {
     color: #999;
     margin-bottom: 35px;
     text-align: left;
+    min-height: 50px;
 }
 
 .news img {
@@ -966,6 +988,7 @@ header {
 .footer-one p {
     width: 300px;
     margin: auto;
+    padding-left: 10px;
     text-align: left;
     line-height: 20px;
 }
@@ -989,10 +1012,11 @@ header {
 
 .footer-two p {
     width: 300px;
-    margin: 10px auto 0px auto;
+    margin: 30px auto 0px auto;
+    padding-left: 10px;
     text-align: left;
     color: #555b5b;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -1011,15 +1035,15 @@ header {
 /* cdio */
 
 .cdio-title {
-    color: #666;
-    font-size: 20px;
+    color: #333;
+    font-size: 28px;
     margin-top: 50px;
     text-align: left !important;
     padding-left: 10px;
 }
 
 .cdio-line {
-    width: 120px;
+    width: 150px;
     height: 3px;
     background-color: #2b85d2;
     /* float: left; */
@@ -1038,11 +1062,12 @@ header {
 
 .cdio-img-text {
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     width: 100%;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 30px;
+    margin-top: 5px;
 }
 
 .cdio-wit {
@@ -1059,6 +1084,7 @@ header {
     color: #777;
     font-size: 16px;
     text-align: left;
+    line-height: 28px;
     width: 100%;
     padding: 0px 30px;
     margin-bottom: 25px;
@@ -1072,7 +1098,7 @@ header {
 .Sponsors_wit p {
     text-align: left;
     color: #666;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     margin: 30px 0px 40px 10px;
 }
@@ -1083,6 +1109,7 @@ header {
 }
 
 .Sponsors-blu {
+    padding-top: 30px;
     width: 100%;
     background-color: #eff7fe;
 }
@@ -1090,9 +1117,9 @@ header {
 .Sponsors-blu p {
     text-align: left;
     color: #666;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
-    margin: 30px 0px 40px 10px;
+    margin: 30px 0px 30px 10px;
 }
 
 .sponsors_emp {
@@ -1102,20 +1129,60 @@ header {
 
 .sponsors-titles {
     color: #666;
-    font-size: 33px;
-    padding-top: 50px;
-    margin-top: 50px;
+    font-size: 25px;
+    margin-top: 40px;
 }
 
 .sponsors_title_plus {
     color: #333 !important;
-    font-size: 30px !important;
-    padding-top: 30px;
-    margin-top: 30px;
+    font-size: 23px !important;
+    padding-top: 15px;
+    margin-bottom: 20px !important;
 }
 
 .sponsors-tit {
     color: #333 !important;
     font-size: 30px !important;
     margin: 30px 0px 0px 10px !important;
+}
+
+
+/* 微调 */
+
+.dropdown-menu>li>a:hover {
+    background-color: transparent;
+}
+
+.ico-bar i {
+    cursor: pointer;
+}
+
+.path_blu2 {
+    height: 520px;
+}
+
+.new-title:hover {
+    color: #333;
+}
+
+.new-text:hover {
+    color: #666;
+}
+
+.cdio-table tbody {
+    color: #666;
+    font-size: 14px;
+}
+
+.cdio-table th {
+    text-align: center;
+}
+
+.infor-text {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
