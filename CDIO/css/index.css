@@ -249,7 +249,7 @@ header {
         margin-left: 5% !important;
     }
     .two-path {
-        padding-left: 50px !important;
+        padding-left: 30px !important;
     }
     .two-path p:nth-child(1) {
         margin-top: 60px !important;
@@ -280,6 +280,10 @@ header {
 
 @media screen and (max-width: 992px) and (min-width:768px) {
     /* ipad */
+    .movie {
+        margin: 30px auto 30px auto !important;
+        width: 640px !important;
+    }
     header {
         position: fixed !important;
         width: 100% !important;
@@ -333,7 +337,7 @@ header {
         margin-left: 10% !important;
     }
     .two-path {
-        padding-left: 50px;
+        padding-left: 30px !important;
         text-align: left !important;
     }
     .two-button {
@@ -414,9 +418,25 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .sponsors_title_plus {
+        font-size: 18px !important;
+        padding-left: 10px;
+    }
+    .sponsors-titles {
+        font-size: 23px !important;
+    }
+    .sponsors-tit {
+        font-size: 20px !important;
+    }
+    .Sponsors-blu p {
+        font-size: 14px !important;
+    }
+    .cdio-line {
+        width: 80px !important;
+    }
     .movie {
         margin: 30px auto 30px auto !important;
-        width: 320px !important;
+        width: 290px !important;
     }
     .cdio-title {
         font-size: 18px !important;
@@ -528,21 +548,21 @@ header {
         font-size: 14px !important;
     }
     .two-path p:nth-child(1) {
-        padding-left: 50px;
+        padding-left: 10px;
         font-size: 20px !important;
         margin-top: 50px !important;
     }
     .two-path p:nth-child(3) {
-        padding-left: 50px;
+        padding-left: 10px;
         font-size: 15px !important;
         margin-top: 20px !important;
     }
     .line {
         margin-top: 20px !important;
-        margin-left: 50px !important;
+        margin-left: 10px !important;
     }
     .two-path p:nth-child(4) {
-        padding-left: 50px;
+        padding-left: 10px;
         font-size: 12px !important;
         line-height: 20px !important;
     }
@@ -1003,7 +1023,7 @@ header {
     height: 50px;
 }
 
-.ico-bar div {
+.fuckkkkkk {
     width: 50px;
     height: 50px;
     background: #474747;
@@ -1012,6 +1032,32 @@ header {
     color: #fff;
     font-size: 32px;
     border-radius: 37px;
+}
+
+.fuckkkkkk a {
+    color: #fff;
+}
+
+.ico-bar button {
+    width: 50px;
+    height: 50px;
+    background: #474747;
+    float: left;
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 37px;
+    padding: 0;
+    border: none;
+}
+
+.ico-bar button:hover {
+    background: #474747;
+    color: #fff;
+}
+
+.ico-bar button:focus {
+    outline: none;
 }
 
 .footer-two p {
@@ -1096,7 +1142,8 @@ header {
 
 .movie {
     margin: 50px auto 50px auto;
-    width: 640px;
+    width: 940px;
+    z-index: 20;
 }
 
 .Sponsors_wit p {
@@ -1142,12 +1189,8 @@ header {
     font-size: 23px !important;
     padding-top: 15px;
     margin-bottom: 20px !important;
-}
-
-.sponsors-tit {
-    color: #333 !important;
-    font-size: 30px !important;
-    margin: 30px 0px 0px 10px !important;
+    text-align: left;
+    padding-left: 10px;
 }
 
 
@@ -1195,4 +1238,18 @@ header {
     width: 100%;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+.sponsors-tit {
+    color: #333;
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.tooltip-inner {
+    background: url("../img/schoo.png") 0 0/100% 100% no-repeat;
+    height: 150px;
+    width: 150px;
 }
