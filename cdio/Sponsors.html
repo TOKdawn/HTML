@@ -23,7 +23,7 @@
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="./js/swiper-3.4.2.jquery.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=iKY3WKUMKb7xy4uOLmNd3ThpeYGb8Slx&services=&t=20180201111639"></script>
-
+<script type="text/javascript" src="./js/jquery.goup.js"></script>
 <style type="text/css">
     html,
     body {
@@ -150,7 +150,7 @@
                             <a href="./program.html">Program</a>
                         </li>
                         <li>
-                            <a href="./speaker.html">Speaker</a>
+                            <a href="./speaker.html">Speakers</a>
                         </li>
                         <li class="active">
                             <a href="#">Information</a>
@@ -170,22 +170,40 @@
         </div>
     </div>
     <div class="introduce">
-        25 March 2019
+        2019 CDIO Asian Regional Meeting
         </br>
-        Dalian, Liaoning, China
+        25-27 March 2019 Dalian, Liaoning, China
         </br>
         <p>Dalian Neusoft University of Information</p>
         <div class="introduce_button">LEARN MORE</div>
     </div>
+    <div class="mao">
+        <ul>
+            <li><a href="#ADC"> About Dalian City</a></li>
+            <li>
+                <a href="#TI">Transportation Information</a>
+            </li>
+            <li>
+                <a href="#V">Venue </a>
+            </li>
+            <li>
+                <a href="#A">Accommodation</a>
+            </li>
+            <li>
+                <a href="#WF">Weather Forecast </a>
+            </li>
+        </ul>
+    </div>
+
 
     <div class="Sponsors_wit">
         <div class="content">
 
-            <div class="sponsors-tit">About Dalian City
+            <div id="ADC" class="sponsors-tit">About Dalian City
             </div>
             <div class="cdio-line"></div>
             <p> Dalian is a major city and seaport in the south of Liaoning Province, China. It is located on Korea Bay north of the Yellow Sea and roughly in the middle of the Liaodong peninsula at its narrowest neck or isthmus. With a coastline of 1,906
-                km (1,184 mi), it governs the majority of the Liaodong Peninsula and about 260 surrounding islands and reefs. Dalian is the province’s second largest city and has sub-provincial administrative status. It is also a financial, shipping and
+                km (1,184 mi), it governs the majority of the Liaodong Peninsula and about 260 surrounding islands and reefs. Dalian is the province's second largest city and has sub-provincial administrative status. It is also a financial, shipping and
                 logistics center for Northeast Asia.
                 </br>
                 <br> Dalian is located in the warm temperate zone of the Northern Hemisphere with oceanic climate; it's neither cold in winter nor hot in summer. The annual mean temperature is 10.90 °C. The monthly 24-hour average temperature ranges from
@@ -247,7 +265,7 @@
     <div class="Sponsors-blu">
 
         <div class="content">
-            <div class="sponsors-tit">Transportation Information
+            <div id="TI" class="sponsors-tit">Transportation Information
             </div>
             <div class="cdio-line"></div>
             <div class="sponsors-titles">Airport
@@ -439,7 +457,7 @@
     </div>
     <div class="Sponsors_wit">
         <div class="content">
-            <div class="
+            <div id="V" class="
 sponsors-tit">Venue
 
 
@@ -447,7 +465,7 @@ sponsors-tit">Venue
             <div class="cdio-line"></div>
             <p>Coming soon…
             </p>
-            <div class="
+            <div id="A" class="
 sponsors-tit">Accommodation
 
 
@@ -456,7 +474,7 @@ sponsors-tit">Accommodation
             <div class="cdio-line"></div>
             <p>Coming soon…
             </p>
-            <div class="
+            <div id="WF" class="
 sponsors-tit"> Weather Forecast
 
 
@@ -493,10 +511,19 @@ sponsors-tit"> Weather Forecast
                     </div>
                     <div class="col-md-6 footer-two">
                         <div class="ico-bar">
-                            <div><i class="fa fa-weibo" aria-hidden="true"></i></div>
-                            <div> <i class="fa fa-weixin" aria-hidden="true"></i></div>
-                            <div> <i class="fa fa-qq" aria-hidden="true"></i></div>
+                            <div class="fuckkkkkk">
+                                <a href="https://weibo.com/neusoftii?sudaref=www.neusoft.edu.cn&display=0&retcode=6102"> <i class="fa fa-weibo" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title=" ">
+                                <i class="fa fa-weixin" aria-hidden="true"></i>
+                                </button>
+                            <div class="fuckkkkkk">
+                                <i class="fa fa-qq" aria-hidden="true"></i>
+                            </div>
+
                         </div>
+
 
                         <p>Powered by Shimmer network studio
                         </p>
@@ -508,6 +535,23 @@ sponsors-tit"> Weather Forecast
     </footer>
     <script>
         $(function() {
+            $.goup({
+
+                trigger: 100,
+
+                bottomOffset: 150,
+
+                locationOffset: 30,
+
+                title: '',
+
+                titleAsText: true
+
+            });
+
+
+
+            $('[data-toggle="tooltip"]').tooltip()
             $('.zp-slide').zpSlide({
                 //'original':1, //414px小屏幕，默认显示1个
                 'xs': 1, //640px小屏幕，默认显示2个，当前自定义显示1个
