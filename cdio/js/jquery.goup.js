@@ -16,7 +16,7 @@
             location: 'right',
             locationOffset: 20,
             bottomOffset: 10,
-            containerRadius: 10,
+            containerRadius: 0,
             containerClass: 'goup-container',
             arrowClass: 'goup-arrow',
             alwaysVisible: false,
@@ -24,7 +24,7 @@
             entryAnimation: 'fade',
             goupSpeed: 'slow',
             hideUnderWidth: 500,
-            containerColor: '#000',
+            containerColor: '#0088cc',
             arrowColor: '#fff',
             title: '',
             titleAsText: false,
@@ -90,8 +90,8 @@
         var containerStyle = {};
         containerStyle = {
             position: 'fixed',
-            width: 40,
-            height: 40,
+            width: 60,
+            height: 60,
             background: containerColor,
             cursor: 'pointer'
         };
@@ -121,7 +121,7 @@
         arrowStyle = {
             width: 0,
             height: 0,
-            margin: '0 auto',
+            margin: '10px auto',
             'padding-top': 13,
             'border-style': 'solid',
             'border-width': '0 10px 10px 10px',

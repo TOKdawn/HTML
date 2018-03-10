@@ -290,6 +290,9 @@ header {
 
 @media screen and (max-width: 992px) and (min-width:768px) {
     /* ipad */
+    .maomao .btn {
+        font-size: 14px !important;
+    }
     .mao ul>li {
         float: left;
         font-size: 16px;
@@ -438,6 +441,9 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .maomao {
+        display: none;
+    }
     .mao ul>li {
         float: left;
         font-size: 13px !important;
@@ -1027,7 +1033,7 @@ header {
     font-size: 20px;
     padding-top: 20px;
     height: 200px;
-    width: 80%;
+    max-width: 1200px;
 }
 
 .footer-one {
@@ -1264,6 +1270,7 @@ header {
 .cdio-table th {
     text-align: center;
     font-weight: 500;
+    vertical-align: middle !important;
 }
 
 .infor-text {
@@ -1309,11 +1316,36 @@ header {
 
 .mao ul>li {
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     width: 20%;
     background: lightgoldenrodyellow;
     height: 30px;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-top: 5px;
+}
+
+.maomao {
+    height: 50px;
+    border: none;
+    padding: .8em 1em;
+    background: hsl(210, 13%, 60%);
+    color: hsl(210, 13%, 30%);
+    text-shadow: 0 1px 1px rgba(220, 220, 220, 0.8);
+    padding: 0px;
+    word-wrap: break-word;
+}
+
+.maomao .btn-default {
+    border: none;
+    background-color: transparent;
+    word-wrap: break-word !important;
+}
+
+.maomao .btn {
+    font-size: 16px;
+}
+
+.btn-default:hover {
+    background-color: transparent;
 }
