@@ -441,6 +441,10 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .one-titles {
+        font-size: 20px !important;
+        margin-top: 30px !important;
+    }
     .maomao {
         display: none;
     }
@@ -512,7 +516,7 @@ header {
         margin-top: 16px !important;
     }
     .swiperOne {
-        height: 390px !important;
+        height: 330px !important;
         width: 100%;
         overflow: hidden;
         margin: auto;
@@ -567,8 +571,8 @@ header {
     .path_wit p {
         padding-left: 50px;
         font-size: 14px !important;
-        padding: 10px 40px !important;
-        line-height: 20px !important;
+        padding: 10px 20px !important;
+        line-height: 24px !important;
         word-wrap: keep-all !important;
         text-align: left;
     }
@@ -738,6 +742,7 @@ header {
     line-height: 60px;
     font-size: 40px;
     text-shadow: 4px 2px 15px #000;
+    font-weight: 800;
     /* margin: auto; */
 }
 
@@ -794,6 +799,10 @@ header {
     padding-left: 10px;
 }
 
+.tongyi {
+    color: #0e73c0 !important;
+}
+
 .one-title a {
     color: #888;
     float: right;
@@ -819,7 +828,7 @@ header {
 }
 
 .path_wit p {
-    color: #999;
+    color: #666;
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -841,7 +850,7 @@ header {
 }
 
 .new-text {
-    color: #999;
+    color: #666;
     margin-bottom: 35px;
     text-align: left;
     min-height: 50px;
@@ -1290,15 +1299,21 @@ header {
     padding-left: 10px;
 }
 
-.tooltip-inner {
+.qqbu+div .tooltip-inner {
+    background: url("../img/weixin.jpg") 0 0/100% 100% no-repeat;
+    height: 150px;
+    width: 150px;
+}
+
+.wxbu+div .tooltip-inner {
     background: url("../img/schoo.png") 0 0/100% 100% no-repeat;
     height: 150px;
     width: 150px;
 }
 
 .wbsite {
-    text-align: right;
-    padding-right: 30px;
+    text-align: left;
+    padding-left: 30px;
     font-size: 18px;
     width: 100%;
 }
@@ -1329,11 +1344,19 @@ header {
     height: 50px;
     border: none;
     padding: .8em 1em;
-    background: hsl(210, 13%, 60%);
-    color: hsl(210, 13%, 30%);
+    background: hsl(210, 13%, 30%);
     text-shadow: 0 1px 1px rgba(220, 220, 220, 0.8);
     padding: 0px;
     word-wrap: break-word;
+}
+
+.maomao a {
+    color: #fff;
+    text-shadow: 0 -1px 1px black;
+}
+
+.maomao .btn-default:hover {
+    color: #fff !important;
 }
 
 .maomao .btn-default {
@@ -1348,4 +1371,8 @@ header {
 
 .btn-default:hover {
     background-color: transparent;
+}
+
+.gai {
+    margin-bottom: 10px !important;
 }
