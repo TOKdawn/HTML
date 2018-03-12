@@ -263,7 +263,7 @@ header {
     }
     .two-path p:nth-child(1) {
         margin-top: 60px !important;
-        color: #0e73c0;
+        color: #666;
         font-size: 30px;
     }
     .two-path p:nth-child(3) {
@@ -412,7 +412,7 @@ header {
         height: 310px !important;
     }
     .tag-text i {
-        font-size: 80px !important;
+        font-size: 70px !important;
         margin: auto;
         display: block;
     }
@@ -441,6 +441,10 @@ header {
 
 @media screen and (max-width:767px) and (min-width:200px) {
     /* iphnoe */
+    .wbsite {
+        font-size: 14px !important;
+        padding-left: 20px;
+    }
     .one-titles {
         font-size: 20px !important;
         margin-top: 30px !important;
@@ -473,6 +477,7 @@ header {
     }
     .cdio-line {
         width: 80px !important;
+        margin-left: 0px !important
     }
     .movie {
         margin: 30px auto 30px auto !important;
@@ -480,9 +485,12 @@ header {
     }
     .cdio-title {
         font-size: 18px !important;
+        padding-left: 0px !important;
     }
     .cdio-text {
         font-size: 13px !important;
+        padding: 0px 10px !important;
+        line-height: 24px !important;
     }
     .cdio-img-text {
         font-size: 14px !important;
@@ -501,6 +509,7 @@ header {
     }
     .one-title a {
         margin-top: 0px !important;
+        font-size: 14px !important;
     }
     .DNUInav {
         padding: 15px 0px 3px 15px;
@@ -578,6 +587,7 @@ header {
     }
     .Sponsors_wit p {
         font-size: 14px !important;
+        line-height: 24px !important;
     }
     .new-title {
         padding: 0 15px !important;
@@ -593,7 +603,7 @@ header {
         margin-top: 50px !important;
     }
     .two-path p:nth-child(3) {
-        padding-left: 10px;
+        padding-left: 0px;
         font-size: 15px !important;
         margin-top: 20px !important;
     }
@@ -616,8 +626,8 @@ header {
         margin: 22px auto 50px auto !important;
     }
     .three-path>p:nth-child(1) {
-        margin-top: 50px !important;
-        margin-bottom: 0px !important;
+        margin-top: 80px !important;
+        margin-bottom: 130px !important;
         font-size: 25px !important;
     }
     header {
@@ -677,7 +687,7 @@ header {
     .tag-text h1 {
         font-size: 15px !important;
         color: #666;
-        margin-top: 30px !important;
+        margin-top: 25px !important;
         margin-bottom: 20px !important;
     }
     .tag-text p {
@@ -741,7 +751,7 @@ header {
     width: 100%;
     line-height: 60px;
     font-size: 40px;
-    text-shadow: 4px 2px 15px #000;
+    text-shadow: 2px 1px 5px #000;
     font-weight: 800;
     /* margin: auto; */
 }
@@ -814,12 +824,20 @@ header {
 }
 
 .one-titles {
-    color: #666;
+    color: #666 !important;
     font-size: 33px;
     margin-top: 50px;
 }
 
 .one-line {
+    width: 90px;
+    height: 3px;
+    background-color: #2b85d2;
+    /* float: left; */
+    margin: 5px 0 5px 0px;
+}
+
+.one-linep {
     width: 90px;
     height: 3px;
     background-color: #2b85d2;
@@ -880,7 +898,7 @@ header {
 
 .two-path p:nth-child(1) {
     margin-top: 80px;
-    color: #0e73c0;
+    color: #666;
     font-size: 30px;
 }
 
@@ -888,6 +906,7 @@ header {
     margin-top: 30px;
     color: #888;
     font-size: 20px;
+    margin-left: 10px;
 }
 
 .two-path p:nth-child(4) {
@@ -1002,13 +1021,13 @@ header {
 }
 
 .tag-text i {
-    font-size: 110px;
+    font-size: 90px;
     margin: auto;
     display: block;
 }
 
 .tag-text h1 {
-    font-size: 30px;
+    font-size: 28px;
     color: #666;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1130,11 +1149,11 @@ header {
 /* cdio */
 
 .cdio-title {
-    color: #333;
+    color: #666;
     font-size: 28px;
     margin-top: 50px;
     text-align: left !important;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .cdio-line {
@@ -1142,7 +1161,7 @@ header {
     height: 3px;
     background-color: #2b85d2;
     /* float: left; */
-    margin: 5px 0 5px 10px;
+    margin: 5px 0 5px 20px;
     margin-bottom: 30px;
 }
 
@@ -1196,7 +1215,7 @@ header {
     color: #666;
     font-size: 16px;
     line-height: 28px;
-    margin: 30px 0px 40px 10px;
+    margin: 30px 0px 40px 20px;
 }
 
 .Sponsors_wit a {
@@ -1215,7 +1234,7 @@ header {
     color: #666;
     font-size: 16px;
     line-height: 28px;
-    margin: 30px 0px 30px 10px;
+    margin: 30px 0px 30px 20px;
 }
 
 .sponsors_emp {
@@ -1235,7 +1254,7 @@ header {
     padding-top: 15px;
     margin-bottom: 20px !important;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 
@@ -1292,11 +1311,11 @@ header {
 }
 
 .sponsors-tit {
-    color: #333;
+    color: #666;
     font-size: 28px;
     margin-top: 50px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .qqbu+div .tooltip-inner {
@@ -1313,7 +1332,6 @@ header {
 
 .wbsite {
     text-align: left;
-    padding-left: 30px;
     font-size: 18px;
     width: 100%;
 }
@@ -1344,10 +1362,12 @@ header {
     height: 50px;
     border: none;
     padding: .8em 1em;
-    background: hsl(210, 13%, 30%);
+    background: rgba(0, 0, 0, .6);
     text-shadow: 0 1px 1px rgba(220, 220, 220, 0.8);
     padding: 0px;
     word-wrap: break-word;
+    margin-top: -50px;
+    z-index: 20;
 }
 
 .maomao a {
@@ -1375,4 +1395,9 @@ header {
 
 .gai {
     margin-bottom: 10px !important;
+}
+
+.pacse {
+    width: 2px;
+    height: 10px;
 }
