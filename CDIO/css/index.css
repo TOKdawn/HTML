@@ -1143,6 +1143,7 @@ header {
 .map {
     height: 500px;
     margin: 50px 0px;
+    width: 100%;
 }
 
 
