@@ -1,0 +1,107 @@
+    html,
+    body {
+        box-sizing: border-box;
+        background: #eaeaea;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .z_left {
+        background: #fff;
+        z-index: 10;
+        transition: all .2s ease-in;
+        opacity: 1;
+        min-height: 850px;
+    }
+    
+
+    
+    .z_userPortait {
+        width: 120px;
+        height: 120px;
+        display: block;
+        border-radius: 60px;
+    }
+    
+    .z_portrait {
+        background: radial-gradient(circle closest-side at 60% 43%, #f7aeb9 26%, rgba(187, 0, 51, 0) 27%), radial-gradient(circle closest-side at 40% 43%, #f7aeb9 26%, rgba(187, 0, 51, 0) 27%), radial-gradient(circle closest-side at 40% 22%, #F03861 45%, rgba(221, 51, 85, 0) 46%), radial-gradient(circle closest-side at 60% 22%, #F03861 45%, rgba(221, 51, 85, 0) 46%), radial-gradient(circle closest-side at 50% 35%, #F03861 30%, rgba(221, 51, 85, 0) 31%), radial-gradient(circle closest-side at 60% 43%, #f7aeb9 26%, rgba(187, 0, 51, 0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 43%, #f7aeb9 26%, rgba(187, 0, 51, 0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 22%, #F03861 45%, rgba(221, 51, 85, 0) 46%) 50px 50px, radial-gradient(circle closest-side at 60% 22%, #F03861 45%, rgba(221, 51, 85, 0) 46%) 50px 50px, radial-gradient(circle closest-side at 50% 35%, #F03861 30%, rgba(221, 51, 85, 0) 31%) 50px 50px;
+        background-color: #f7aeb9;
+        background-size: 100px 100px;
+    }
+    
+
+    
+    @media only screen and (min-width:921px) and (max-width: 1300px) {
+        .z_left {
+            width: 350px;
+            height: 100%;
+            position: fixed;
+        }
+        .z_right {
+            left: 350px;
+            position: absolute;
+        }
+        .z_left_top {
+            width: 100%;
+            height: 25%;
+            background-color: aquamarine;
+        }
+        .z_name {
+            width: 60%;
+            height: 100%;
+            float: left;
+            background-color: aqua;
+        }
+        .z_portrait {
+            width: 40%;
+            height: 65%;
+            position: relative;
+            float: left;
+            background-size: 100px 100px;
+        }
+        .z_left_down {
+            width: 100%;
+            height: 75%;
+            background-color: blueviolet;
+        }
+        .z_userPortait {
+            margin: 10px auto 0px auto;
+        }
+    }
+    
+    @media only screen and (min-width: 1301px) {
+        .z_left {
+            width: 30%;
+            height: 100%;
+            position: fixed;
+        }
+      
+        .z_left_top {
+            width: 100%;
+            height: 30%;
+            background-color: aquamarine;
+        }
+        .z_name {
+            width: 60%;
+            height: 100%;
+            background-color: aqua;
+            float: left;
+        }
+        .z_portrait {
+            width: 40%;
+            height: 65%;
+            position: relative;
+            float: left;
+        }
+        .z_left_down {
+            width: 100%;
+            height: 70%;
+            background-color: blueviolet;
+        }
+        .z_userPortait {
+            margin: 20px auto 0px auto;
+        }
+    }
