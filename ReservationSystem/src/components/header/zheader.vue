@@ -60,10 +60,10 @@ a, a:hover, a:link, a:visited {
 }
 
 .nav_sub .sub_logo{
-  background-color: #1f8dd6;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  
   opacity: 0;
   transition: .3s all;
+  height: 60px;
 }
 
 .nav_sub.show .sub_logo{
@@ -74,8 +74,6 @@ a, a:hover, a:link, a:visited {
   padding: 10px 10px;
   height: 60px;
 }
-
-
 .nav_sub .right a{
   display: inline-block;
   padding: 0 15px;
