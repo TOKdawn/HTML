@@ -5,9 +5,13 @@ import App from './App'
 import routes from './router'
 import VueRouter from 'vue-router'
 import ElementUI from 'element-ui'
+
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
+
+
+
 const router = new VueRouter({
     routes
 })

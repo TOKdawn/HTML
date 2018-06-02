@@ -2,8 +2,8 @@
  <div class="home">
    <div class="home_content">
       <div class="home_calendar">
-        <div >
-
+        <div>
+        <fullcalendar :events="events" locale="zh" lang="zh" :eventClick="text"></fullcalendar>
         </div>
         </div>
      <div class="home_info">
@@ -11,7 +11,7 @@
          <p> 学校坐落于美丽的海滨城市大连，地处大连软件园核心区域，占地面积905亩，总建筑面积39.9万平方米 </p>
         <div> 
           <el-button type="danger" @click="P_appointment">个人预约</el-button>
-          <el-button type="danger" plain>团体预约</el-button>
+          <el-button type="danger" plain @click="text">团体预约</el-button>
         </div>
      </div>
    </div>
@@ -52,11 +52,28 @@
 </template>
 
 <script>
+import fullcalendar from '../vue-full/fullCalendar';
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      events : [
+        {
+          title     :  'event1',
+          start     : '2018-06-01',
+           end       : '2018-06-01',
+          YOUR_DATA : {
+            id: 123
+          }
+        },
+        {
+          title     : 'event2',
+          start     : '2018-06-02',
+          YOUR_DATA : {
+            id: 456
+          }
+        }]  
+      
     }
   },
   methods:{
@@ -68,7 +85,18 @@ export default {
         }
       })
     },
+   dayClick(){
+     console.log("dsdsds")
+   },
+   text(){
+     console.log("ssss");
+   }
+   
+  },
+  components:{
+    fullcalendar
   }
+  
 }
 </script>
 
@@ -95,8 +123,8 @@ export default {
     min-height: 680px;
 
 }
-.home_calendar div{
-  background-color: #9C27B0;
+.home_calendar>div{
+  
   width: 600px;
   height: 500px;
   position: relative;
