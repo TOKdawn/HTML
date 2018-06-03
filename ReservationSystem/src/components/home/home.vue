@@ -3,7 +3,7 @@
    <div class="home_content">
       <div class="home_calendar">
         <div>
-        <fullcalendar :events="events" locale="zh" lang="zh" :eventClick="text"></fullcalendar>
+        <fullcalendar :events="events" locale="zh" lang="zh" ></fullcalendar>
         </div>
         </div>
      <div class="home_info">
@@ -61,7 +61,6 @@ export default {
         {
           title     :  'event1',
           start     : '2018-06-01',
-           end       : '2018-06-01',
           YOUR_DATA : {
             id: 123
           }
@@ -72,7 +71,55 @@ export default {
           YOUR_DATA : {
             id: 456
           }
-        }]  
+        },{
+          title     : 'event2',
+          start     : '2018-06-03',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-04',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-05',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-06',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-07',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-08',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event3',
+          start     : '2018-06-02',
+          YOUR_DATA : {
+            id: 456
+          }
+        },{
+          title     : 'event2',
+          start     : '2018-06-010',
+          YOUR_DATA : {
+            id: 456
+          }
+        },]  
       
     }
   },
@@ -124,13 +171,12 @@ export default {
 
 }
 .home_calendar>div{
-  
-  width: 600px;
+  width: 700px;
   height: 500px;
   position: relative;
   top: 50%;
   margin: auto;
-  transform: translateY(-50%);
+  transform: translateY(-53%);
 }
 
 .home_info{

@@ -101,8 +101,9 @@
 </script>
 <style lang="scss">
   .comp-full-calendar{
-    // font-family: "elvetica neue", tahoma, "hiragino sans gb";
-    padding:20px;
+
+    border-radius: 10px 10px 0 0;
+    font-family: 'Courier New', Courier, monospace;
     background: #fff;
     max-width: 960px;
     margin:0 auto;
@@ -110,6 +111,7 @@
       margin:0;
       padding:0;
       font-size: 14px;
+      color: transparent;
     }
   }
 </style>

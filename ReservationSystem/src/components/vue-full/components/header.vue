@@ -80,10 +80,17 @@
 </script>
 <style lang="scss">
 .full-calendar-header{
+  background:linear-gradient(top, #f56c6c 0%, #fa5036 100%);
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+  font-weight: 900;
+  color:#fff;
+  height: 40px;
   display: flex;
   align-items: center;
   .header-left,.header-right{
     flex:1;
+    
   }
   .header-center{
     flex:3;

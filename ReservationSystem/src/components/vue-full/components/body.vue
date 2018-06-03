@@ -231,11 +231,11 @@
         }
       },
       dayClick(day, jsEvent) {
-         console.log('event:',day );
+         console.log('day:',day );
         this.$emit('dayclick', day, jsEvent)
       },
       eventClick(event, jsEvent) {
-       
+        console.log('event:',event);
         if (!event.isShow) {
           return
         }
@@ -247,19 +247,37 @@
   }
 </script>
 <style lang="scss">
+$--red: rgba(250, 80, 54, 0.9);
+$--bodyheight: 75px;
+$--grey: #898989;
+$--text-align: left;
+
 .full-calendar-body{
-  margin-top: 20px;
+ 
   .weeks{
     display: flex;
     border-top:1px solid #e0e0e0;
     border-bottom:1px solid #e0e0e0;
-    border-left:1px solid #e0e0e0;
+   
+    background-color:#898989;
     .week{
       flex:1;
       text-align: center;
-      border-right:1px solid #e0e0e0;
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      
     }
+     .week:nth-child(1){
+    background-color: $--red;
+
   }
+    .week:nth-child(7){
+    background-color: $--red;
+
+   }
+  }
+  
   .dates {
     position:relative;
     .week-row{
@@ -269,20 +287,27 @@
       display: flex;
       .day-cell{
         flex:1;
-        min-height: 100px;
+        min-height: $--bodyheight;
         padding:4px;
         border-right:1px solid #e0e0e0;
         border-bottom:1px solid #e0e0e0;
+      
         .day-number{
-          text-align: right;
+          text-align: $--text-align;
         }
         &.today{
           background-color:#fcf8e3;
+
         }
         &.not-cur-month{
+           background-color: rgb(236, 231, 231);
+            z-index: 20;
+          //不可见
           .day-number{
-            color:rgba(0,0,0,.24);
+          color: transparent;
+         
           }
+        
         }
       }
     }
@@ -294,20 +319,34 @@
       width: 100%;
       .events-week{
         display: flex;
+          .events-day:nth-child(1){
+            .day-number{
+            color: $--red;
+            }
+          }
+          .events-day:nth-child(7){
+            .day-number{
+            color: $--red;
+            }
+          }
         .events-day{
           cursor: pointer;
           flex:1;
-          min-height: 109px;
+          min-height: $--bodyheight+9;
           overflow: hidden;
           text-overflow: ellipsis;
+
           .day-number{
-            text-align: right;
+            text-align: left;
             padding:4px 5px 4px 4px;
-            opacity: 0;
+            opacity: 1;
+            font-size: 18px;
+            font-weight: bold;
+            color: $--grey;
           }
           &.not-cur-month{
             .day-number{
-              color:rgba(0,0,0,.24);
+                 
             }
           }
           .event-box{
@@ -339,13 +378,16 @@
             }
             .more-link{
               cursor: pointer;
-              // text-align: right;
+              text-align: right;
               padding-left: 8px;
               padding-right: 2px;
               color: rgba(0,0,0,.38);
               font-size: 14px;
             }
           }
+        }
+        .events-day:hover{
+
         }
       }
     }
