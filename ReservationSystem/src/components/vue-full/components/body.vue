@@ -14,25 +14,36 @@
         </div>
       </div>
       <!-- absolute so we can make dynamic td -->
-      <div class="dates-events">
+      <div class="dates-events" >
         <div class="events-week" v-for="week in currentDates">
           <div class="events-day" v-for="day in week" track-by="$index"
             :class="{'today' : day.isToday,
               'not-cur-month' : !day.isCurMonth}"
                @click.stop="dayClick(day, $event)"
                >
-            <p class="day-number">{{day.monthDay}}</p>
-            <div class="event-box">
-              <p class="event-item" v-for="event in day.events" v-show="event.cellIndex <= eventLimit"
+            <p class="day-number">{{day.monthDay}}
+            </p>
+                <div v-if="day.events.length">
+                   <p v-if="(day.events[0]).YOUR_DATA.bespeak_over_time >= mytime" class="day-infor"> 可预约</p>
+                   <p v-else  class="day-false-infor"> 已结束</p>
+                </div>
+            <div class="event-box" >
+              <p class="event-item"  v-for="event in day.events" v-show="event.cellIndex <= eventLimit"
                  :class="[classNames(event.cssClass), {
                   'is-start'   : isStart(event.start, day.date),
                   'is-end'     : isEnd(event.end,day.date),
-                  'is-opacity' : !event.isShow
+                  'is-opacity' : !event.isShow,
+                  'eventchoose': (event.YOUR_DATA.active_time_id == chooseflag),
+                 'eventnotshow': (event.YOUR_DATA.bespeak_over_time <= mytime)
                   }]" 
                 @click="eventClick(event,$event)">
                 {{isBegin(event, day.date, day.weekDay)}}
+                </br>
+                开始:{{event.YOUR_DATA.start_time.slice(10)}}
+                 </br>
+                结束:{{event.YOUR_DATA.over_time.slice(10)}}
               </p>
-              <p v-if="day.events.length > eventLimit"
+              <p v-if="day.events.length > 1"
                 class="more-link" @click.stop="selectThisDay(day, $event)">
                 + {{day.events[day.events.length -1].cellIndex - eventLimit}} more
               </p>
@@ -59,6 +70,7 @@
       </div>
 
       <slot name="body-card">
+        {{chooseflag}}
       </slot>
     </div>
   </div>
@@ -75,15 +87,28 @@
         default : []
       },
       monthNames  : {},
-      firstDay    : {}
+      firstDay    : {},
     },
     created () {
       this.events.forEach((item, index) => {
         item._id = item.id || index
         item.end = item.end || item.start
       })
-      // this.events = events
-    },
+      var date = new Date();
+      var year = date.getFullYear(); 
+      var month =(date.getMonth() + 1).toString(); 
+      var day = (date.getDate()).toString();  
+      if (month.length == 1) { 
+          month = "0" + month; 
+      } 
+      if (day.length == 1) { 
+          day = "0" + day; 
+      }
+      var dateTime = year + "-" + month + "-" + day;
+          this.mytime=dateTime;
+          console.log(this.mytime);
+          // this.events = events
+        },
     data () {
       return {
         // weekNames : DAY_NAMES,
@@ -96,7 +121,10 @@
           top: 0,
           left : 0
         },
-        selectDay : {}
+        selectDay : {},
+        day_infor: '可预约',
+        mytime: '',
+        chooseflag: '',
       }
     },
     watch : {
@@ -231,11 +259,19 @@
         }
       },
       dayClick(day, jsEvent) {
-         console.log('day:',day );
+     
         this.$emit('dayclick', day, jsEvent)
       },
       eventClick(event, jsEvent) {
-        console.log('event:',event);
+        // console.log('body:',event);
+        if(event.YOUR_DATA.active_time_id == this.chooseflag || event.YOUR_DATA.bespeak_over_time <= this.mytime){
+           this.chooseflag = '';
+             console.log( "取消",this.chooseflag )
+        }else{
+          this.chooseflag = event.YOUR_DATA.active_time_id ;
+          console.log( "设置",this.chooseflag )
+        }
+       
         if (!event.isShow) {
           return
         }
@@ -248,18 +284,34 @@
 </script>
 <style lang="scss">
 $--red: rgba(250, 80, 54, 0.9);
-$--bodyheight: 75px;
+$--bodyheight: 80px;
 $--grey: #898989;
 $--text-align: left;
 
+
+
+
 .full-calendar-body{
- 
+  .eventchoose::before{
+    content: '';
+    position: absolute;
+    border: 2px solid $--red;
+   width: 105px;
+   height: 88px;
+  margin-left: -9px;
+   margin-top: -30px;
+  }
+ .eventnotshow{
+   background-color: #e4d9d9 !important;
+   cursor: not-allowed !important;
+   color: #898989 !important;
+ }
   .weeks{
     display: flex;
     border-top:1px solid #e0e0e0;
     border-bottom:1px solid #e0e0e0;
    
-    background-color:#898989;
+    background-color:#d3d3d3;
     .week{
       flex:1;
       text-align: center;
@@ -330,12 +382,24 @@ $--text-align: left;
             }
           }
         .events-day{
-          cursor: pointer;
+       
           flex:1;
           min-height: $--bodyheight+9;
-          overflow: hidden;
+          overflow: scroll;
           text-overflow: ellipsis;
-
+          height:$--bodyheight+9 ;
+          .day-infor{
+            float: right;
+            margin-top: -25px;
+            margin-right: 5px;
+            color: #62c413;
+          }
+          .day-false-infor{
+           float: right;
+            margin-top: -25px;
+            margin-right: 5px;
+            color: #b42810;
+          }
           .day-number{
             text-align: left;
             padding:4px 5px 4px 4px;
@@ -357,7 +421,7 @@ $--text-align: left;
               margin-bottom:2px;
               color: rgba(0,0,0,.87);
               padding:0 0 0 4px;
-              height: 18px;
+              height: $--bodyheight - 22;
               line-height: 18px;
               white-space: nowrap;
               overflow: hidden;

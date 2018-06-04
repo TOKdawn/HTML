@@ -3,7 +3,7 @@
    <div class="home_content">
       <div class="home_calendar">
         <div>
-        <fullcalendar :events="events" locale="zh" lang="zh" ></fullcalendar>
+        <fullcalendar :events="events" locale="zh" lang="zh" @eventClick = 'eventClick'></fullcalendar>
         </div>
         </div>
      <div class="home_info">
@@ -57,69 +57,50 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      events : [
+      events :  [
         {
-          title     :  'event1',
-          start     : '2018-06-01',
-          YOUR_DATA : {
-            id: 123
-          }
+            "YOUR_DATA": {
+                "start_time": "2018-06-10 11:10",
+                "bespeak_over_time": "2018-06-09 11:10",
+                "over_time": "2018-06-10 13:10",
+                "active_time_id": "xonf-h9h9-ukf2-49ps"
+            },
+            "start": "2018-06-10",
+            "title": "企业合作参观"
         },
         {
-          title     : 'event2',
-          start     : '2018-06-02',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-03',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-04',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-05',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-06',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-07',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-08',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event3',
-          start     : '2018-06-02',
-          YOUR_DATA : {
-            id: 456
-          }
-        },{
-          title     : 'event2',
-          start     : '2018-06-010',
-          YOUR_DATA : {
-            id: 456
-          }
-        },]  
+            "YOUR_DATA": {
+                "start_time": "2018-06-15 10:00",
+                "bespeak_over_time": "2018-05-10 11:00",
+                "over_time": "2018-06-15 11:00",
+                "active_time_id": "8rce-xtmd-owdm-hfhz"
+            },
+            "start": "2018-06-15",
+            "title": "新生/家长校园参观"
+        },
+        {
+            "YOUR_DATA": {
+                "start_time": "2018-06-20 10:10",
+                "bespeak_over_time": "2018-06-15 10:10",
+                "over_time": "2018-06-20 11:10",
+                "active_time_id": "n7rv-tfp2-hjm1-19ja"
+            },
+            "start": "2018-06-20",
+            "title": "新生/家长校园水水水水少时诵诗书所少时诵诗书所所参观"
+        },
+           {
+            "YOUR_DATA": {
+                "start_time": "2018-06-20 10:10",
+                "bespeak_over_time": "2018-06-15 10:10",
+                "over_time": "2018-06-20 11:10",
+                "active_time_id": "n7rv-tfp2-hjmss1-19ja"
+            },
+            "start": "2018-06-09",
+            "title": "新生/家长校园水水水水少时诵诗书所少时诵诗书所所参观"
+        }
+    ],
+
+         
       
     }
   },
@@ -137,6 +118,9 @@ export default {
    },
    text(){
      console.log("ssss");
+   },
+   eventClick(event){
+     console.log('home:',event);
    }
    
   },
@@ -171,7 +155,7 @@ export default {
 
 }
 .home_calendar>div{
-  width: 700px;
+  width: 750px;
   height: 500px;
   position: relative;
   top: 50%;
@@ -207,7 +191,7 @@ text-shadow: 0 0 10px rgb(22, 2, 2);
     width: 100%;
     height: 15vh;
     background-color: rgba(250, 80, 54, 0.9);
-                    // rgba(255, 111, 67, 0.9);
+   // rgba(255, 111, 67, 0.9);
     font-size: 16px;
     z-index: 888;
   }

@@ -23,6 +23,8 @@
       @moreclick="emitMoreClick">
       <div slot="body-card">
         <slot name="fc-body-card">
+         
+
         </slot>
       </div>
     </fcbody>
@@ -83,9 +85,11 @@
         this.$emit('changeMonth', start, end, currentStart)
       },
       emitEventClick (event, jsEvent, pos) {
+        console.log('fullCalender', event)
         this.$emit('eventClick', event, jsEvent, pos)
       },
       emitDayClick (day, jsEvent) {
+
         this.$emit('dayClick', day, jsEvent)
       },
       emitMoreClick (day, events, jsEvent) {

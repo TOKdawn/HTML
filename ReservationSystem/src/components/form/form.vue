@@ -2,13 +2,11 @@
 <div class="form">
     <div>
         <div class="left">
-
         </div>
                     <div class="right">
-                        <div class="button_bar">
+                        <div class="button_bar" @click="gohome">
                             <a href="#" class="a-btn">
-						<span class="a-btn-text">返回</span>
-					
+						<span class="a-btn-text" >返回</span>
 						<span class="a-btn-icon-right"><span></span></span>
 					</a>
                         </div>
@@ -19,9 +17,29 @@
                 <el-form-item label="联系人邮箱:" prop="mail" >
                         <el-input v-model="ruleForm.mail" placeholder="请输入联系人邮箱"></el-input>
                 </el-form-item>
-               <el-form-item label="参观人数:" prop="amount " >
+               <el-form-item label="参观人数:" prop="amount" >
                         <el-input v-model="ruleForm.amount" placeholder="请输入参观人数"></el-input>
                 </el-form-item>
+                        <el-form-item label="参观目的:"    class="select">
+                              <el-select
+                                v-model="ruleForm.value5"
+                                filterable
+                                allow-create
+                                default-first-option
+                                placeholder="请选择">
+                                <el-option
+                                v-for="item in options"
+                                :key="item.value"
+                                :label="item.label"
+                                :value="item.value">
+                                </el-option>
+                            </el-select>
+                </el-form-item>
+                
+                 <el-form-item label="参观人数:" prop="amount" style="margin-left:180px; margin-bottom:0px;">
+                        <el-input v-model="ruleForm.amount" placeholder="请输入参观人数"></el-input>
+                </el-form-item>
+        
                   <el-form-item label="填写手机号:" prop="phone" >
                         <el-input v-model="ruleForm.phone" placeholder="请输入手机号码"></el-input>
                 </el-form-item>
@@ -32,8 +50,7 @@
                     </el-input>
             </el-form-item>
             <el-button round class="submit">提 交</el-button>
-            
-</el-form>
+            </el-form>
         </div>
     </div>
 </div>
@@ -47,8 +64,24 @@ export default {
           name: '',
           mail: '',
          amount: '',
-         phone: ''
-        },
+         phone: '',
+        value5:''
+        }, options: [{
+          value: '选项1',
+          label: '黄金糕'
+        }, {
+          value: '选项2',
+          label: '双皮奶'
+        }, {
+          value: '选项3',
+          label: '蚵仔煎'
+        }, {
+          value: '选项4',
+          label: '龙须面'
+        }, {
+          value: '选项5',
+          label: '北京烤鸭'
+        }],
         rules: {
           name: [
             { required: true, message: '请输入联系人名称', trigger: 'blur' },
@@ -79,10 +112,15 @@ export default {
           }
         });
       },
+      gohome(){
+        
+           this.$router.push('/home')
+      }
+    
+    },
     created(){
-        this.date = this.$route.params.date;
+        this.date = this.$router.params.date;
         console.log(this.date)
-    }
     }
 }
 </script>
@@ -147,7 +185,7 @@ export default {
         padding-left: 0px;
     }
     .form .el-form-item__label{
-        margin-top: 10px;
+        margin-top: 5px;
         line-height: 30px;
               font-weight: 300;
             padding: 0px;
@@ -167,6 +205,10 @@ export default {
     }
     .form .submit:hover{
         color: #fff;
+    }
+    .form .select{
+       width: 177px;
+       float: left;
     }
 
 
