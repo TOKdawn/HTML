@@ -1,0 +1,4 @@
+let data = `{"data":[{"data":{"start_time":"2018-06-07 12:00","bespeak_over_time":"2018-06-06 00:00","over_time":"2018-06-07 15:00","active_time_id":"us0q-jy7t-j7xf-dp0z"},"start":"2018-06-07","tittle":"企业合作参观"},{"data":{"start_time":"2018-06-10 11:10","bespeak_over_time":"2018-06-09 11:10","over_time":"2018-06-10 13:10","active_time_id":"xonf-h9h9-ukf2-49ps"},"start":"2018-06-10","tittle":"企业合作参观"},{"data":{"start_time":"2018-06-15 10:00","bespeak_over_time":"2018-06-14 11:00","over_time":"2018-06-15 11:00","active_time_id":"8rce-xtmd-owdm-hfhz"},"start":"2018-06-15","tittle":"新生/家长校园参观"},{"data":{"start_time":"2018-06-20 10:10","bespeak_over_time":"2018-06-15 10:10","over_time":"2018-06-20 11:10","active_time_id":"n7rv-tfp2-hjm1-19ja"},"start":"2018-06-20","tittle":"新生/家长校园参观"}],"success":1}`
+
+let newdata = data.replace(/"data":/g, '"YOUR_DATA":');
+console.log(JSON.parse(newdata).YOUR_DATA)

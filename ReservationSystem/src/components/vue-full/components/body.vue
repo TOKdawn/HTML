@@ -106,7 +106,7 @@
       }
       var dateTime = year + "-" + month + "-" + day;
           this.mytime=dateTime;
-          console.log(this.mytime);
+          // console.log(this.mytime);
           // this.events = events
         },
     data () {
@@ -129,7 +129,7 @@
     },
     watch : {
       weekNames (val) {
-        console.log('watch weekNames', val)
+        // console.log('watch weekNames', val)
       }
     },
     computed : {
@@ -267,17 +267,21 @@
         if(event.YOUR_DATA.active_time_id == this.chooseflag || event.YOUR_DATA.bespeak_over_time <= this.mytime){
            this.chooseflag = '';
              console.log( "取消",this.chooseflag )
+             this.$emit('eventclick', null )
+                     
         }else{
           this.chooseflag = event.YOUR_DATA.active_time_id ;
-          console.log( "设置",this.chooseflag )
-        }
-       
-        if (!event.isShow) {
+          // console.log( "设置",this.chooseflag )
+               if (!event.isShow) {
           return
         }
-        jsEvent.stopPropagation()
-        let pos = this.computePos(jsEvent.target)
-        this.$emit('eventclick', event, jsEvent, pos)
+        // jsEvent.stopPropagation()
+        // let pos = this.computePos(jsEvent.target)
+
+           this.$emit('eventclick', event.YOUR_DATA.active_time_id)
+        }
+       
+   
       }
     }
   }
@@ -287,9 +291,6 @@ $--red: rgba(250, 80, 54, 0.9);
 $--bodyheight: 80px;
 $--grey: #898989;
 $--text-align: left;
-
-
-
 
 .full-calendar-body{
   .eventchoose::before{
@@ -385,7 +386,7 @@ $--text-align: left;
        
           flex:1;
           min-height: $--bodyheight+9;
-          overflow: scroll;
+          overflow: hidden;
           text-overflow: ellipsis;
           height:$--bodyheight+9 ;
           .day-infor{
@@ -417,7 +418,7 @@ $--text-align: left;
             .event-item{
               cursor: pointer;
               font-size:12px;
-              background-color:#C7E6FD;
+              background-color:#ffcc80;
               margin-bottom:2px;
               color: rgba(0,0,0,.87);
               padding:0 0 0 4px;
@@ -487,7 +488,7 @@ $--text-align: left;
           .body-item{
             cursor: pointer;
             font-size:12px;
-            background-color:#C7E6FD;
+            background-color:#ffcc80;
             margin-bottom:2px;
             color: rgba(0,0,0,.87);
             padding:0 0 0 4px;

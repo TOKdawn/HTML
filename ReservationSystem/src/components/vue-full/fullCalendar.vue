@@ -79,13 +79,13 @@
     },
     methods : {
       emitChangeMonth (start, end, currentStart, current) {
-        console.log('currentDate 2', this.currentDate)
+        // console.log('currentDate 2', this.currentDate)
         this.currentDate = current
-        console.log('currentDate 3', this.currentDate)
-        this.$emit('changeMonth', start, end, currentStart)
+        // console.log('currentDate 3', this.currentDate)
+        this.$emit('changeMonth', this.currentDate)
       },
       emitEventClick (event, jsEvent, pos) {
-        console.log('fullCalender', event)
+        // console.log('fullCalender', event)
         this.$emit('eventClick', event, jsEvent, pos)
       },
       emitDayClick (day, jsEvent) {

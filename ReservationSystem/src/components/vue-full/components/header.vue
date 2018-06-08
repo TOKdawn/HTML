@@ -39,7 +39,7 @@
       currentDate (val) {
         if (!val) return
         this.headDate = val
-        console.log('currentDate', val)
+        // console.log('currentDate', val)
         // this.headDate = JSON.parse(JSON.stringify(val))
       }
     },
@@ -47,10 +47,12 @@
       goPrev () {
         this.headDate = this.changeMonth(this.headDate, -1)
         this.dispatchEvent()
+        //  console.log(this.headDate)
       },
       goNext () {
         this.headDate = this.changeMonth(this.headDate, 1)
         this.dispatchEvent()
+        // console.log( 'ssssss',this.headDate)
       },
       changeMonth (date, num) {
         let dt = new Date(date)

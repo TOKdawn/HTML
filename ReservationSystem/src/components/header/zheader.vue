@@ -45,7 +45,7 @@ a, a:hover, a:link, a:visited {
   left: 0;
   height: 60px;
   width: 100%;
-  z-index: 2333;
+  z-index: 233;
   line-height: 60px;
   background-color: #fff;
   box-shadow: 5px 0 10px rgba(0,0,0,.125);
