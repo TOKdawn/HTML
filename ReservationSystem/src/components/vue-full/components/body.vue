@@ -299,7 +299,7 @@ $--text-align: left;
     border: 2px solid $--red;
    width: 105px;
    height: 88px;
-  margin-left: -9px;
+  margin-left: -6px;
    margin-top: -30px;
   }
  .eventnotshow{
@@ -428,12 +428,12 @@ $--text-align: left;
               overflow: hidden;
               text-overflow: ellipsis;
               &.is-start{
-                margin-left: 4px;
+                margin-left: 1px;
                 // border-top-left-radius:4px;
                 // border-bottom-left-radius:4px;
               }
               &.is-end{
-                margin-right: 4px;
+                margin-right: 1px;
                 // border-top-right-radius:4px;
                 // border-bottom-right-radius:4px;
               }

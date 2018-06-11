@@ -2,6 +2,31 @@
 <div class="form">
     <div>
         <div class="left">
+          <h1>参观须知:</h1>
+          <p>1、参观当天请携带有效身份证件（身份证、户口本或护照原件）按照规定时间到工作人员处登记，过时不候；
+            </br>
+
+2、由于校园内部禁止外部车辆通行且周围停车位置有限，无法容纳所有车辆。请尽量乘坐公共交通到校或及早抵达自行寻找车辆停放位置；
+</br>
+3、请遵守学校秩序，听从工作人员指引，按照预定的参观线路依次前行，以免干扰校内正常教学秩序；
+</br>
+4、请自行保管好私人财物，我们不对来访人员私人财物的损坏或损失负责；
+</br>
+5、参观过程中请勿有以下行为：处于销售或交换目的的展示任何物品或服务；散发传单、集会或演讲；分发、展示任何形式的印刷品、录制品、旗帜、横幅或标牌等； 
+</br>
+6、为了保持学校环境卫生以及在校学生及来访人员人身安全，不可携带宠物及法律规定的危险物品（包括但不限于任何种类的火器、弹药或攻击性武器及其他易燃、易爆、有害、有毒物品等）；
+</br>
+7、请来访人员在指定区域吸烟，因非吸烟区域内吸烟导致的本校或者第三方的人身、财产损害，由吸烟的来访人员承担赔偿责任；
+</br>
+8、不乱丢杂物、纸屑；不随地吐痰；垃圾和废弃物品请及时放入垃圾桶内，切勿随地抛弃。请爱护学校内花、草、树木。请勿攀折、采、摘及践踏、损坏草坪、绿地、雕塑等；
+</br>
+9、如学校进行重要接待、大型活动或出现暴雨、雷电、台风等恶劣天气、停电，以及其他不可抗拒因素，学校可能会临时改变参观时间或封闭部分区域，具体行程变化以当日公告为准；
+
+以上参观须知敬请来访人员在入园前认真阅读并遵守，来访人员入校后视为认同以上管理要求，所有内容最终解释权归大连东软信息学院所有。
+
+</p>
+
+<el-checkbox v-model="checked" class="cheakbox">我已阅读须知</el-checkbox>
         </div>
                     <div class="right">
                         <div class="button_bar" @click="gohome">
@@ -73,7 +98,7 @@ export default {
       rules: {
         name: [
           { required: true, message: "请输入联系人名称", trigger: "blur" },
-          { min: 3, max: 5, message: "长度在 2 到 5 个字符", trigger: "blur" }
+          { min: 1, max: 10, message: "长度在 2 到 10 个字符", trigger: "blur" }
         ],
         mail: [
           { required: true, message: "请输入邮箱地址", trigger: "blur" },
@@ -87,68 +112,64 @@ export default {
           { min: 11, max: 11, message: "请输入正确的手机号码", trigger: "blur" }
         ]
       },
-      subflag: false
+      subflag: false,
+      checked: false
     };
   },
   methods: {
     submitForm(formName) {
-      this.$refs[formName].validate(valid => {
-        if (valid) {
-          // this.$axios
-          //   .get("/api/index/getPhoneEncode", {
-          //     aim: this.ruleForm.aim,
-          //     phone: this.ruleForm.phone,
-          //     mail: this.ruleForm.mail,
-          //     name: this.ruleForm.name,
-          //     phone_encode: this.ruleForm.phone_encode,
-          //     id: this.ruleForm.id,
-          //     amount: this.ruleForm.amount
-          //   })
-
-          this.$axios({
-            method: "post",
-            url: "/api/index/join",
-            params: {
-              aim: this.ruleForm.aim,
-              phone: this.ruleForm.phone,
-              mail: this.ruleForm.mail,
-              name: this.ruleForm.name,
-              phone_encode: this.ruleForm.phone_encode,
-              id: this.ruleForm.id,
-              amount: this.ruleForm.amount
-            }
-          })
-          .then((res) => {
-            console.log("sub:", res);
-            if (res.data.success) {
-              this.$message({
-                showClose: true,
-                message: res.data.message,
-                type: "success"
-              });
-            }
-          });
-        } else {
-          this.$message({
-            showClose: true,
-            message: "正确填写表单",
-            type: "warning"
-          });
-          return false;
-        }
-      });
+      if (!this.checked) {
+        this.$notify({
+          title: "警告",
+          message: "请阅读并勾选参观须知",
+          type: "warning"
+        });
+      } else {
+        this.$refs[formName].validate(valid => {
+          if (valid) {
+            this.$axios({
+              method: "post",
+              url: "/api/index/join",
+              params: {
+                aim: this.ruleForm.aim,
+                phone: this.ruleForm.phone,
+                mail: this.ruleForm.mail,
+                name: this.ruleForm.name,
+                phone_encode: this.ruleForm.phone_encode,
+                id: this.ruleForm.id,
+                amount: this.ruleForm.amount
+              }
+            }).then(res => {
+              console.log("sub:", res);
+              if (res.data.success) {
+                this.$alert("您已成功预约,请留意查看邮箱信息", "成功预约", {
+                  confirmButtonText: "确定",
+                  callback: action => {
+                    this.$router.push("/home");
+                  }
+                });
+              }
+            });
+          } else {
+            this.$notify({
+              title: "警告",
+              message: "正确填写表单",
+              type: "warning"
+            });
+            return false;
+          }
+        });
+      }
     },
     timedown() {
-    
-
- this.$axios({
-            method: "post",
-            url: "/api/index/getPhoneEncode",
-            params: {
-             phone: this.ruleForm.phone
-            }
-          })
-        .then((res) => {
+      this.$axios({
+        method: "post",
+        url: "/api/index/getPhoneEncode",
+        params: {
+          phone: this.ruleForm.phone
+        }
+      })
+        .then(res => {
           console.log("phone:", res);
           const TIME_COUNT = 60;
           this.subflag = true;
@@ -165,7 +186,7 @@ export default {
             }, 1000);
           }
         })
-        .catch((err) => {
+        .catch(err => {
           console.log("未知错误");
         });
     },
@@ -179,9 +200,9 @@ export default {
     this.options = [];
     this.$axios
       .get("/api/index/choose")
-      .then((res) => {
+      .then(res => {
         console.log("choose: ", res);
-        for ( var item  in res.data.data) {
+        for (var item in res.data.data) {
           let oneObj = {
             value: res.data.data[item],
             label: res.data.data[item]
@@ -189,7 +210,7 @@ export default {
           this.options.push(oneObj);
         }
       })
-      .catch((err)=> {
+      .catch(err => {
         console.log("错误", err);
       });
   }
@@ -228,8 +249,8 @@ export default {
 .form .left {
   width: 50%;
   float: left;
-  background: rgb(103, 212, 196);
-  box-shadow: 0px 0px 330px 60px #53c5b9 inset;
+  background: #ef6c00;
+  box-shadow: 0px 0px 330px 60px #f97040 inset;
   height: 100%;
 }
 .form .right {
@@ -276,9 +297,9 @@ export default {
   padding: 11px 44px;
   font-size: 16px;
   margin-top: 20px;
-  background: linear-gradient(top, #53c5b9 0%, #6f97c5 100%);
+  background: linear-gradient(top, #ef6c00 0%, #ff7043 100%);
   border: none;
-  color: #446388;
+  color: #eee;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
 }
 .form .submit:hover {
@@ -292,25 +313,25 @@ export default {
 /*  */
 
 .a-btn {
-  background: #53c5b9;
+  background: #ef6c00;
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(#53c5b9, 0),
-    color-stop(#6f97c5, 1)
+    color-stop(#ef6c00, 0),
+    color-stop(#ff7043, 1)
   );
-  background: -webkit-linear-gradient(top, #53c5b9 0%, #6f97c5 100%);
-  background: -moz-linear-gradient(top, #53c5b9 0%, #6f97c5 100%);
-  background: -o-linear-gradient(top, #53c5b9 0%, #6f97c5 100%);
-  background: linear-gradient(top, #53c5b9 0%, #6f97c5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53C5B9', endColorstr='#6f97c5',GradientType=0 );
+  background: -webkit-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
+  background: -moz-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
+  background: -o-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
+  background: linear-gradient(top, #ef6c00 0%, #ff7043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6c00', endColorstr='#FF7043',GradientType=0 );
   padding-left: 20px;
   padding-right: 65px;
   height: 28px;
   display: inline-block;
   position: relative;
-  border: 1px solid #5d81ab;
+  border: 1px solid #ef6c00;
   -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
     1px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 0px 4px rgba(188, 188, 188, 0.5);
   -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
@@ -335,7 +356,7 @@ export default {
   font-size: 16px;
   white-space: nowrap;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
-  color: #446388;
+  color: #eee;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -374,7 +395,7 @@ export default {
   top: 0px;
   height: 100%;
   width: 52px;
-  border-left: 1px solid #5d81ab;
+  border-left: 1px solid #ef6c00;
   -webkit-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   -moz-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
@@ -395,7 +416,7 @@ export default {
 }
 
 .a-btn:hover .a-btn-text {
-  text-shadow: 0px 1px 1px #5d81ab;
+  text-shadow: 0px 1px 1px #ef6c00;
   color: #fff;
 }
 
@@ -405,11 +426,35 @@ export default {
 .a-btn:active {
   position: relative;
   top: 1px;
-  background: #5d81ab;
+  background: #ef6c00;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-  border-color: #53c5b9;
+  border-color: #ff7043;
+}
+.form .left {
+  padding: 20px 50px;
+  text-align: left;
+  color: #fff;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.form .left h1 {
+  text-align: left;
+}
+.form .left p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.form .cheakbox {
+  color: #fff;
+}
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #eee;
+}
+.form .el-checkbox__label {
+  font-size: 16px;
 }
 </style>
 

@@ -3,11 +3,11 @@
         <div class="container">
             <div class="sub_logo left"><img src="./logo.png" /></div>
             <div class="nav right">
-                <a href="#"><i class="icon-home"></i> 概况</a><a href="#"><i class="icon-sound"></i> 新闻</a>
-                <a href="#"><i class="icon-shareable"></i> 院系</a><a href="#"><i class="icon-network"></i> 部门</a>
-                <a href="#"><i class="icon-leaf"></i> 人才培养</a>
-                <a href="#"><i class="icon-briefcase"></i> 招生就业</a><a href="#"><i class="icon-feather"></i> 校园生活</a>
-                <a href="#"><i class="icon-paper-plane"></i> 快速导航</a></div>
+                <a href="http://www.neusoft.edu.cn/about/about/"><i class="icon-home"></i> 概况</a><a href="http://news.neusoft.edu.cn/"><i class="icon-sound"></i> 新闻</a>
+                <a href="http://www.neusoft.edu.cn/schools&departments/"><i class="icon-shareable"></i> 院系</a><a href="http://www.neusoft.edu.cn/2016/1025/6947.shtml"><i class="icon-network"></i> 部门</a>
+                <a href="http://www.neusoft.edu.cn/adademics/"><i class="icon-leaf"></i> 人才培养</a>
+                <a href="http://www.neusoft.edu.cn/admissions&employmen/"><i class="icon-briefcase"></i> 招生就业</a><a href="http://www.neusoft.edu.cn/life/"><i class="icon-feather"></i> 校园生活</a>
+                <a href="#"><i class="icon-paper-plane"></i> 公共服务</a></div>
         </div>
     </div>
 </template>
@@ -71,8 +71,8 @@ a, a:hover, a:link, a:visited {
 }
 
 .nav_sub .sub_logo img{
-  padding: 10px 10px;
-  height: 60px;
+  padding: 5px 5px;
+  height: 50px;
 }
 .nav_sub .right a{
   display: inline-block;
