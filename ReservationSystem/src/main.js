@@ -10,7 +10,7 @@ import axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(VueRouter)
-axios.defaults.baseURL = 'http://visit.neusoft.edu.cn'
+axios.defaults.baseURL = 'http://visitor.neusoft.edu.cn'
 
 Vue.prototype.$axios = axios
 

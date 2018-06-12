@@ -1,7 +1,7 @@
 <template>
      <div class="nav_sub show header_basic">
         <div class="container">
-            <div class="sub_logo left"><img src="./logo.png" /></div>
+            <div class="sub_logo left"><a href="http://www.neusoft.edu.cn/"><img src="./logo.png" /></a></div>
             <div class="nav right">
                 <a href="http://www.neusoft.edu.cn/about/about/"><i class="icon-home"></i> 概况</a><a href="http://news.neusoft.edu.cn/"><i class="icon-sound"></i> 新闻</a>
                 <a href="http://www.neusoft.edu.cn/schools&departments/"><i class="icon-shareable"></i> 院系</a><a href="http://www.neusoft.edu.cn/2016/1025/6947.shtml"><i class="icon-network"></i> 部门</a>

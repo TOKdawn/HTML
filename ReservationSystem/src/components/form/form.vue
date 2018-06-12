@@ -249,7 +249,7 @@ export default {
 .form .left {
   width: 50%;
   float: left;
-  background: #ef6c00;
+  background: rgba(250, 80, 54,1);
   box-shadow: 0px 0px 330px 60px #f97040 inset;
   height: 100%;
 }
@@ -297,7 +297,7 @@ export default {
   padding: 11px 44px;
   font-size: 16px;
   margin-top: 20px;
-  background: linear-gradient(top, #ef6c00 0%, #ff7043 100%);
+  background: #f6493b ;
   border: none;
   color: #eee;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
@@ -313,25 +313,25 @@ export default {
 /*  */
 
 .a-btn {
-  background: #ef6c00;
+  background: #f6493b;
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(#ef6c00, 0),
-    color-stop(#ff7043, 1)
+    color-stop(#f6493b, 0),
+    color-stop(#ff603b, 1)
   );
-  background: -webkit-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
-  background: -moz-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
-  background: -o-linear-gradient(top, #ef6c00 0%, #ff7043 100%);
-  background: linear-gradient(top, #ef6c00 0%, #ff7043 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6c00', endColorstr='#FF7043',GradientType=0 );
+  background: -webkit-linear-gradient(top, #f6493b 0%, #ff603b 100%);
+  background: -moz-linear-gradient(top, #f6493b 0%, #ff603b 100%);
+  background: -o-linear-gradient(top, #f6493b 0%, #ff603b 100%);
+  background: linear-gradient(top, #f6493b 0%, #ff603b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6493b', endColorstr='#ff603b',GradientType=0 );
   padding-left: 20px;
   padding-right: 65px;
   height: 28px;
   display: inline-block;
   position: relative;
-  border: 1px solid #ef6c00;
+  border: 1px solid #f6493b;
   -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
     1px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 0px 4px rgba(188, 188, 188, 0.5);
   -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
@@ -395,7 +395,7 @@ export default {
   top: 0px;
   height: 100%;
   width: 52px;
-  border-left: 1px solid #ef6c00;
+  border-left: 1px solid #f6493b;
   -webkit-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   -moz-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
@@ -416,7 +416,7 @@ export default {
 }
 
 .a-btn:hover .a-btn-text {
-  text-shadow: 0px 1px 1px #ef6c00;
+  text-shadow: 0px 1px 1px #f6493b;
   color: #fff;
 }
 
@@ -426,18 +426,18 @@ export default {
 .a-btn:active {
   position: relative;
   top: 1px;
-  background: #ef6c00;
+  background: #f6493b;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
-  border-color: #ff7043;
+  border-color: #ff603b;
 }
 .form .left {
   padding: 20px 50px;
   text-align: left;
   color: #fff;
   box-sizing: border-box;
-  overflow: scroll;
+ 
 }
 .form .left h1 {
   text-align: left;

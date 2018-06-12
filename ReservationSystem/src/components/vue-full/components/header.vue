@@ -82,7 +82,7 @@
 </script>
 <style lang="scss">
 .full-calendar-header{
-  background:linear-gradient(top, #f56c6c 0%, #fa5036 100%);
+  background:rgba(250, 80, 54, 1);
   border-radius: 10px 10px 0 0;
   font-size: 18px;
   font-weight: 900;

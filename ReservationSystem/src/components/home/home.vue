@@ -250,6 +250,7 @@ export default {
   transform: translateY(-60%);
   color: #fff;
   padding-left: 40px;
+  text-shadow: 0px 0px 8px #222;
 }
 .home_info h1 {
   max-width: 400px;
