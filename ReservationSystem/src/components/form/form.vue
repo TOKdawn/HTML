@@ -21,7 +21,7 @@
 8、不乱丢杂物、纸屑；不随地吐痰；垃圾和废弃物品请及时放入垃圾桶内，切勿随地抛弃。请爱护学校内花、草、树木。请勿攀折、采、摘及践踏、损坏草坪、绿地、雕塑等；
 </br>
 9、如学校进行重要接待、大型活动或出现暴雨、雷电、台风等恶劣天气、停电，以及其他不可抗拒因素，学校可能会临时改变参观时间或封闭部分区域，具体行程变化以当日公告为准；
-
+</br>
 以上参观须知敬请来访人员在入园前认真阅读并遵守，来访人员入校后视为认同以上管理要求，所有内容最终解释权归大连东软信息学院所有。
 
 </p>
@@ -297,7 +297,7 @@ export default {
   padding: 11px 44px;
   font-size: 16px;
   margin-top: 20px;
-  background: #f6493b ;
+  background: #f56c6c ;
   border: none;
   color: #eee;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
@@ -313,25 +313,25 @@ export default {
 /*  */
 
 .a-btn {
-  background: #f6493b;
+  background: #f56c6c;
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(#f6493b, 0),
+    color-stop(#f56c6c, 0),
     color-stop(#ff603b, 1)
   );
-  background: -webkit-linear-gradient(top, #f6493b 0%, #ff603b 100%);
-  background: -moz-linear-gradient(top, #f6493b 0%, #ff603b 100%);
-  background: -o-linear-gradient(top, #f6493b 0%, #ff603b 100%);
-  background: linear-gradient(top, #f6493b 0%, #ff603b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6493b', endColorstr='#ff603b',GradientType=0 );
+  background: -webkit-linear-gradient(top, #f56c6c 0%, #ff603b 100%);
+  background: -moz-linear-gradient(top, #f56c6c 0%, #ff603b 100%);
+  background: -o-linear-gradient(top, #f56c6c 0%, #ff603b 100%);
+  background: linear-gradient(top, #f56c6c 0%, #ff603b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f56c6c', endColorstr='#ff603b',GradientType=0 );
   padding-left: 20px;
   padding-right: 65px;
   height: 28px;
   display: inline-block;
   position: relative;
-  border: 1px solid #f6493b;
+  border: 1px solid #f56c6c;
   -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
     1px 1px 3px rgba(0, 0, 0, 0.2), 0px 0px 0px 4px rgba(188, 188, 188, 0.5);
   -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8) inset,
@@ -395,7 +395,7 @@ export default {
   top: 0px;
   height: 100%;
   width: 52px;
-  border-left: 1px solid #f6493b;
+  border-left: 1px solid #f56c6c;
   -webkit-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   -moz-box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
   box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.4) inset;
@@ -416,7 +416,7 @@ export default {
 }
 
 .a-btn:hover .a-btn-text {
-  text-shadow: 0px 1px 1px #f6493b;
+  text-shadow: 0px 1px 1px #f56c6c;
   color: #fff;
 }
 
@@ -426,7 +426,7 @@ export default {
 .a-btn:active {
   position: relative;
   top: 1px;
-  background: #f6493b;
+  background: #f56c6c;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) inset;

@@ -6,7 +6,7 @@ import routes from './router'
 import VueRouter from 'vue-router'
 import ElementUI from 'element-ui'
 import axios from 'axios'
-
+import 'babel-polyfill'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(VueRouter)

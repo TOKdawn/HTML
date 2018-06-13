@@ -324,7 +324,6 @@ export default {
 .home_button .dropdown {
   position: fixed;
   left: 0;
-  // top: 0;
   width: 100vw;
   transform: translateY(-100%);
   height: 0;

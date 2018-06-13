@@ -1,0 +1,55 @@
+.bg {
+    background: url('./weixin-pt.jpg') 0 0 /auto 100% no-repeat;
+    height: 35vh;
+    width: 100%;
+}
+
+html,
+body,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+._zpy_ ul li {
+    height: 60px;
+    border-bottom: 1px #eee solid;
+}
+
+._zpy_ ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+._zpy_ ul li p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0px 0px 10px;
+    height: 55px;
+}
+
+._zpy_ .num {
+    float: right;
+    line-height: 60px;
+    height: 60px;
+    margin-right: 8px;
+    color: #777;
+}
+
+._zpy_ span {
+    color: rgb(235, 100, 11);
+    font-size: 24px;
+    margin-right: 3px;
+}
+
+._zpy_ .serial {
+    width: 30px;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
