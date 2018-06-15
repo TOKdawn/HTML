@@ -1,7 +1,10 @@
 .bg {
-    background: url('./weixin-pt.jpg') 0 0 /auto 100% no-repeat;
+    background: url('./pt-ym.jpg') 0 0 /auto 100% no-repeat;
     height: 35vh;
     width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
 }
 
 html,
@@ -11,9 +14,14 @@ ul {
     padding: 0px;
 }
 
+._zpy_ ul {
+    margin-top: 35vh;
+}
+
 ._zpy_ ul li {
     height: 60px;
     border-bottom: 1px #eee solid;
+    padding: 0px 20px;
 }
 
 ._zpy_ ul li img {

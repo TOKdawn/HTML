@@ -34,7 +34,7 @@
                   'is-end'     : isEnd(event.end,day.date),
                   'is-opacity' : !event.isShow,
                   'eventchoose': (event.YOUR_DATA.active_time_id == chooseflag),
-                 'eventnotshow': (event.YOUR_DATA.bespeak_over_time <= mytime)
+                 'eventnotshow': (event.YOUR_DATA.bespeak_over_time < mytime)
                   }]" 
                 @click="eventClick(event,$event)">
                 {{isBegin(event, day.date, day.weekDay)}}
@@ -95,9 +95,12 @@
         item.end = item.end || item.start
       })
       var date = new Date();
+
       var year = date.getFullYear(); 
       var month =(date.getMonth() + 1).toString(); 
       var day = (date.getDate()).toString();  
+
+
       if (month.length == 1) { 
           month = "0" + month; 
       } 
@@ -106,7 +109,7 @@
       }
       var dateTime = year + "-" + month + "-" + day;
           this.mytime=dateTime;
-          // console.log(this.mytime);
+          console.log(this.mytime);
           // this.events = events
         },
     data () {
