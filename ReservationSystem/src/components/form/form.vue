@@ -3,27 +3,24 @@
     <div>
         <div class="left">
           <h1>参观须知:</h1>
-          <p>1、参观当天请携带有效身份证件（身份证、户口本或护照原件）按照规定时间到工作人员处登记，过时不候；
+          <p>1.参观当天请携带本人有效身份证件（身份证、户口本或护照原件）按照规定时间到工作人员处登记，过时不候；
             </br>
-
-2、由于校园内部禁止外部车辆通行且周围停车位置有限，无法容纳所有车辆。请尽量乘坐公共交通到校或及早抵达自行寻找车辆停放位置；
-</br>
-3、请遵守学校秩序，听从工作人员指引，按照预定的参观线路依次前行，以免干扰校内正常教学秩序；
-</br>
-4、请自行保管好私人财物，我们不对来访人员私人财物的损坏或损失负责；
-</br>
-5、参观过程中请勿有以下行为：处于销售或交换目的的展示任何物品或服务；散发传单、集会或演讲；分发、展示任何形式的印刷品、录制品、旗帜、横幅或标牌等； 
-</br>
-6、为了保持学校环境卫生以及在校学生及来访人员人身安全，不可携带宠物及法律规定的危险物品（包括但不限于任何种类的火器、弹药或攻击性武器及其他易燃、易爆、有害、有毒物品等）；
-</br>
-7、请来访人员在指定区域吸烟，因非吸烟区域内吸烟导致的本校或者第三方的人身、财产损害，由吸烟的来访人员承担赔偿责任；
-</br>
-8、不乱丢杂物、纸屑；不随地吐痰；垃圾和废弃物品请及时放入垃圾桶内，切勿随地抛弃。请爱护学校内花、草、树木。请勿攀折、采、摘及践踏、损坏草坪、绿地、雕塑等；
-</br>
-9、如学校进行重要接待、大型活动或出现暴雨、雷电、台风等恶劣天气、停电，以及其他不可抗拒因素，学校可能会临时改变参观时间或封闭部分区域，具体行程变化以当日公告为准；
-</br>
-以上参观须知敬请来访人员在入园前认真阅读并遵守，来访人员入校后视为认同以上管理要求，所有内容最终解释权归大连东软信息学院所有。
-
+2.由于校园内部禁止外部车辆通行且学校周边停车位置有限。建议尽量乘坐公共交通工具到校或尽早抵达自行寻找合适的车辆停放位置；
+     </br>
+3.请遵守学校秩序，听从工作人员指引，按照预定的参观线路前行，未经允许，不要随意进入教室、办公室，以免影响校内正常教学秩序；
+     </br>
+4.请自行保管好私人财物，参观过程中来访人员私人财物丢失、损坏学校概不负责；
+     </br>
+5.参观过程中请勿有以下行为：出于销售或交换目的展示任何物品或服务；散发传单、集会或演讲；分发、展示任何形式的印刷品、录制品、旗帜、横幅或标牌等；或者其他工作人员认为干扰到学校正常教学秩序的行为，我校工作人员将随时终止其参观并联络相关安保部门；
+     </br>
+6.禁止携带宠物及法律规定的危险物品（包括但不限于任何种类的火器、弹药或攻击性武器及其他易燃、易爆、有害、有毒物品等）进入校园； 
+     </br>
+7.请来访人员在指定区域吸烟，因在非吸烟区域内吸烟导致的本校或者第三方的人身、财产损害，由吸烟的来访人员承担赔偿责任；     </br>
+8.请爱护学校环境，不随地吐痰；不乱丢杂物、纸屑；垃圾和废弃物品请及时放入垃圾桶内，切勿随地抛弃。请爱护校园内花、草、树木。请勿攀折、采、摘及践踏、损坏草坪、绿地、雕塑等；
+     </br>
+9.如预约来访当天学校进行重要接待、大型活动或出现暴雨、雷电、台风等恶劣天气、停电，以及其他不可抗拒因素，学校可能会临时改变参观时间或封闭部分区域，具体行程变化以当日公告为准；
+     </br>
+以上参观须知敬请来访人员在预约来校参观前认真阅读并遵守，来访人员预约成功即视为认同以上管理要求，所有内容最终解释权归大连东软信息学院所有。
 </p>
 
 <el-checkbox v-model="checked" class="cheakbox">我已阅读须知</el-checkbox>
@@ -37,7 +34,7 @@
                         </div>
                 <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="form-ruleForm" label-position="top">
                 <el-form-item label="联系人姓名:" prop="name">
-                        <el-input v-model="ruleForm.name" placeholder="请输入联系人名称"></el-input>
+                        <el-input v-model="ruleForm.name" placeholder="请输入实名，现场需登记核对"></el-input>
                 </el-form-item>
                 <el-form-item label="联系人邮箱:" prop="mail" >
                         <el-input v-model="ruleForm.mail" placeholder="请输入联系人邮箱"></el-input>
@@ -148,6 +145,12 @@ export default {
                     this.$router.push("/home");
                   }
                 });
+              }else{
+                 this.$notify({
+                    title: "警告",
+                    message: res.data.message,
+                    type: "warning"
+                  });
               }
             });
           } else {
@@ -171,20 +174,30 @@ export default {
       })
         .then(res => {
           console.log("phone:", res);
+            if (res.data.success) {
           const TIME_COUNT = 60;
-          this.subflag = true;
-          if (!this.timer) {
-            this.count = TIME_COUNT;
-            this.timer = setInterval(() => {
-              if (this.count > 0 && this.count <= TIME_COUNT) {
-                this.count--;
-              } else {
-                clearInterval(this.timer);
-                this.subflag = false;
-                this.count = "获取";
-              }
-            }, 1000);
-          }
+                  this.subflag = true;
+                  if (!this.timer) {
+                    this.count = TIME_COUNT;
+                    this.timer = setInterval(() => {
+                      if (this.count > 0 && this.count <= TIME_COUNT) {
+                        this.count--;
+                      } else {
+                        clearInterval(this.timer);
+                        this.subflag = false;
+                        this.count = "获取";
+                      }
+                    }, 1000);
+                  }
+            }else{
+this.$notify({
+              title: "警告",
+               message: res.data.message,
+              type: "warning"
+            });
+            return false;
+            }
+        
         })
         .catch(err => {
           console.log("未知错误");
